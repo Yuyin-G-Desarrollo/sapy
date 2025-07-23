@@ -75,7 +75,7 @@ jobs:
 
 
       - name: Publicar con ClickOnce
-        run: msbuild Framework.Vista/Framework.Vista.vbproj /target:Publish /p:Configuration=Debug /p:PublishDir="C:\inetpub\wwwroot\SAPY_2024\"
+        run: msbuild Framework.Vista/Framework.Vista.vbproj /target:Publish /p:Configuration=Debug /p:PublishDir="C:\Users\SISTEMAS15\Desktop\compartida\sapy"
 
 
       - name: Incrementar ApplicationRevision en .vbproj
