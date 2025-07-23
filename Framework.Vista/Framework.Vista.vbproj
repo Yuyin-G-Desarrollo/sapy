@@ -35,7 +35,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://192.168.2.170/sapy_2024/</InstallUrl>
+    <InstallUrl>http://192.168.17.38/sapy/</InstallUrl>
     <SupportUrl>http://www.grupoyuyin.com.mx</SupportUrl>
     <ErrorReportUrl>http://www.grupoyuyin.com.mx</ErrorReportUrl>
     <ProductName>SAPY</ProductName>
