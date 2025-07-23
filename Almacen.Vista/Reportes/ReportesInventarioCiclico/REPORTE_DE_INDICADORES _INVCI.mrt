@@ -1,0 +1,1066 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Conexión Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Conexión</Alias>
+        <ConnectionStringEncrypted>+SDRiU0Fo/lBG6SBTXT1O95gd4ndVKOJ4lv9UGlstxLUVsEJyVETvPNJ0PBvAPV7kHz7ycVrS21pE6X0YxzhXsNweY5jSvNZyxWlhOpM5DuAGN2JVk8BRcAI6PFhJWE/xG77K2I=</ConnectionStringEncrypted>
+        <Name>Conexión</Name>
+      </Conexión>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <dtInventarios Ref="3" type="DataTableSource" isKey="true">
+        <Alias>dtInventarios</Alias>
+        <Columns isList="true" count="5">
+          <value>Total,System.Int32</value>
+          <value>Sin_x0020_diferencias,System.Int32</value>
+          <value>Con_x0020_diferencias,System.Int32</value>
+          <value>_x0025_sin,System.Double</value>
+          <value>_x0025_con,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>dtInventarios</Name>
+        <NameInSource>dsResumenInventarios.dtInventarios</NameInSource>
+      </dtInventarios>
+      <dtPares Ref="4" type="DataTableSource" isKey="true">
+        <Alias>dtPares</Alias>
+        <Columns isList="true" count="5">
+          <value>Total,System.Int32</value>
+          <value>Correctos,System.Int32</value>
+          <value>Diferencias,System.Int32</value>
+          <value>_x0025_sin,System.Double</value>
+          <value>_x0025_con,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>dtPares</Name>
+        <NameInSource>dsResumenInventarios.dtPares</NameInSource>
+      </dtPares>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="8">
+      <value>,urlImagenNave,urlImagenNave,System.String,,False,False</value>
+      <value>,nombreNave,nombreNave,System.String,,False,False</value>
+      <value>,NombreReporte,NombreReporte,System.String,,False,False</value>
+      <value>,Usuario,Usuario,System.String,,False,False</value>
+      <value>,Operador,Operador,System.String,,False,False</value>
+      <value>,Fecha_x0020_de_x0020_Ejecucion,Fecha_x0020_de_x0020_Ejecución,System.DateTime,_x0039__x002F_8_x002F_2014_x0020_9:20:56_x0020_AM,False,False</value>
+      <value>,FechaInicio,FechaInicio,System.String,,False,False</value>
+      <value>,FechaFin,FechaFin,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="2">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="7">
+        <PageHeaderBand1 Ref="6" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,25.9,2.2</ClientRectangle>
+          <Components isList="true" count="7">
+            <Image2 Ref="7" type="Image" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,4.8,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>21125725773741428dd09ee0ac9231dc</Guid>
+              <ImageURL>{urlImagenNave}</ImageURL>
+              <Name>Image2</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Stretch>True</Stretch>
+            </Image2>
+            <Text28 Ref="8" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,0,17.4,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,16,Bold</Font>
+              <Guid>d30aa20e81a74b01b18d4cace0555265</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Reporte de indicadores de Inventarios Cíclicos</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+            <Text1 Ref="9" type="Text" isKey="true">
+              <Border>All;Black;0;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>4.8,1.4,17.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Del {FechaInicio} al {FechaFin}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="10" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22.2,0,3.6,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Nave: {nombreNave}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text30 Ref="11" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22.2,1.4,3.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>8a7455b1682649b4aa0014574a13a4bf</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Fecha de impresión:
+{Time}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="12" type="DateFormat" isKey="true">
+                <StringFormat>dd/MM/yyyy</StringFormat>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text30>
+            <StartPointPrimitive3 Ref="13" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0,0,0,0</ClientRectangle>
+              <Guid>05085e0bb3804a73a8666a32158e69b1</Guid>
+              <Name>StartPointPrimitive3</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <ReferenceToGuid>63222de1650242539316aac912f5c7bc</ReferenceToGuid>
+            </StartPointPrimitive3>
+            <EndPointPrimitive3 Ref="14" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>0,2.2,0,0</ClientRectangle>
+              <Guid>8292f75c7aae488d8ce145673d3da5d4</Guid>
+              <Name>EndPointPrimitive3</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <ReferenceToGuid>63222de1650242539316aac912f5c7bc</ReferenceToGuid>
+            </EndPointPrimitive3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="15" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,18.8,25.9,0.8</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text27 Ref="16" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>11,0.1,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>87ae47aaf3ae4e96b91d4263b06fc121</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="5" />
+              <Parent isRef="15" />
+              <Text>{PageNofMThrough}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text31 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.1,8.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>f2611037093045f08222c976cad2a30c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="5" />
+              <Parent isRef="15" />
+              <Text>{NombreReporte}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text32 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>20.2,0.1,5.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>3576f0d0f34b410aa1ca655656cf80fa</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="5" />
+              <Parent isRef="15" />
+              <Text>{Usuario}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>c7fa9d8a72744d5bad006f5fa2a5ee18</Guid>
+          <Name>PageFooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageFooterBand1>
+        <Text24 Ref="19" type="Text" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>-10.6,4.4,7.2,2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,16,Bold</Font>
+          <Guid>163356442b674a358518d0548eaa562e</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text24</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Text>Numero de inventarios
+ levantados</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text24>
+        <Text26 Ref="20" type="Text" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>-10.6,6.4,7.2,2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,16,Bold</Font>
+          <Guid>ebd4dae2f4464ba1a52f31f03a57664e</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text26</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Text>Numero de inventarios con 
+diferencias</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text26>
+        <Text29 Ref="21" type="Text" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>-10.6,8.4,7.2,2.2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,16,Bold</Font>
+          <Guid>d1955bb9b9e140f1af6d20c591093363</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text29</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Text>Numero de inventarios sin 
+diferencias</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text29>
+        <DataBand1 Ref="22" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3.4,25.9,7.4</ClientRectangle>
+          <Components isList="true" count="7">
+            <Panel1 Ref="23" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.8,0.2,10.4,6.8</ClientRectangle>
+              <Components isList="true" count="6">
+                <Chart1 Ref="24" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+                  <Area Ref="25" type="Stimulsoft.Report.Chart.StiPieArea" isKey="true">
+                    <BorderColor>171, 172, 173</BorderColor>
+                    <Brush>[255:255:255]</Brush>
+                    <Chart isRef="24" />
+                  </Area>
+                  <Border>None;Transparent;0;Solid;False;4;EmptyBrush</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>2.2,0.6,6.2,5.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <ConstantLines isList="true" count="0" />
+                  <CustomStyleName />
+                  <Filters isList="true" count="0" />
+                  <Legend Ref="26" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+                    <BorderColor>105, 105, 105</BorderColor>
+                    <Brush>[255:255:255]</Brush>
+                    <Chart isRef="24" />
+                    <Font>Arial,8</Font>
+                    <LabelsColor>140, 140, 140</LabelsColor>
+                    <MarkerSize>10, 10</MarkerSize>
+                    <TitleColor>105, 105, 105</TitleColor>
+                    <TitleFont>Arial,14,Bold</TitleFont>
+                    <Visible>False</Visible>
+                  </Legend>
+                  <Name>Chart1</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="23" />
+                  <Series isList="true" count="2">
+                    <Item23 Ref="27" type="Stimulsoft.Report.Chart.StiPieSeries" isKey="true">
+                      <ArgumentDataColumn>100</ArgumentDataColumn>
+                      <BorderColor>255, 255, 255</BorderColor>
+                      <Brush>[91:155:213]</Brush>
+                      <Chart isRef="24" />
+                      <Conditions isList="true" count="0" />
+                      <Filters isList="true" count="0" />
+                      <SeriesLabels Ref="28" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                        <BorderColor>140, 140, 140</BorderColor>
+                        <Brush>[255:255:255]</Brush>
+                        <Chart isRef="24" />
+                        <Font>Arial,7</Font>
+                        <Format>P2</Format>
+                        <LabelColor>90, 90, 90</LabelColor>
+                        <MarkerSize>8, 6</MarkerSize>
+                        <ShowInPercent>True</ShowInPercent>
+                        <ValueTypeSeparator>-</ValueTypeSeparator>
+                        <Width>0</Width>
+                      </SeriesLabels>
+                      <Title>sin</Title>
+                      <TopN Ref="29" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+                      <ValueDataColumn>dtInventarios._sin</ValueDataColumn>
+                    </Item23>
+                    <Item24 Ref="30" type="Stimulsoft.Report.Chart.StiPieSeries" isKey="true">
+                      <ArgumentDataColumn>100</ArgumentDataColumn>
+                      <BorderColor>255, 255, 255</BorderColor>
+                      <Brush>[237:125:49]</Brush>
+                      <Chart isRef="24" />
+                      <Conditions isList="true" count="0" />
+                      <Filters isList="true" count="0" />
+                      <SeriesLabels Ref="31" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                        <BorderColor>140, 140, 140</BorderColor>
+                        <Brush>[255:255:255]</Brush>
+                        <Chart isRef="24" />
+                        <Font>Arial,7</Font>
+                        <Format>P2</Format>
+                        <LabelColor>90, 90, 90</LabelColor>
+                        <MarkerSize>8, 6</MarkerSize>
+                        <ShowInPercent>True</ShowInPercent>
+                        <ValueTypeSeparator>-</ValueTypeSeparator>
+                        <Width>0</Width>
+                      </SeriesLabels>
+                      <Title>con</Title>
+                      <TopN Ref="32" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+                      <ValueDataColumn>dtInventarios._con</ValueDataColumn>
+                    </Item24>
+                  </Series>
+                  <SeriesLabels Ref="33" type="Stimulsoft.Report.Chart.StiInsideEndPieLabels" isKey="true">
+                    <BorderColor>140, 140, 140</BorderColor>
+                    <Brush>[255:255:255]</Brush>
+                    <Chart isRef="24" />
+                    <Font>Arial,7</Font>
+                    <LabelColor>90, 90, 90</LabelColor>
+                    <MarkerSize>8, 6</MarkerSize>
+                    <ValueTypeSeparator>-</ValueTypeSeparator>
+                    <Width>0</Width>
+                  </SeriesLabels>
+                  <SeriesLabelsConditions isList="true" count="0" />
+                  <Sort isList="true" count="0" />
+                  <Strips isList="true" count="0" />
+                  <Style Ref="34" type="Stimulsoft.Report.Chart.StiStyle22" isKey="true" />
+                  <Table Ref="35" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
+                    <Font>Tahoma,8</Font>
+                    <GridLineColor>105, 105, 105</GridLineColor>
+                    <TextColor>140, 140, 140</TextColor>
+                  </Table>
+                  <Title Ref="36" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+                    <Brush>[140:140:140]</Brush>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </Chart1>
+                <Text33 Ref="37" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.4,0.2,9.8,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,12</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text33</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="23" />
+                  <Text>Porcentaje de inventarios con diferencias</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Text33>
+                <Text15 Ref="38" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>3.4,6.2,5.2,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text15</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="23" />
+                  <Text>Número de inventarios con diferencias</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text15>
+                <Text16 Ref="39" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>3.4,5.8,5.2,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>f280ac92edd5426d90280ba661cfac1a</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text16</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="23" />
+                  <Text>Número de inventarios sin diferencias</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text16>
+                <Text17 Ref="40" type="Text" isKey="true">
+                  <Brush>Highlight</Brush>
+                  <ClientRectangle>3,5.8,0.4,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>9c4f192950304d809d25796bfec186a3</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text17</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="23" />
+                  <TextBrush>Black</TextBrush>
+                </Text17>
+                <Text18 Ref="41" type="Text" isKey="true">
+                  <Brush>[255:128:0]</Brush>
+                  <ClientRectangle>3,6.2,0.4,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>5fddd6adf7c44a7aaaa7b55f8f63bd86</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text18</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="23" />
+                  <TextBrush>Black</TextBrush>
+                </Text18>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>Panel1</Name>
+              <Page isRef="5" />
+              <Parent isRef="22" />
+            </Panel1>
+            <Text4 Ref="42" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,0.2,9.2,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="22" />
+              <Text>Numero de inventarios levantados</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text8 Ref="43" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,2.4,9.2,2.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="5" />
+              <Parent isRef="22" />
+              <Text>Numero de inventarios sin diferencias</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text6 Ref="44" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,4.8,9.2,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="5" />
+              <Parent isRef="22" />
+              <Text>Numero de inventarios con diferencias</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Panel3 Ref="45" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,0.2,4.8,2.2</ClientRectangle>
+              <Components isList="true" count="1">
+                <Text3 Ref="46" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.2,4.6,1.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,24,Bold</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text3</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="45" />
+                  <Text>{dtInventarios.Total}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="47" type="NumberFormat" isKey="true">
+                    <DecimalDigits>0</DecimalDigits>
+                    <GroupSeparator>,</GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text3>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>Panel3</Name>
+              <Page isRef="5" />
+              <Parent isRef="22" />
+            </Panel3>
+            <Panel4 Ref="48" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,2.4,4.8,2.4</ClientRectangle>
+              <Components isList="true" count="1">
+                <Text7 Ref="49" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.2,4.6,2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,24,Bold</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text7</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="48" />
+                  <Text>{dtInventarios.Sin_diferencias}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="50" type="NumberFormat" isKey="true">
+                    <DecimalDigits>0</DecimalDigits>
+                    <GroupSeparator>,</GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text7>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>111d7342ee7a4d3a965b7c03f576a653</Guid>
+              <Name>Panel4</Name>
+              <Page isRef="5" />
+              <Parent isRef="22" />
+            </Panel4>
+            <Panel5 Ref="51" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,4.8,4.8,2.2</ClientRectangle>
+              <Components isList="true" count="1">
+                <Text5 Ref="52" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.2,4.6,1.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,24,Bold</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text5</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="51" />
+                  <Text>{dtInventarios.Con_diferencias}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="53" type="NumberFormat" isKey="true">
+                    <DecimalDigits>0</DecimalDigits>
+                    <GroupSeparator>,</GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text5>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>da6d88fd1a934fe6aa4db31aaae203ed</Guid>
+              <Name>Panel5</Name>
+              <Page isRef="5" />
+              <Parent isRef="22" />
+            </Panel5>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>dtInventarios</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <VerticalLinePrimitive2 Ref="54" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>0,0.4,0.0254,2.2</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="55" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>63222de1650242539316aac912f5c7bc</Guid>
+          <Name>VerticalLinePrimitive2</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <StartCap Ref="56" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>9f8eb718e8c048b3b27daa0e73615ffd</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21.6</PageHeight>
+      <PageWidth>27.9</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="57" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+    <Page2 Ref="58" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand2 Ref="59" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,25.9,7.4</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text10 Ref="60" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,0.4,9.2,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Guid>7ad9b9a0217b4e058fe8b0f71b3eae14</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>Total de pares inventariados</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text12 Ref="61" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,2.6,9.2,2.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Guid>eef9375c9fe34534ac72c6397d060246</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>Total de pares correctos</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text14 Ref="62" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,5,9.2,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Guid>74758819184d4c3496c5675c42a1f7c0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>Total de pares con diferencias</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Panel2 Ref="63" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.8,0.4,10.4,6.8</ClientRectangle>
+              <Components isList="true" count="6">
+                <Text34 Ref="64" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.2,0.2,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,12</Font>
+                  <Guid>ca78d9cdcde54a3287a81caf06fb8fd6</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text34</Name>
+                  <Page isRef="58" />
+                  <Parent isRef="63" />
+                  <Text>Porcentaje de pares con diferencias</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Text34>
+                <Chart2 Ref="65" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+                  <Area Ref="66" type="Stimulsoft.Report.Chart.StiPieArea" isKey="true">
+                    <BorderColor>171, 172, 173</BorderColor>
+                    <Brush>[255:255:255]</Brush>
+                    <Chart isRef="65" />
+                  </Area>
+                  <Border>None;Transparent;0;Solid;False;4;EmptyBrush</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>2.2,0.6,6.4,5.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <ConstantLines isList="true" count="0" />
+                  <CustomStyleName />
+                  <Filters isList="true" count="0" />
+                  <Guid>f1a3837befee4a5b91845c6c4bba1013</Guid>
+                  <Legend Ref="67" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+                    <BorderColor>105, 105, 105</BorderColor>
+                    <Brush>[255:255:255]</Brush>
+                    <Chart isRef="65" />
+                    <Font>Arial,8</Font>
+                    <LabelsColor>140, 140, 140</LabelsColor>
+                    <MarkerSize>10, 10</MarkerSize>
+                    <TitleColor>105, 105, 105</TitleColor>
+                    <TitleFont>Arial,14,Bold</TitleFont>
+                    <Visible>False</Visible>
+                  </Legend>
+                  <Name>Chart2</Name>
+                  <Page isRef="58" />
+                  <Parent isRef="63" />
+                  <Series isList="true" count="2">
+                    <Item48 Ref="68" type="Stimulsoft.Report.Chart.StiPieSeries" isKey="true">
+                      <ArgumentDataColumn>100</ArgumentDataColumn>
+                      <BorderColor>255, 255, 255</BorderColor>
+                      <Brush>[91:155:213]</Brush>
+                      <Chart isRef="65" />
+                      <Conditions isList="true" count="0" />
+                      <Filters isList="true" count="0" />
+                      <SeriesLabels Ref="69" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                        <BorderColor>140, 140, 140</BorderColor>
+                        <Brush>[255:255:255]</Brush>
+                        <Chart isRef="65" />
+                        <Font>Arial,7</Font>
+                        <Format>P2</Format>
+                        <LabelColor>90, 90, 90</LabelColor>
+                        <MarkerSize>8, 6</MarkerSize>
+                        <ShowInPercent>True</ShowInPercent>
+                        <ValueTypeSeparator>-</ValueTypeSeparator>
+                        <Width>0</Width>
+                      </SeriesLabels>
+                      <Title>SIN</Title>
+                      <TopN Ref="70" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+                      <ValueDataColumn>dtPares._sin</ValueDataColumn>
+                    </Item48>
+                    <Item49 Ref="71" type="Stimulsoft.Report.Chart.StiPieSeries" isKey="true">
+                      <ArgumentDataColumn>100</ArgumentDataColumn>
+                      <BorderColor>255, 255, 255</BorderColor>
+                      <Brush>[237:125:49]</Brush>
+                      <Chart isRef="65" />
+                      <Conditions isList="true" count="0" />
+                      <Filters isList="true" count="0" />
+                      <SeriesLabels Ref="72" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                        <BorderColor>140, 140, 140</BorderColor>
+                        <Brush>[255:255:255]</Brush>
+                        <Chart isRef="65" />
+                        <Font>Arial,7</Font>
+                        <Format>P2</Format>
+                        <LabelColor>90, 90, 90</LabelColor>
+                        <MarkerSize>8, 6</MarkerSize>
+                        <ShowInPercent>True</ShowInPercent>
+                        <ValueTypeSeparator>-</ValueTypeSeparator>
+                        <Width>0</Width>
+                      </SeriesLabels>
+                      <Title>CON</Title>
+                      <TopN Ref="73" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+                      <ValueDataColumn>dtPares._con</ValueDataColumn>
+                    </Item49>
+                  </Series>
+                  <SeriesLabels Ref="74" type="Stimulsoft.Report.Chart.StiInsideEndPieLabels" isKey="true">
+                    <BorderColor>140, 140, 140</BorderColor>
+                    <Brush>[255:255:255]</Brush>
+                    <Chart isRef="65" />
+                    <Font>Arial,7</Font>
+                    <LabelColor>90, 90, 90</LabelColor>
+                    <MarkerSize>8, 6</MarkerSize>
+                    <ValueTypeSeparator>-</ValueTypeSeparator>
+                    <Width>0</Width>
+                  </SeriesLabels>
+                  <SeriesLabelsConditions isList="true" count="0" />
+                  <Sort isList="true" count="0" />
+                  <Strips isList="true" count="0" />
+                  <Style Ref="75" type="Stimulsoft.Report.Chart.StiStyle22" isKey="true" />
+                  <Table Ref="76" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
+                    <Font>Tahoma,8</Font>
+                    <GridLineColor>105, 105, 105</GridLineColor>
+                    <TextColor>140, 140, 140</TextColor>
+                  </Table>
+                  <Title Ref="77" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+                    <Brush>[140:140:140]</Brush>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </Chart2>
+                <Text20 Ref="78" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>4,5.8,4,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>f4bdec7d1e884014b0ef96a7491f58d0</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text20</Name>
+                  <Page isRef="58" />
+                  <Parent isRef="63" />
+                  <Text>Total de pares correctos</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text20>
+                <Text21 Ref="79" type="Text" isKey="true">
+                  <Brush>Highlight</Brush>
+                  <ClientRectangle>3.4,5.8,0.4,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8,Bold</Font>
+                  <Guid>69a10075c18d4643be34e73382671479</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text21</Name>
+                  <Page isRef="58" />
+                  <Parent isRef="63" />
+                  <TextBrush>Black</TextBrush>
+                </Text21>
+                <Text22 Ref="80" type="Text" isKey="true">
+                  <Brush>[255:128:0]</Brush>
+                  <ClientRectangle>3.4,6.2,0.4,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>b4e319d65f16452fa3b427b98a8dbf6e</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text22</Name>
+                  <Page isRef="58" />
+                  <Parent isRef="63" />
+                  <TextBrush>Black</TextBrush>
+                </Text22>
+                <Text19 Ref="81" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>4,6.2,5.2,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>38dc5bd13148419fbdcc0c3aa78b7664</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text19</Name>
+                  <Page isRef="58" />
+                  <Parent isRef="63" />
+                  <Text>Total de pares con diferencias</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text19>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>b45ed46b1d5d4157ad7fc86b7693763a</Guid>
+              <Name>Panel2</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+            </Panel2>
+            <Panel8 Ref="82" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,0.4,4.8,2.2</ClientRectangle>
+              <Components isList="true" count="1">
+                <Text9 Ref="83" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.2,4.6,1.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,24,Bold</Font>
+                  <Guid>c77fdcb9795d4143bf563abb50a450bc</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text9</Name>
+                  <Page isRef="58" />
+                  <Parent isRef="82" />
+                  <Text>{dtPares.Total}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="84" type="NumberFormat" isKey="true">
+                    <DecimalDigits>0</DecimalDigits>
+                    <GroupSeparator>,</GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text9>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>000870a5c22c4f0ba0d4441bbb57dfec</Guid>
+              <Name>Panel8</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+            </Panel8>
+            <Panel7 Ref="85" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,2.6,4.8,2.4</ClientRectangle>
+              <Components isList="true" count="1">
+                <Text11 Ref="86" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.2,4.6,2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,24,Bold</Font>
+                  <Guid>4bcf7101921743a9815cbf9677a1f15d</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text11</Name>
+                  <Page isRef="58" />
+                  <Parent isRef="85" />
+                  <Text>{dtPares.Correctos}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="87" type="NumberFormat" isKey="true">
+                    <DecimalDigits>0</DecimalDigits>
+                    <GroupSeparator>,</GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text11>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>bf6ee928c3b84415b18850598337f722</Guid>
+              <Name>Panel7</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+            </Panel7>
+            <Panel6 Ref="88" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,5,4.8,2.2</ClientRectangle>
+              <Components isList="true" count="1">
+                <Text13 Ref="89" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.2,4.6,1.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,24,Bold</Font>
+                  <Guid>8b4fbc8733f94b1dbb0fff73f4ad4797</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text13</Name>
+                  <Page isRef="58" />
+                  <Parent isRef="88" />
+                  <Text>{dtPares.Diferencias}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="90" type="NumberFormat" isKey="true">
+                    <DecimalDigits>0</DecimalDigits>
+                    <GroupSeparator>,</GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text13>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>201bf6c9181b4e2fa07c4eae3c33b653</Guid>
+              <Name>Panel6</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+            </Panel6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>dtPares</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Guid>ece5a77a35c949729be4c5cb208021f1</Guid>
+          <Name>DataBand2</Name>
+          <Page isRef="58" />
+          <Parent isRef="58" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>3e89cf82f2ae401f81fa88857e28cada</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page2</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21.6</PageHeight>
+      <PageWidth>27.9</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <PrintHeadersFootersFromPreviousPage>True</PrintHeadersFootersFromPreviousPage>
+      <PrintOnPreviousPage>True</PrintOnPreviousPage>
+      <Report isRef="0" />
+      <Watermark Ref="91" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page2>
+  </Pages>
+  <PrinterSettings Ref="92" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>9/26/2014 4:54:04 PM</ReportChanged>
+  <ReportCreated>9/8/2014 9:00:55 AM</ReportCreated>
+  <ReportFile>C:\ProyectosNET\SAY\YuyinERP_COMPLETO\Almacen.Vista\Reportes\ReportesInventarioCiclico\REPORTE_DE_INDICADORES _INVCI.mrt</ReportFile>
+  <ReportGuid>ac27a067034540df8add6222ad1d0142</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2013.3.1800</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Estilo1 Ref="93" type="Stimulsoft.Report.StiChartStyle" isKey="true">
+      <BasicStyleColor>HighlightText</BasicStyleColor>
+      <Conditions isList="true" count="0" />
+      <Description />
+      <Name>Estilo1</Name>
+      <StyleColors>White</StyleColors>
+    </Estilo1>
+  </Styles>
+</StiSerializer>

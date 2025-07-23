@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ListaCorteNominaDS" targetNamespace="http://tempuri.org/ListaCorteNominaDS.xsd" xmlns:mstns="http://tempuri.org/ListaCorteNominaDS.xsd" xmlns="http://tempuri.org/ListaCorteNominaDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ListaCorteNominaDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ListaCorteNominaDS" msprop:Generator_UserDSName="ListaCorteNominaDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ListaCorteNomina" msprop:Generator_TableClassName="ListaCorteNominaDataTable" msprop:Generator_TableVarName="tableListaCorteNomina" msprop:Generator_RowChangedName="ListaCorteNominaRowChanged" msprop:Generator_TablePropName="ListaCorteNomina" msprop:Generator_RowDeletingName="ListaCorteNominaRowDeleting" msprop:Generator_RowChangingName="ListaCorteNominaRowChanging" msprop:Generator_RowEvHandlerName="ListaCorteNominaRowChangeEventHandler" msprop:Generator_RowDeletedName="ListaCorteNominaRowDeleted" msprop:Generator_RowClassName="ListaCorteNominaRow" msprop:Generator_UserTableName="ListaCorteNomina" msprop:Generator_RowEvArgName="ListaCorteNominaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="clmContador" msprop:Generator_ColumnVarNameInTable="columnclmContador" msprop:Generator_ColumnPropNameInRow="clmContador" msprop:Generator_ColumnPropNameInTable="clmContadorColumn" msprop:Generator_UserColumnName="clmContador" type="xs:string" minOccurs="0" />
+              <xs:element name="clmColaborador" msprop:Generator_ColumnVarNameInTable="columnclmColaborador" msprop:Generator_ColumnPropNameInRow="clmColaborador" msprop:Generator_ColumnPropNameInTable="clmColaboradorColumn" msprop:Generator_UserColumnName="clmColaborador" type="xs:string" minOccurs="0" />
+              <xs:element name="clmDiasTrabajados" msprop:Generator_ColumnVarNameInTable="columnclmDiasTrabajados" msprop:Generator_ColumnPropNameInRow="clmDiasTrabajados" msprop:Generator_ColumnPropNameInTable="clmDiasTrabajadosColumn" msprop:Generator_UserColumnName="clmDiasTrabajados" type="xs:string" minOccurs="0" />
+              <xs:element name="clmSalarioRegistrado" msprop:Generator_ColumnVarNameInTable="columnclmSalarioRegistrado" msprop:Generator_ColumnPropNameInRow="clmSalarioRegistrado" msprop:Generator_ColumnPropNameInTable="clmSalarioRegistradoColumn" msprop:Generator_UserColumnName="clmSalarioRegistrado" type="xs:string" minOccurs="0" />
+              <xs:element name="clmPuntualidadAsistencia" msprop:Generator_ColumnVarNameInTable="columnclmPuntualidadAsistencia" msprop:Generator_ColumnPropNameInRow="clmPuntualidadAsistencia" msprop:Generator_ColumnPropNameInTable="clmPuntualidadAsistenciaColumn" msprop:Generator_UserColumnName="clmPuntualidadAsistencia" type="xs:string" minOccurs="0" />
+              <xs:element name="clmGratificaciones" msprop:Generator_ColumnVarNameInTable="columnclmGratificaciones" msprop:Generator_ColumnPropNameInRow="clmGratificaciones" msprop:Generator_ColumnPropNameInTable="clmGratificacionesColumn" msprop:Generator_UserColumnName="clmGratificaciones" type="xs:string" minOccurs="0" />
+              <xs:element name="clmAusentismos" msprop:Generator_ColumnVarNameInTable="columnclmAusentismos" msprop:Generator_ColumnPropNameInRow="clmAusentismos" msprop:Generator_ColumnPropNameInTable="clmAusentismosColumn" msprop:Generator_UserColumnName="clmAusentismos" type="xs:string" minOccurs="0" />
+              <xs:element name="clmIMMS" msprop:Generator_ColumnVarNameInTable="columnclmIMMS" msprop:Generator_ColumnPropNameInRow="clmIMMS" msprop:Generator_ColumnPropNameInTable="clmIMMSColumn" msprop:Generator_UserColumnName="clmIMMS" type="xs:string" minOccurs="0" />
+              <xs:element name="clmInfonavit" msprop:Generator_ColumnVarNameInTable="columnclmInfonavit" msprop:Generator_ColumnPropNameInRow="clmInfonavit" msprop:Generator_ColumnPropNameInTable="clmInfonavitColumn" msprop:Generator_UserColumnName="clmInfonavit" type="xs:string" minOccurs="0" />
+              <xs:element name="clmPrestamos" msprop:Generator_ColumnVarNameInTable="columnclmPrestamos" msprop:Generator_ColumnPropNameInRow="clmPrestamos" msprop:Generator_ColumnPropNameInTable="clmPrestamosColumn" msprop:Generator_UserColumnName="clmPrestamos" type="xs:string" minOccurs="0" />
+              <xs:element name="clmCajaDeAhorro" msprop:Generator_ColumnVarNameInTable="columnclmCajaDeAhorro" msprop:Generator_ColumnPropNameInRow="clmCajaDeAhorro" msprop:Generator_ColumnPropNameInTable="clmCajaDeAhorroColumn" msprop:Generator_UserColumnName="clmCajaDeAhorro" type="xs:string" minOccurs="0" />
+              <xs:element name="clmOtrasDeducciones" msprop:Generator_ColumnVarNameInTable="columnclmOtrasDeducciones" msprop:Generator_ColumnPropNameInRow="clmOtrasDeducciones" msprop:Generator_ColumnPropNameInTable="clmOtrasDeduccionesColumn" msprop:Generator_UserColumnName="clmOtrasDeducciones" type="xs:string" minOccurs="0" />
+              <xs:element name="clmTotalEntregar" msprop:Generator_ColumnVarNameInTable="columnclmTotalEntregar" msprop:Generator_ColumnPropNameInRow="clmTotalEntregar" msprop:Generator_ColumnPropNameInTable="clmTotalEntregarColumn" msprop:Generator_UserColumnName="clmTotalEntregar" type="xs:string" minOccurs="0" />
+              <xs:element name="clmDepartamento" msprop:Generator_ColumnVarNameInTable="columnclmDepartamento" msprop:Generator_ColumnPropNameInRow="clmDepartamento" msprop:Generator_ColumnPropNameInTable="clmDepartamentoColumn" msprop:Generator_UserColumnName="clmDepartamento" type="xs:string" minOccurs="0" />
+              <xs:element name="clmPuesto" msprop:Generator_ColumnVarNameInTable="columnclmPuesto" msprop:Generator_ColumnPropNameInRow="clmPuesto" msprop:Generator_ColumnPropNameInTable="clmPuestoColumn" msprop:Generator_UserColumnName="clmPuesto" type="xs:string" minOccurs="0" />
+              <xs:element name="fini_finiquitoid" msprop:Generator_ColumnVarNameInTable="columnfini_finiquitoid" msprop:Generator_ColumnPropNameInRow="fini_finiquitoid" msprop:Generator_ColumnPropNameInTable="fini_finiquitoidColumn" msprop:Generator_UserColumnName="fini_finiquitoid" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

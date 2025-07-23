@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE61386E-2EF3-4944-8038-473A1D0ED856}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Facturacion.Vista</RootNamespace>
+    <AssemblyName>Facturacion.Vista</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Facturacion.Vista.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Facturacion.Vista.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Misc.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formas\AltaEmpresa.Designer.vb">
+      <DependentUpon>AltaEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltaEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltaSucursal.Designer.vb">
+      <DependentUpon>AltaSucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltaSucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListadoEmpresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListadoEmpresas.Designer.vb">
+      <DependentUpon>ListadoEmpresas.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListadoSucursales.Designer.vb">
+      <DependentUpon>ListadoSucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListadoSucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\PruebaFacturacion.Designer.vb">
+      <DependentUpon>PruebaFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\PruebaFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formas\AltaEmpresa.resx">
+      <DependentUpon>AltaEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltaSucursal.resx">
+      <DependentUpon>AltaSucursal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListadoEmpresas.resx">
+      <DependentUpon>ListadoEmpresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListadoSucursales.resx">
+      <DependentUpon>ListadoSucursales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\PruebaFacturacion.resx">
+      <DependentUpon>PruebaFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1373583708_10.png" />
+    <Content Include="Resources\1373583751_arrow_up.png" />
+    <Content Include="Resources\1373584033_navigate-up.png" />
+    <Content Include="Resources\1373584074_navigate-down.png" />
+    <Content Include="Resources\1377294862_error_small.png" />
+    <Content Include="Resources\1377984609_Impresora.png" />
+    <Content Include="Resources\1377984708_print.png" />
+    <Content Include="Resources\1377984784_printer.png" />
+    <Content Include="Resources\aceptar_32.png" />
+    <Content Include="Resources\advertencia.png" />
+    <Content Include="Resources\altas_32.png" />
+    <Content Include="Resources\aviso.png" />
+    <Content Include="Resources\borrar_32.png" />
+    <Content Include="Resources\buscar_32.png" />
+    <None Include="Resources\buscar_calcular.png" />
+    <Content Include="Resources\Cabecera Credencial IzqDer.png" />
+    <Content Include="Resources\Cabecera Credencial.png" />
+    <Content Include="Resources\catalogos_32.png" />
+    <Content Include="Resources\colaboradoracademica_32.png" />
+    <Content Include="Resources\colaboradorexpediente_32.png" />
+    <Content Include="Resources\colaboradorfamilia_32.png" />
+    <Content Include="Resources\colaboradorlaboral_32.png" />
+    <Content Include="Resources\colaboradormedica_32.png" />
+    <Content Include="Resources\colaboradornomina_32.png" />
+    <Content Include="Resources\conf_32.bmp" />
+    <Content Include="Resources\conf_32.png" />
+    <Content Include="Resources\editar_32.png" />
+    <Content Include="Resources\editar_321.png" />
+    <Content Include="Resources\excepiones_32.png" />
+    <Content Include="Resources\exito.png" />
+    <Content Include="Resources\fichaColaborador_32.png" />
+    <Content Include="Resources\fondo.png" />
+    <Content Include="Resources\fondo1.png" />
+    <Content Include="Resources\guardar2_32.png" />
+    <Content Include="Resources\limpiar_32.png" />
+    <Content Include="Resources\menubk.png" />
+    <Content Include="Resources\menubk1.png" />
+    <Content Include="Resources\menubk2.png" />
+    <Content Include="Resources\menubk3.png" />
+    <Content Include="Resources\menubk4.png" />
+    <Content Include="Resources\menubk5.png" />
+    <Content Include="Resources\menubk6.png" />
+    <Content Include="Resources\menubk7.png" />
+    <Content Include="Resources\nomina_32.png" />
+    <Content Include="Resources\nuevo_32.png" />
+    <Content Include="Resources\palomita_16x16.png" />
+    <Content Include="Resources\perfiles_32.png" />
+    <Content Include="Resources\ramdom.png" />
+    <Content Include="Resources\rechazar_32.png" />
+    <Content Include="Resources\refresh_32.png" />
+    <Content Include="Resources\tachita_16x16.png" />
+    <Content Include="Resources\TexturalateralIzquierdo.png" />
+    <Content Include="Resources\YUMPER-BIEN.png" />
+    <Content Include="Resources\YUMPER-BUSTO.png" />
+    <Content Include="Resources\YUMPER.png" />
+    <Content Include="Resources\yuyin.png" />
+    <None Include="Resources\salir_32.png" />
+    <None Include="Resources\reporteDeducciones-.png" />
+    <None Include="Resources\prestamos-32.png" />
+    <None Include="Resources\imprimir_32.png" />
+    <None Include="Resources\guardar4.png" />
+    <None Include="Resources\guardar3.png" />
+    <None Include="Resources\guardar2_321.png" />
+    <Content Include="Resources\guardar_32.png" />
+    <None Include="Resources\finiquito_32.png" />
+    <None Include="Resources\finanzas_321.png" />
+    <None Include="Resources\finanzas_32.png" />
+    <None Include="Resources\excel_32.png" />
+    <None Include="Resources\enviarcalculo_32.png" />
+    <None Include="Resources\entregarColaborador.png" />
+    <None Include="Resources\diafestivocalendario.png" />
+    <None Include="Resources\copiar_horario_32.png" />
+    <None Include="Resources\copiar_32.png" />
+    <None Include="Resources\cobservacion.png" />
+    <None Include="Resources\candado_abierto_32.png" />
+    <None Include="Resources\candado.png" />
+    <None Include="Resources\cancelar32.png" />
+    <Content Include="Resources\cancelar_32.png" />
+    <None Include="Resources\calculo_32.png" />
+    <None Include="Resources\autorizar_32.png" />
+    <None Include="Resources\aceptar_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{01976fd5-cf48-4406-8118-782f1fcaaf18}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturacion.Negocios\Facturacion.Negocios.vbproj">
+      <Project>{00657bed-ae91-4283-ae0e-0b222e6bc45c}</Project>
+      <Name>Facturacion.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Negocios\Framework.Negocios.vbproj">
+      <Project>{44693732-f211-43d1-b164-72e528e990dc}</Project>
+      <Name>Framework.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vbproj">
+      <Project>{400f3e25-60b7-4f1c-b8fc-c063d6c563ea}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

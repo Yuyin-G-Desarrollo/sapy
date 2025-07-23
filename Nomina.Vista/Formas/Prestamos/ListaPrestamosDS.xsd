@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ListaPrestamosDS" targetNamespace="http://tempuri.org/ListaPrestamosDS.xsd" xmlns:mstns="http://tempuri.org/ListaPrestamosDS.xsd" xmlns="http://tempuri.org/ListaPrestamosDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ListaPrestamosDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ListaPrestamosDS" msprop:Generator_UserDSName="ListaPrestamosDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ListaPrestamos" msprop:Generator_TableClassName="ListaPrestamosDataTable" msprop:Generator_TableVarName="tableListaPrestamos" msprop:Generator_TablePropName="ListaPrestamos" msprop:Generator_RowDeletingName="ListaPrestamosRowDeleting" msprop:Generator_UserTableName="ListaPrestamos" msprop:Generator_RowChangingName="ListaPrestamosRowChanging" msprop:Generator_RowEvHandlerName="ListaPrestamosRowChangeEventHandler" msprop:Generator_RowDeletedName="ListaPrestamosRowDeleted" msprop:Generator_RowEvArgName="ListaPrestamosRowChangeEvent" msprop:Generator_RowChangedName="ListaPrestamosRowChanged" msprop:Generator_RowClassName="ListaPrestamosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="clmColaborador" msprop:Generator_ColumnVarNameInTable="columnclmColaborador" msprop:Generator_ColumnPropNameInRow="clmColaborador" msprop:Generator_ColumnPropNameInTable="clmColaboradorColumn" msprop:Generator_UserColumnName="clmColaborador" type="xs:string" minOccurs="0" />
+              <xs:element name="clmFechaSolicitud" msprop:Generator_ColumnVarNameInTable="columnclmFechaSolicitud" msprop:Generator_ColumnPropNameInRow="clmFechaSolicitud" msprop:Generator_ColumnPropNameInTable="clmFechaSolicitudColumn" msprop:Generator_UserColumnName="clmFechaSolicitud" type="xs:string" minOccurs="0" />
+              <xs:element name="clmPuesto" msprop:Generator_ColumnVarNameInTable="columnclmPuesto" msprop:Generator_ColumnPropNameInRow="clmPuesto" msprop:Generator_ColumnPropNameInTable="clmPuestoColumn" msprop:Generator_UserColumnName="clmPuesto" type="xs:string" minOccurs="0" />
+              <xs:element name="clmAntiguedad" msprop:Generator_ColumnVarNameInTable="columnclmAntiguedad" msprop:Generator_ColumnPropNameInRow="clmAntiguedad" msprop:Generator_ColumnPropNameInTable="clmAntiguedadColumn" msprop:Generator_UserColumnName="clmAntiguedad" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="clmFaltasUltimoMes" msprop:Generator_ColumnVarNameInTable="columnclmFaltasUltimoMes" msprop:Generator_ColumnPropNameInRow="clmFaltasUltimoMes" msprop:Generator_ColumnPropNameInTable="clmFaltasUltimoMesColumn" msprop:Generator_UserColumnName="clmFaltasUltimoMes" type="xs:string" minOccurs="0" />
+              <xs:element name="clmAcumuladoCajaAhorro" msprop:Generator_ColumnVarNameInTable="columnclmAcumuladoCajaAhorro" msprop:Generator_ColumnPropNameInRow="clmAcumuladoCajaAhorro" msprop:Generator_ColumnPropNameInTable="clmAcumuladoCajaAhorroColumn" msprop:Generator_UserColumnName="clmAcumuladoCajaAhorro" type="xs:double" minOccurs="0" />
+              <xs:element name="clmTasaDeInteres" msprop:Generator_ColumnVarNameInTable="columnclmTasaDeInteres" msprop:Generator_ColumnPropNameInRow="clmTasaDeInteres" msprop:Generator_ColumnPropNameInTable="clmTasaDeInteresColumn" msprop:Generator_UserColumnName="clmTasaDeInteres" type="xs:string" minOccurs="0" />
+              <xs:element name="clmSinInteres" msprop:Generator_ColumnVarNameInTable="columnclmSinInteres" msprop:Generator_ColumnPropNameInRow="clmSinInteres" msprop:Generator_ColumnPropNameInTable="clmSinInteresColumn" msprop:Generator_UserColumnName="clmSinInteres" type="xs:string" minOccurs="0" />
+              <xs:element name="clmAbono" msprop:Generator_ColumnVarNameInTable="columnclmAbono" msprop:Generator_ColumnPropNameInRow="clmAbono" msprop:Generator_ColumnPropNameInTable="clmAbonoColumn" msprop:Generator_UserColumnName="clmAbono" type="xs:double" minOccurs="0" />
+              <xs:element name="clmSaldo" msprop:Generator_ColumnVarNameInTable="columnclmSaldo" msprop:Generator_ColumnPropNameInRow="clmSaldo" msprop:Generator_ColumnPropNameInTable="clmSaldoColumn" msprop:Generator_UserColumnName="clmSaldo" type="xs:double" minOccurs="0" />
+              <xs:element name="clmSemanas" msprop:Generator_ColumnVarNameInTable="columnclmSemanas" msprop:Generator_ColumnPropNameInRow="clmSemanas" msprop:Generator_ColumnPropNameInTable="clmSemanasColumn" msprop:Generator_UserColumnName="clmSemanas" type="xs:int" minOccurs="0" />
+              <xs:element name="clmPrestamo" msprop:Generator_ColumnVarNameInTable="columnclmPrestamo" msprop:Generator_ColumnPropNameInRow="clmPrestamo" msprop:Generator_ColumnPropNameInTable="clmPrestamoColumn" msprop:Generator_UserColumnName="clmPrestamo" type="xs:double" minOccurs="0" />
+              <xs:element name="clmestatus" msprop:Generator_ColumnVarNameInTable="columnclmestatus" msprop:Generator_ColumnPropNameInRow="clmestatus" msprop:Generator_ColumnPropNameInTable="clmestatusColumn" msprop:Generator_UserColumnName="clmestatus" type="xs:string" minOccurs="0" />
+              <xs:element name="clmMeses" msprop:Generator_ColumnVarNameInTable="columnclmMeses" msprop:Generator_ColumnPropNameInRow="clmMeses" msprop:Generator_ColumnPropNameInTable="clmMesesColumn" msprop:Generator_UserColumnName="clmMeses" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

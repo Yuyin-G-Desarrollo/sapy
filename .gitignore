@@ -1,0 +1,43 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configuración local (como cadenas de conexión, rutas, etc.)
+*.vspscc
+*.vssscc
+.vs/
+
+# Archivos de publicación
+publish/
+
+# Archivos de base de datos locales
+*.mdf
+*.ldf
+
+# Paquetes NuGet descargados (pueden restaurarse)
+#packages/
+
+# Archivos de análisis de código
+TestResults/
+*.coverage
+*.codeanalysis
+
+# Archivos de cache y autogenerados por el IDE
+_ReSharper*/
+*.ncb
+*.sdf
+*.cache
+*.dbmdl
+*.dbproj.schemaview
+*.pdb

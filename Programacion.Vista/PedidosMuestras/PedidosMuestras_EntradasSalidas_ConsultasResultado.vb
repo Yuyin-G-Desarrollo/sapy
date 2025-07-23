@@ -1,0 +1,3 @@
+﻿Public Class PedidosMuestras_EntradasSalidas_ConsultasResultado
+
+End Class

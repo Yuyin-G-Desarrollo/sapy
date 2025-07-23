@@ -1,0 +1,1726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92CC895A-F0C8-452C-A85F-7826B7E4E7BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Produccion.Vista</RootNamespace>
+    <AssemblyName>Produccion.Vista</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Produccion.Vista.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Produccion.Vista.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20111.602, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Charts.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.CodeParser.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Dashboard.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v24.2.Win, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Dashboard.v24.2.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.Desktop.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.DataAccess.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v24.2.UI, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.DataAccess.v24.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.DataVisualization.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Diagram.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Drawing.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Images.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Map.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Map.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Office.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Pdf.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v24.2.Drawing, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Pdf.v24.2.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.PivotGrid.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Printing.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.RichEdit.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v24.2.Export, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.RichEdit.v24.2.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Sparkline.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Spreadsheet.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.TreeMap.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.TreeMap.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v24.2.UI, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v24.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Xpo.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.2.UI, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v24.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.2.Wizard, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v24.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraDiagram.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGauges.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v24.2.Presets, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGauges.v24.2.Presets.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v24.2.Win, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGauges.v24.2.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraMap.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraNavBar.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPivotGrid.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPrinting.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraReports.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraRichEdit.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraSpreadsheet.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraTreeList.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraTreeMap.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v24.2.UI, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraTreeMap.v24.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraVerticalGrid.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v12.2, Version=12.2.20122.2123, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.IO.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.IO.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Reports.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Reports.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v12.2, Version=12.2.20122.2123, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Shared.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.Misc.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v12.2, Version=12.2.20122.2123, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.ExcelExport.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.2, Version=12.2.20122.2123, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v12.2, Version=12.2.20122.2123, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsultasProduccion\AdministradorArchivosForm.Designer.vb">
+      <DependentUpon>AdministradorArchivosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasProduccion\AdministradorArchivosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasProduccion\AdministradorArchivosProduccion.Designer.vb">
+      <DependentUpon>AdministradorArchivosProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasProduccion\AdministradorArchivosProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasProduccion\AdministradorArchivosTecnicosForm.Designer.vb">
+      <DependentUpon>AdministradorArchivosTecnicosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasProduccion\AdministradorArchivosTecnicosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasProduccion\AdministradorArchivos_GuardarCategoria_Departamento.Designer.vb">
+      <DependentUpon>AdministradorArchivos_GuardarCategoria_Departamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasProduccion\AdministradorArchivos_GuardarCategoria_Departamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasProduccion\AltaDocumentosProduccion_Form.Designer.vb">
+      <DependentUpon>AltaDocumentosProduccion_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasProduccion\AltaDocumentosProduccion_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ConsultaEstadosArticuloPorNaveForm.Designer.vb">
+      <DependentUpon>ConsultaEstadosArticuloPorNaveForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ConsultaEstadosArticuloPorNaveForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\AltaConsumosFracciones.Designer.vb">
+      <DependentUpon>AltaConsumosFracciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\AltaConsumosFracciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\AltaEdicionMaquinariaForm.Designer.vb">
+      <DependentUpon>AltaEdicionMaquinariaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\AltaEdicionMaquinariaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\AltaEditarComponentesForm.Designer.vb">
+      <DependentUpon>AltaEditarComponentesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\AltaEditarComponentesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\AltaModificarFraccionesForm.Designer.vb">
+      <DependentUpon>AltaModificarFraccionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\AltaModificarFraccionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ConsultaListadoModelosForm.Designer.vb">
+      <DependentUpon>ConsultaListadoModelosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ConsultaListadoModelosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaFraccionesNaveForm.Designer.vb">
+      <DependentUpon>ListaFraccionesNaveForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaFraccionesNaveForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\Listafracciones\ListaFraccionesporNaveForm.designer.vb">
+      <DependentUpon>ListaFraccionesporNaveForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\Listafracciones\ListaFraccionesporNaveForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\Listafracciones\ListaParametrosForm.Designer.vb">
+      <DependentUpon>ListaParametrosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\Listafracciones\ListaParametrosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaMaquinariaForm.Designer.vb">
+      <DependentUpon>ListaMaquinariaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaMaquinariaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaModelosSinFraccionesActivasForm.Designer.vb">
+      <DependentUpon>ListaModelosSinFraccionesActivasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaModelosSinFraccionesActivasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ProductosporNaveForm.Designer.vb">
+      <DependentUpon>ProductosporNaveForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ProductosporNaveForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ConsultarInventarioNavesForm.Designer.vb">
+      <DependentUpon>ConsultarInventarioNavesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ConsultarInventarioNavesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Fracciones\Produccion_Fracciones_DeptoAvances_Form.Designer.vb">
+      <DependentUpon>Produccion_Fracciones_DeptoAvances_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Fracciones\Produccion_Fracciones_DeptoAvances_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Fracciones\Produccion_Fracciones_Puesto_Form.Designer.vb">
+      <DependentUpon>Produccion_Fracciones_Puesto_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Fracciones\Produccion_Fracciones_Puesto_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListadoParametrosFiltrado.Designer.vb">
+      <DependentUpon>ListadoParametrosFiltrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListadoParametrosFiltrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\OrdenesEnProceso\OrdenesEnProceso_ListadoParametrosForm.Designer.vb">
+      <DependentUpon>OrdenesEnProceso_ListadoParametrosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\OrdenesEnProceso\OrdenesEnProceso_ListadoParametrosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\OrdenesEnProceso\OrdenesEnProceso_ReporteOrdenesEnProcesoForm.Designer.vb">
+      <DependentUpon>OrdenesEnProceso_ReporteOrdenesEnProcesoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\OrdenesEnProceso\OrdenesEnProceso_ReporteOrdenesEnProcesoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\OrdenesEnProceso\OrdenesEnProceso_ReporteOrdenesEnProcesoPorMesForm.Designer.vb">
+      <DependentUpon>OrdenesEnProceso_ReporteOrdenesEnProcesoPorMesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\OrdenesEnProceso\OrdenesEnProceso_ReporteOrdenesEnProcesoPorMesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\VentaArticulosComercializadora\AdministradorResumenCostosForm.Designer.vb">
+      <DependentUpon>AdministradorResumenCostosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\VentaArticulosComercializadora\AdministradorResumenCostosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\gridVReporte.vb" />
+    <Compile Include="FormularioReportes\ListadoParametrosForm.Designer.vb">
+      <DependentUpon>ListadoParametrosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\ListadoParametrosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\OrdenesEnProcesoForm.designer.vb">
+      <DependentUpon>OrdenesEnProcesoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\OrdenesEnProcesoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\Produccion_ArticulosEstatusNoAutorizadoProduccion_Form.Designer.vb">
+      <DependentUpon>Produccion_ArticulosEstatusNoAutorizadoProduccion_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\Produccion_ArticulosEstatusNoAutorizadoProduccion_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\ProyeccionMaterialesForm.Designer.vb">
+      <DependentUpon>ProyeccionMaterialesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\ProyeccionMaterialesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\ReporteGeneralSuelaForm.Designer.vb">
+      <DependentUpon>ReporteGeneralSuelaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\ReporteGeneralSuelaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\ReporteLotesPilotoForm.Designer.vb">
+      <DependentUpon>ReporteLotesPilotoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\ReporteLotesPilotoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\ReporteOrdenesEnProcesoForm.designer.vb">
+      <DependentUpon>ReporteOrdenesEnProcesoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\ReporteOrdenesEnProcesoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\ReporteOrdenesEnProcesoPorMesForm.Designer.vb">
+      <DependentUpon>ReporteOrdenesEnProcesoPorMesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\ReporteOrdenesEnProcesoPorMesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\ReportesProduccionForm.Designer.vb">
+      <DependentUpon>ReportesProduccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\ReportesProduccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\ReportesProduccionMaquilasForm.Designer.vb">
+      <DependentUpon>ReportesProduccionMaquilasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\ReportesProduccionMaquilasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioReportes\TarjetaDeProduccionForm.Designer.vb">
+      <DependentUpon>TarjetaDeProduccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioReportes\TarjetaDeProduccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\CierreInventarioForm.Designer.vb">
+      <DependentUpon>CierreInventarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\CierreInventarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\InventarioDetalleForm.Designer.vb">
+      <DependentUpon>InventarioDetalleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\InventarioDetalleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\InventariosForm.Designer.vb">
+      <DependentUpon>InventariosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\InventariosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\MovimientosInventarioForm.Designer.vb">
+      <DependentUpon>MovimientosInventarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\MovimientosInventarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\ReporteInventarioForm.Designer.vb">
+      <DependentUpon>ReporteInventarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\ReporteInventarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\ResumenMovimientosForm.Designer.vb">
+      <DependentUpon>ResumenMovimientosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\ResumenMovimientosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kiosko\AdministracionKiosko_CargaModelosForm.Designer.vb">
+      <DependentUpon>AdministracionKiosko_CargaModelosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosko\AdministracionKiosko_CargaModelosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kiosko\AdministracionKiosko_ConfiguracionGeneralForm.Designer.vb">
+      <DependentUpon>AdministracionKiosko_ConfiguracionGeneralForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosko\AdministracionKiosko_ConfiguracionGeneralForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetasProduccion\AltaCambiosMetasHoraForm.Designer.vb">
+      <DependentUpon>AltaCambiosMetasHoraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MetasProduccion\AltaCambiosMetasHoraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetasProduccion\AltasYCambiosForm.Designer.vb">
+      <DependentUpon>AltasYCambiosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MetasProduccion\AltasYCambiosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetasProduccion\MetasHoraForm.Designer.vb">
+      <DependentUpon>MetasHoraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MetasProduccion\MetasHoraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetasProduccion\MetasProduccionForm.Designer.vb">
+      <DependentUpon>MetasProduccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MetasProduccion\MetasProduccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\AgregarMaterialOrdenCompraForm.Designer.vb">
+      <DependentUpon>AgregarMaterialOrdenCompraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\AgregarMaterialOrdenCompraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\Compras_AdministradorFacturas.Designer.vb">
+      <DependentUpon>Compras_AdministradorFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\Compras_AdministradorFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\ConsultaOrdenCompraForm.Designer.vb">
+      <DependentUpon>ConsultaOrdenCompraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\ConsultaOrdenCompraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\DetalleOrdenDeCompraForm.Designer.vb">
+      <DependentUpon>DetalleOrdenDeCompraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\DetalleOrdenDeCompraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\DetallePreOrdenDeCompraForm.Designer.vb">
+      <DependentUpon>DetallePreOrdenDeCompraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\DetallePreOrdenDeCompraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\ExplosionMaterialesForm.Designer.vb">
+      <DependentUpon>ExplosionMaterialesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\ExplosionMaterialesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\GeneradorPreordenesDeCompraForm.Designer.vb">
+      <DependentUpon>GeneradorPreordenesDeCompraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\GeneradorPreordenesDeCompraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\Proveedor_AdministradorFacturasdeCompra.Designer.vb">
+      <DependentUpon>Proveedor_AdministradorFacturasdeCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\Proveedor_AdministradorFacturasdeCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\RecepcionFacturasForm.Designer.vb">
+      <DependentUpon>RecepcionFacturasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\RecepcionFacturasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\RecibirMaterialesForm.Designer.vb">
+      <DependentUpon>RecibirMaterialesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\RecibirMaterialesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\RecibirMaterialOrdenCompraForm.Designer.vb">
+      <DependentUpon>RecibirMaterialOrdenCompraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\RecibirMaterialOrdenCompraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreordenesCompra\RecibirRemisionesForm.Designer.vb">
+      <DependentUpon>RecibirRemisionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreordenesCompra\RecibirRemisionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\AsignacionDeCelulasForm.Designer.vb">
+      <DependentUpon>AsignacionDeCelulasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\AsignacionDeCelulasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\AvancesProduccion_CapturaMotivoRestraso_Form.Designer.vb">
+      <DependentUpon>AvancesProduccion_CapturaMotivoRestraso_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\AvancesProduccion_CapturaMotivoRestraso_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\ListaColaboradoresSicyForm.Designer.vb">
+      <DependentUpon>ListaColaboradoresSicyForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\ListaColaboradoresSicyForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\AltaCortadoresForm.Designer.vb">
+      <DependentUpon>AltaCortadoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\AltaCortadoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\AsignacionColaboradoresAvancesProduccionForm.Designer.vb">
+      <DependentUpon>AsignacionColaboradoresAvancesProduccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\AsignacionColaboradoresAvancesProduccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\AsignarColaboradoresAvancesProduccionForm.Designer.vb">
+      <DependentUpon>AsignarColaboradoresAvancesProduccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\AsignarColaboradoresAvancesProduccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\CambiosGlobalesForm.Designer.vb">
+      <DependentUpon>CambiosGlobalesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\CambiosGlobalesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\CatalogoComponentesForm.Designer.vb">
+      <DependentUpon>CatalogoComponentesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\CatalogoComponentesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\CatalogoCortadoresPielyForroForm.Designer.vb">
+      <DependentUpon>CatalogoCortadoresPielyForroForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\CatalogoCortadoresPielyForroForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\CatalogoFraccionesForm.Designer.vb">
+      <DependentUpon>CatalogoFraccionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\CatalogoFraccionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\CatalogoMaquinariaForm.Designer.vb">
+      <DependentUpon>CatalogoMaquinariaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\CatalogoMaquinariaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\CelulasBandasForm.Designer.vb">
+      <DependentUpon>CelulasBandasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\CelulasBandasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\ConfirmBorradoresForm.Designer.vb">
+      <DependentUpon>ConfirmBorradoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\ConfirmBorradoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\ConsultaDeLotesDeProgramasDeProduccionForm.Designer.vb">
+      <DependentUpon>ConsultaDeLotesDeProgramasDeProduccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\ConsultaDeLotesDeProgramasDeProduccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\CopiarConsumosFraccionesForm.Designer.vb">
+      <DependentUpon>CopiarConsumosFraccionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\CopiarConsumosFraccionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\DatosImportConsumos.Designer.vb">
+      <DependentUpon>DatosImportConsumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\DatosImportConsumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ImagenEstiloForm.Designer.vb">
+      <DependentUpon>ImagenEstiloForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ImagenEstiloForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaClasificacionesForm.Designer.vb">
+      <DependentUpon>ListaClasificacionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaClasificacionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\listaColaboradoresForm.Designer.vb">
+      <DependentUpon>listaColaboradoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\listaColaboradoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaComponentesForm.Designer.vb">
+      <DependentUpon>ListaComponentesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaComponentesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\ListaDepartamentosForm.Designer.vb">
+      <DependentUpon>ListaDepartamentosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\ListaDepartamentosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListadoModelosForm.Designer.vb">
+      <DependentUpon>ListadoModelosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListadoModelosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\listaFraccionesForm.Designer.vb">
+      <DependentUpon>listaFraccionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\listaFraccionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaMaterialesEstatusDesarrolloForm.Designer.vb">
+      <DependentUpon>ListaMaterialesEstatusDesarrolloForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaMaterialesEstatusDesarrolloForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\listaMaterialesForm.Designer.vb">
+      <DependentUpon>listaMaterialesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\listaMaterialesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaModelosImportarConsumoFraccionForm.Designer.vb">
+      <DependentUpon>ListaModelosImportarConsumoFraccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaModelosImportarConsumoFraccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaNavesAsignadasProduccionEstiloForm.Designer.vb">
+      <DependentUpon>ListaNavesAsignadasProduccionEstiloForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaNavesAsignadasProduccionEstiloForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaNavesForm.Designer.vb">
+      <DependentUpon>ListaNavesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaNavesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ListaProveedoresForm.Designer.vb">
+      <DependentUpon>ListaProveedoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ListaProveedoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumos\ModificarComponenteForm.Designer.vb">
+      <DependentUpon>ModificarComponenteForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumos\ModificarComponenteForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AdmonAvancesDetalleForm.Designer.vb">
+      <DependentUpon>AdmonAvancesDetalleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AdmonAvancesDetalleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ConsultaAvancesProdccionForm.Designer.vb">
+      <DependentUpon>ConsultaAvancesProdccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ConsultaAvancesProdccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ConsultaInventarioForm.Designer.vb">
+      <DependentUpon>ConsultaInventarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ConsultaInventarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\DetalleLotesForm.Designer.vb">
+      <DependentUpon>DetalleLotesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\DetalleLotesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\InventarioForm.Designer.vb">
+      <DependentUpon>InventarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\InventarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaAdmonAvancesForm.Designer.vb">
+      <DependentUpon>ListaAdmonAvancesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaAdmonAvancesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ReportesVistaPreviaForm.Designer.vb">
+      <DependentUpon>ReportesVistaPreviaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ReportesVistaPreviaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ResumenInventarioProcesoForm.Designer.vb">
+      <DependentUpon>ResumenInventarioProcesoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ResumenInventarioProcesoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ResumenMotivosAtrasos.Designer.vb">
+      <DependentUpon>ResumenMotivosAtrasos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ResumenMotivosAtrasos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\VerificarAvancesForm.Designer.vb">
+      <DependentUpon>VerificarAvancesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\VerificarAvancesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Produccion\MotivoRechazoForm.Designer.vb">
+      <DependentUpon>MotivoRechazoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\MotivoRechazoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Produccion_Borradores_ReplicarLotesSICY_SAYForm.Designer.vb">
+      <DependentUpon>Produccion_Borradores_ReplicarLotesSICY_SAYForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Produccion_Borradores_ReplicarLotesSICY_SAYForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroSuelaTerminada\RegistroSuelaTerminada_AdministradorSalidasLoteSuela_Form.Designer.vb">
+      <DependentUpon>RegistroSuelaTerminada_AdministradorSalidasLoteSuela_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroSuelaTerminada\RegistroSuelaTerminada_AdministradorSalidasLoteSuela_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroSuelaTerminada\RegistroSuelaTerminada_DetalleSalida_Form.Designer.vb">
+      <DependentUpon>RegistroSuelaTerminada_DetalleSalida_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroSuelaTerminada\RegistroSuelaTerminada_DetalleSalida_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptAvanceLotesProduccion.vb">
+      <DependentUpon>rptAvanceLotesProduccion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\rptResumenInventarioProceso.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptResumenInventarioProceso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Suelas\DetallesTarjetaProduccionSuelas_Form.Designer.vb">
+      <DependentUpon>DetallesTarjetaProduccionSuelas_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suelas\DetallesTarjetaProduccionSuelas_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suelas\EditarArticulo_SuelaForm.Designer.vb">
+      <DependentUpon>EditarArticulo_SuelaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suelas\EditarArticulo_SuelaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suelas\ListadoParametrosSuelaForm.Designer.vb">
+      <DependentUpon>ListadoParametrosSuelaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suelas\ListadoParametrosSuelaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suelas\Produccion_Suelas_CargarDatosSuelasEnArticulos_Form.Designer.vb">
+      <DependentUpon>Produccion_Suelas_CargarDatosSuelasEnArticulos_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suelas\Produccion_Suelas_CargarDatosSuelasEnArticulos_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suelas\Produccion_Suelas_ConsultaAvancesProduccionForm.Designer.vb">
+      <DependentUpon>Produccion_Suelas_ConsultaAvancesProduccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suelas\Produccion_Suelas_ConsultaAvancesProduccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suelas\Produccion_Suela_ConcentradoSuela_Form.Designer.vb">
+      <DependentUpon>Produccion_Suela_ConcentradoSuela_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suelas\Produccion_Suela_ConcentradoSuela_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suelas\ReporteProduccionSuela.Designer.vb">
+      <DependentUpon>ReporteProduccionSuela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suelas\ReporteProduccionSuela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suelas\TarjetaProduccionSuelas_Form.Designer.vb">
+      <DependentUpon>TarjetaProduccionSuelas_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suelas\TarjetaProduccionSuelas_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilerias\Controles.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConsultasProduccion\AdministradorArchivosForm.resx">
+      <DependentUpon>AdministradorArchivosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasProduccion\AdministradorArchivosProduccion.resx">
+      <DependentUpon>AdministradorArchivosProduccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasProduccion\AdministradorArchivosTecnicosForm.resx">
+      <DependentUpon>AdministradorArchivosTecnicosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasProduccion\AdministradorArchivos_GuardarCategoria_Departamento.resx">
+      <DependentUpon>AdministradorArchivos_GuardarCategoria_Departamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasProduccion\AltaDocumentosProduccion_Form.resx">
+      <DependentUpon>AltaDocumentosProduccion_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ConsultaEstadosArticuloPorNaveForm.resx">
+      <DependentUpon>ConsultaEstadosArticuloPorNaveForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\AltaConsumosFracciones.resx">
+      <DependentUpon>AltaConsumosFracciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\AltaEdicionMaquinariaForm.resx">
+      <DependentUpon>AltaEdicionMaquinariaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\AltaEditarComponentesForm.resx">
+      <DependentUpon>AltaEditarComponentesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\AltaModificarFraccionesForm.resx">
+      <DependentUpon>AltaModificarFraccionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ConsultaListadoModelosForm.resx">
+      <DependentUpon>ConsultaListadoModelosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaFraccionesNaveForm.resx">
+      <DependentUpon>ListaFraccionesNaveForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\Listafracciones\ListaFraccionesporNaveForm.resx">
+      <DependentUpon>ListaFraccionesporNaveForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\Listafracciones\ListaParametrosForm.resx">
+      <DependentUpon>ListaParametrosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaMaquinariaForm.resx">
+      <DependentUpon>ListaMaquinariaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaModelosSinFraccionesActivasForm.resx">
+      <DependentUpon>ListaModelosSinFraccionesActivasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ProductosporNaveForm.resx">
+      <DependentUpon>ProductosporNaveForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Fracciones\Produccion_Fracciones_DeptoAvances_Form.resx">
+      <DependentUpon>Produccion_Fracciones_DeptoAvances_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Fracciones\Produccion_Fracciones_Puesto_Form.resx">
+      <DependentUpon>Produccion_Fracciones_Puesto_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListadoParametrosFiltrado.resx">
+      <DependentUpon>ListadoParametrosFiltrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\OrdenesEnProceso\OrdenesEnProceso_ListadoParametrosForm.resx">
+      <DependentUpon>OrdenesEnProceso_ListadoParametrosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\OrdenesEnProceso\OrdenesEnProceso_ReporteOrdenesEnProcesoForm.resx">
+      <DependentUpon>OrdenesEnProceso_ReporteOrdenesEnProcesoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\OrdenesEnProceso\OrdenesEnProceso_ReporteOrdenesEnProcesoPorMesForm.resx">
+      <DependentUpon>OrdenesEnProceso_ReporteOrdenesEnProcesoPorMesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\VentaArticulosComercializadora\AdministradorResumenCostosForm.resx">
+      <DependentUpon>AdministradorResumenCostosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\ListadoParametrosForm.resx">
+      <DependentUpon>ListadoParametrosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\OrdenesEnProcesoForm.resx">
+      <DependentUpon>OrdenesEnProcesoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\Produccion_ArticulosEstatusNoAutorizadoProduccion_Form.resx">
+      <DependentUpon>Produccion_ArticulosEstatusNoAutorizadoProduccion_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\ProyeccionMaterialesForm.resx">
+      <DependentUpon>ProyeccionMaterialesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\ReporteGeneralSuelaForm.resx">
+      <DependentUpon>ReporteGeneralSuelaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\ReporteLotesPilotoForm.resx">
+      <DependentUpon>ReporteLotesPilotoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\ReporteOrdenesEnProcesoForm.resx">
+      <DependentUpon>ReporteOrdenesEnProcesoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ConsultarInventarioNavesForm.resx">
+      <DependentUpon>ConsultarInventarioNavesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\ReporteOrdenesEnProcesoPorMesForm.resx">
+      <DependentUpon>ReporteOrdenesEnProcesoPorMesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\ReportesProduccionForm.resx">
+      <DependentUpon>ReportesProduccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\ReportesProduccionMaquilasForm.resx">
+      <DependentUpon>ReportesProduccionMaquilasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioReportes\TarjetaDeProduccionForm.resx">
+      <DependentUpon>TarjetaDeProduccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\CierreInventarioForm.resx">
+      <DependentUpon>CierreInventarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\InventarioDetalleForm.resx">
+      <DependentUpon>InventarioDetalleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\InventariosForm.resx">
+      <DependentUpon>InventariosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\MovimientosInventarioForm.resx">
+      <DependentUpon>MovimientosInventarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\ReporteInventarioForm.resx">
+      <DependentUpon>ReporteInventarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\ResumenMovimientosForm.resx">
+      <DependentUpon>ResumenMovimientosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kiosko\AdministracionKiosko_CargaModelosForm.resx">
+      <DependentUpon>AdministracionKiosko_CargaModelosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kiosko\AdministracionKiosko_ConfiguracionGeneralForm.resx">
+      <DependentUpon>AdministracionKiosko_ConfiguracionGeneralForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetasProduccion\AltaCambiosMetasHoraForm.resx">
+      <DependentUpon>AltaCambiosMetasHoraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetasProduccion\AltasYCambiosForm.resx">
+      <DependentUpon>AltasYCambiosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetasProduccion\MetasHoraForm.resx">
+      <DependentUpon>MetasHoraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetasProduccion\MetasProduccionForm.resx">
+      <DependentUpon>MetasProduccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\AgregarMaterialOrdenCompraForm.resx">
+      <DependentUpon>AgregarMaterialOrdenCompraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\Compras_AdministradorFacturas.resx">
+      <DependentUpon>Compras_AdministradorFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\ConsultaOrdenCompraForm.resx">
+      <DependentUpon>ConsultaOrdenCompraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\DetalleOrdenDeCompraForm.resx">
+      <DependentUpon>DetalleOrdenDeCompraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\DetallePreOrdenDeCompraForm.resx">
+      <DependentUpon>DetallePreOrdenDeCompraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\ExplosionMaterialesForm.resx">
+      <DependentUpon>ExplosionMaterialesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\GeneradorPreordenesDeCompraForm.resx">
+      <DependentUpon>GeneradorPreordenesDeCompraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\Proveedor_AdministradorFacturasdeCompra.resx">
+      <DependentUpon>Proveedor_AdministradorFacturasdeCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\RecepcionFacturasForm.resx">
+      <DependentUpon>RecepcionFacturasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\RecibirMaterialesForm.resx">
+      <DependentUpon>RecibirMaterialesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\RecibirMaterialOrdenCompraForm.resx">
+      <DependentUpon>RecibirMaterialOrdenCompraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreordenesCompra\RecibirRemisionesForm.resx">
+      <DependentUpon>RecibirRemisionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\AltaCortadoresForm.resx">
+      <DependentUpon>AltaCortadoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\AsignacionColaboradoresAvancesProduccionForm.resx">
+      <DependentUpon>AsignacionColaboradoresAvancesProduccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\AsignacionDeCelulasForm.resx">
+      <DependentUpon>AsignacionDeCelulasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\AsignarColaboradoresAvancesProduccionForm.resx">
+      <DependentUpon>AsignarColaboradoresAvancesProduccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\CambiosGlobalesForm.resx">
+      <DependentUpon>CambiosGlobalesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\CatalogoComponentesForm.resx">
+      <DependentUpon>CatalogoComponentesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\AvancesProduccion_CapturaMotivoRestraso_Form.resx">
+      <DependentUpon>AvancesProduccion_CapturaMotivoRestraso_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\CatalogoCortadoresPielyForroForm.resx">
+      <DependentUpon>CatalogoCortadoresPielyForroForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\CatalogoFraccionesForm.resx">
+      <DependentUpon>CatalogoFraccionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\CatalogoMaquinariaForm.resx">
+      <DependentUpon>CatalogoMaquinariaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\CelulasBandasForm.resx">
+      <DependentUpon>CelulasBandasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\ConfirmBorradoresForm.resx">
+      <DependentUpon>ConfirmBorradoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\ConsultaDeLotesDeProgramasDeProduccionForm.resx">
+      <DependentUpon>ConsultaDeLotesDeProgramasDeProduccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\CopiarConsumosFraccionesForm.resx">
+      <DependentUpon>CopiarConsumosFraccionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\DatosImportConsumos.resx">
+      <DependentUpon>DatosImportConsumos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ImagenEstiloForm.resx">
+      <DependentUpon>ImagenEstiloForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaClasificacionesForm.resx">
+      <DependentUpon>ListaClasificacionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\listaColaboradoresForm.resx">
+      <DependentUpon>listaColaboradoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaComponentesForm.resx">
+      <DependentUpon>ListaComponentesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\ListaColaboradoresSicyForm.resx">
+      <DependentUpon>ListaColaboradoresSicyForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\ListaDepartamentosForm.resx">
+      <DependentUpon>ListaDepartamentosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListadoModelosForm.resx">
+      <DependentUpon>ListadoModelosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\listaFraccionesForm.resx">
+      <DependentUpon>listaFraccionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaMaterialesEstatusDesarrolloForm.resx">
+      <DependentUpon>ListaMaterialesEstatusDesarrolloForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\listaMaterialesForm.resx">
+      <DependentUpon>listaMaterialesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaModelosImportarConsumoFraccionForm.resx">
+      <DependentUpon>ListaModelosImportarConsumoFraccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaNavesAsignadasProduccionEstiloForm.resx">
+      <DependentUpon>ListaNavesAsignadasProduccionEstiloForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaNavesForm.resx">
+      <DependentUpon>ListaNavesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ListaProveedoresForm.resx">
+      <DependentUpon>ListaProveedoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumos\ModificarComponenteForm.resx">
+      <DependentUpon>ModificarComponenteForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AdmonAvancesDetalleForm.resx">
+      <DependentUpon>AdmonAvancesDetalleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ConsultaAvancesProdccionForm.resx">
+      <DependentUpon>ConsultaAvancesProdccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ConsultaInventarioForm.resx">
+      <DependentUpon>ConsultaInventarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\DetalleLotesForm.resx">
+      <DependentUpon>DetalleLotesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\InventarioForm.resx">
+      <DependentUpon>InventarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaAdmonAvancesForm.resx">
+      <DependentUpon>ListaAdmonAvancesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ReportesVistaPreviaForm.resx">
+      <DependentUpon>ReportesVistaPreviaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ResumenInventarioProcesoForm.resx">
+      <DependentUpon>ResumenInventarioProcesoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ResumenMotivosAtrasos.resx">
+      <DependentUpon>ResumenMotivosAtrasos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\VerificarAvancesForm.resx">
+      <DependentUpon>VerificarAvancesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\MotivoRechazoForm.resx">
+      <DependentUpon>MotivoRechazoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Produccion_Borradores_ReplicarLotesSICY_SAYForm.resx">
+      <DependentUpon>Produccion_Borradores_ReplicarLotesSICY_SAYForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroSuelaTerminada\RegistroSuelaTerminada_AdministradorSalidasLoteSuela_Form.resx">
+      <DependentUpon>RegistroSuelaTerminada_AdministradorSalidasLoteSuela_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroSuelaTerminada\RegistroSuelaTerminada_DetalleSalida_Form.resx">
+      <DependentUpon>RegistroSuelaTerminada_DetalleSalida_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptAvanceLotesProduccion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAvanceLotesProduccion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptResumenInventarioProceso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResumenInventarioProceso.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suelas\DetallesTarjetaProduccionSuelas_Form.resx">
+      <DependentUpon>DetallesTarjetaProduccionSuelas_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suelas\EditarArticulo_SuelaForm.resx">
+      <DependentUpon>EditarArticulo_SuelaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suelas\ListadoParametrosSuelaForm.resx">
+      <DependentUpon>ListadoParametrosSuelaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suelas\Produccion_Suelas_CargarDatosSuelasEnArticulos_Form.resx">
+      <DependentUpon>Produccion_Suelas_CargarDatosSuelasEnArticulos_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suelas\Produccion_Suelas_ConsultaAvancesProduccionForm.resx">
+      <DependentUpon>Produccion_Suelas_ConsultaAvancesProduccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suelas\Produccion_Suela_ConcentradoSuela_Form.resx">
+      <DependentUpon>Produccion_Suela_ConcentradoSuela_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suelas\ReporteProduccionSuela.resx">
+      <DependentUpon>ReporteProduccionSuela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suelas\TarjetaProduccionSuelas_Form.resx">
+      <DependentUpon>TarjetaProduccionSuelas_Form.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Almacen.Vista\Almacen.Vista.vbproj">
+      <Project>{6f4f1fde-382b-44af-b76f-0c3146a49a24}</Project>
+      <Name>Almacen.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{01976FD5-CF48-4406-8118-782F1FCAAF18}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Negocios\Framework.Negocios.vbproj">
+      <Project>{44693732-F211-43D1-B164-72E528E990DC}</Project>
+      <Name>Framework.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Produccion.Entidades\Produccion.Negocios.vbproj">
+      <Project>{A8F91E9C-2A16-41BB-8F4B-33DB80AF7E80}</Project>
+      <Name>Produccion.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Programacion.Negocios\Programacion.Negocios.vbproj">
+      <Project>{33c1ad49-27fc-49a8-aa1f-c465d6d3e3ad}</Project>
+      <Name>Programacion.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Programacion.Vista\Programacion.Vista.vbproj">
+      <Project>{7086837E-4655-4BAA-AD6B-8FDDCA92D739}</Project>
+      <Name>Programacion.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proveedores.BU\Proveedor.BU.vbproj">
+      <Project>{C5C8B610-D217-4869-8533-92A4E764CDA4}</Project>
+      <Name>Proveedor.BU</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vbproj">
+      <Project>{400f3e25-60b7-4f1c-b8fc-c063d6c563ea}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1373583708_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1373583751_arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1373584033_navigate-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1373584074_navigate-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altas_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogos_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ciudades_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colaboradores_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conf_32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conf_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deptops_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estados_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excepiones_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fichaColaborador_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finanzas_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar2_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horarios_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naves_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomina_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paises_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patrones_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfiles_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puesto_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguridad_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sucursales_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yuyin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1391114575_application_view_detail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1385860942_Zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar_322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copiar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enviarcalculo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quitar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naves_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rechazar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar_calcular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar_calcular1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editlittle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deshacer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importarPrograma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autorizar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32px-%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2016-10-24_09-59-13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\32x32px-%282%291.png" />
+    <Content Include="Resources\archivo.png" />
+    <Content Include="Resources\descarga.png" />
+    <Content Include="Resources\descarga25.png" />
+    <Content Include="Resources\descargab.png" />
+    <None Include="Resources\dosar.png" />
+    <Content Include="Resources\Email.png" />
+    <Content Include="Resources\FichaCosto.png" />
+    <None Include="Resources\logo_yuyin.jpg" />
+    <None Include="Resources\pares_aceptar_32.png" />
+    <None Include="Resources\pares_autorizar_32.png" />
+    <None Include="Resources\pares_enviar_32.png" />
+    <None Include="Resources\pares_modificar_32.png" />
+    <None Include="Resources\pares_remover_32.png" />
+    <None Include="Resources\pdf_ver_32.png" />
+    <Content Include="Resources\tarjetaProduccion.png" />
+    <Content Include="Resources\tarjetaVista.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,2285 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class AdministracionApartadosForm
+    Inherits System.Windows.Forms.Form
+
+    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Requerido por el Diseñador de Windows Forms
+    Private components As System.ComponentModel.IContainer
+
+    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
+    'Se puede modificar usando el Diseñador de Windows Forms.  
+    'No lo modifique con el editor de código.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim Appearance1 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance2 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance3 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance4 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance5 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance6 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance7 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance8 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance9 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance10 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance11 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance12 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance13 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance14 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance15 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance16 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance17 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance18 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance19 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance20 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance21 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance22 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance23 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance24 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance25 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance26 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdministracionApartadosForm))
+        Me.chboxSeleccionarTodo = New System.Windows.Forms.CheckBox()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.pnlParametros = New System.Windows.Forms.Panel()
+        Me.chkVerUbicaciones = New System.Windows.Forms.CheckBox()
+        Me.lblTotalApartadosCanceladosHoy = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.grdMarca = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.chkVerTallas = New System.Windows.Forms.CheckBox()
+        Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.grdOperador = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.chkImpreso = New System.Windows.Forms.CheckBox()
+        Me.lblTextoApartadosCanceladosHoy = New System.Windows.Forms.Label()
+        Me.chkUrgente = New System.Windows.Forms.CheckBox()
+        Me.chkDetallada = New System.Windows.Forms.CheckBox()
+        Me.cmbOrigenApartado = New System.Windows.Forms.ComboBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.cmbStatusApartados = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.dtpFechaEntregaDel = New System.Windows.Forms.DateTimePicker()
+        Me.rdbFechaConfirmacion = New System.Windows.Forms.RadioButton()
+        Me.lblEntregaDel = New System.Windows.Forms.Label()
+        Me.rdbFechaPreparacion = New System.Windows.Forms.RadioButton()
+        Me.dtpFechaEntregaAl = New System.Windows.Forms.DateTimePicker()
+        Me.rdbFechaSolicitada = New System.Windows.Forms.RadioButton()
+        Me.lblEntregaAl = New System.Windows.Forms.Label()
+        Me.rdbFechaCaptura = New System.Windows.Forms.RadioButton()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.grdCorrida = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.gboxCorrida = New System.Windows.Forms.GroupBox()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.grdTienda = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.grdCliente = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.grdColor = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.grdPiel = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.GroupBox15 = New System.Windows.Forms.GroupBox()
+        Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.grdPedidoSICY = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.txtPedidoSICY = New System.Windows.Forms.MaskedTextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.grdFolioApartado = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.txtFolioApartado = New System.Windows.Forms.MaskedTextBox()
+        Me.GroupBox14 = New System.Windows.Forms.GroupBox()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.grdColeccion = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.gboxPedidos = New System.Windows.Forms.GroupBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.grdPedidoSAY = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.txtPedidoSAY = New System.Windows.Forms.MaskedTextBox()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.grdModelo = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.lblTitulo = New System.Windows.Forms.Label()
+        Me.lblActualizarDatos = New System.Windows.Forms.Label()
+        Me.lblTextoImprimirApartado = New System.Windows.Forms.Label()
+        Me.pnlAccionesCabecera = New System.Windows.Forms.Panel()
+        Me.lblEtiquetas = New System.Windows.Forms.Label()
+        Me.lblTextoInventarioDisponible = New System.Windows.Forms.Label()
+        Me.lblTextoCancelarApartado = New System.Windows.Forms.Label()
+        Me.lblTextoConfirmarApartado = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblTextoMarcarUrgente = New System.Windows.Forms.Label()
+        Me.lblTextoAsignarPrioridad = New System.Windows.Forms.Label()
+        Me.pnlEncabezado = New System.Windows.Forms.Panel()
+        Me.pnlTitulo = New System.Windows.Forms.Panel()
+        Me.pnlPie = New System.Windows.Forms.Panel()
+        Me.lblTextoUltimaActualizacion = New System.Windows.Forms.Label()
+        Me.lblFechaUltimaActualización = New System.Windows.Forms.Label()
+        Me.GroupBox13 = New System.Windows.Forms.GroupBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.pnlEtiquetaNoSolicitada = New System.Windows.Forms.Label()
+        Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.pnlEtiquetaSolicitada = New System.Windows.Forms.Label()
+        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.pnlEstatusConfirmacionIncompleta = New System.Windows.Forms.Panel()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.pnlEstatusEnEjecucion = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.pnlEstatusParcialmenteConfirmado = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.pnlEstatusCancelado = New System.Windows.Forms.Panel()
+        Me.pnlEstatusActivo = New System.Windows.Forms.Panel()
+        Me.pnlEstatusConfirmado = New System.Windows.Forms.Panel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.pnlClienteBloqueado = New System.Windows.Forms.Panel()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.pnlImpreso = New System.Windows.Forms.Panel()
+        Me.pnlUrgente = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.pnlEntregaInmediata = New System.Windows.Forms.Panel()
+        Me.lblNoFacturado = New System.Windows.Forms.Label()
+        Me.pnlEntregaVencida = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.pnlEntregaVenceHoy = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.pnlAlMenos1DiaEntrega = New System.Windows.Forms.Panel()
+        Me.pnlDatosBotones = New System.Windows.Forms.Panel()
+        Me.lblLimpiar = New System.Windows.Forms.Label()
+        Me.lblAceptar = New System.Windows.Forms.Label()
+        Me.lblCerrar = New System.Windows.Forms.Label()
+        Me.pnlPriorida1 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.gridApartados = New Infragistics.Win.UltraWinGrid.UltraGrid()
+        Me.cmsOpcionesAlmacen = New System.Windows.Forms.ContextMenuStrip()
+        Me.tsmiEtiquetaSolicitada = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiAsignarOperador = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiDesasignarOperador = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
+        Me.btnCerrar = New System.Windows.Forms.Button()
+        Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.btnMarca = New System.Windows.Forms.Button()
+        Me.btnOperador = New System.Windows.Forms.Button()
+        Me.btnCorrida = New System.Windows.Forms.Button()
+        Me.btnTienda = New System.Windows.Forms.Button()
+        Me.btnCliente = New System.Windows.Forms.Button()
+        Me.btnColor = New System.Windows.Forms.Button()
+        Me.btnPiel = New System.Windows.Forms.Button()
+        Me.btnColeccion = New System.Windows.Forms.Button()
+        Me.btnModelo = New System.Windows.Forms.Button()
+        Me.btnArriba = New System.Windows.Forms.Button()
+        Me.btnAbajo = New System.Windows.Forms.Button()
+        Me.btnEtiquetas = New System.Windows.Forms.Button()
+        Me.btnInventarioDisponible = New System.Windows.Forms.Button()
+        Me.btnExportarExcelApartados = New System.Windows.Forms.Button()
+        Me.btnConfirmarApartado = New System.Windows.Forms.Button()
+        Me.btnCancelarApartados = New System.Windows.Forms.Button()
+        Me.btnVerDetallesApartados = New System.Windows.Forms.Button()
+        Me.btnImprimirApartado = New System.Windows.Forms.Button()
+        Me.btnMarcarUrgente = New System.Windows.Forms.Button()
+        Me.btnAsignarPrioridad = New System.Windows.Forms.Button()
+        Me.pbYuyin = New System.Windows.Forms.PictureBox()
+        Me.Panel6.SuspendLayout()
+        Me.pnlParametros.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        CType(Me.grdMarca, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox11.SuspendLayout()
+        Me.Panel17.SuspendLayout()
+        CType(Me.grdOperador, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        CType(Me.grdCorrida, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gboxCorrida.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        CType(Me.grdTienda, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        CType(Me.grdCliente, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox8.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        CType(Me.grdColor, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox7.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        CType(Me.grdPiel, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox15.SuspendLayout()
+        Me.Panel25.SuspendLayout()
+        CType(Me.grdPedidoSICY, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.grdFolioApartado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox14.SuspendLayout()
+        Me.Panel24.SuspendLayout()
+        CType(Me.grdColeccion, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gboxPedidos.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        CType(Me.grdPedidoSAY, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox6.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        CType(Me.grdModelo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlAccionesCabecera.SuspendLayout()
+        Me.pnlEncabezado.SuspendLayout()
+        Me.pnlTitulo.SuspendLayout()
+        Me.pnlPie.SuspendLayout()
+        Me.GroupBox13.SuspendLayout()
+        Me.Panel22.SuspendLayout()
+        Me.Panel23.SuspendLayout()
+        Me.GroupBox12.SuspendLayout()
+        Me.GroupBox10.SuspendLayout()
+        Me.pnlClienteBloqueado.SuspendLayout()
+        Me.GroupBox9.SuspendLayout()
+        Me.pnlDatosBotones.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.gridApartados, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.cmsOpcionesAlmacen.SuspendLayout()
+        CType(Me.pbYuyin, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'chboxSeleccionarTodo
+        '
+        Me.chboxSeleccionarTodo.AutoSize = True
+        Me.chboxSeleccionarTodo.Location = New System.Drawing.Point(14, 4)
+        Me.chboxSeleccionarTodo.Name = "chboxSeleccionarTodo"
+        Me.chboxSeleccionarTodo.Size = New System.Drawing.Size(110, 17)
+        Me.chboxSeleccionarTodo.TabIndex = 56
+        Me.chboxSeleccionarTodo.Text = "Seleccionar Todo"
+        Me.chboxSeleccionarTodo.UseVisualStyleBackColor = True
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.chboxSeleccionarTodo)
+        Me.Panel6.Controls.Add(Me.btnArriba)
+        Me.Panel6.Controls.Add(Me.btnAbajo)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel6.Location = New System.Drawing.Point(0, 0)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(1310, 27)
+        Me.Panel6.TabIndex = 46
+        '
+        'pnlParametros
+        '
+        Me.pnlParametros.BackColor = System.Drawing.Color.AliceBlue
+        Me.pnlParametros.Controls.Add(Me.chkVerUbicaciones)
+        Me.pnlParametros.Controls.Add(Me.lblTotalApartadosCanceladosHoy)
+        Me.pnlParametros.Controls.Add(Me.GroupBox4)
+        Me.pnlParametros.Controls.Add(Me.chkVerTallas)
+        Me.pnlParametros.Controls.Add(Me.GroupBox11)
+        Me.pnlParametros.Controls.Add(Me.chkImpreso)
+        Me.pnlParametros.Controls.Add(Me.lblTextoApartadosCanceladosHoy)
+        Me.pnlParametros.Controls.Add(Me.chkUrgente)
+        Me.pnlParametros.Controls.Add(Me.chkDetallada)
+        Me.pnlParametros.Controls.Add(Me.cmbOrigenApartado)
+        Me.pnlParametros.Controls.Add(Me.Label15)
+        Me.pnlParametros.Controls.Add(Me.cmbStatusApartados)
+        Me.pnlParametros.Controls.Add(Me.Label10)
+        Me.pnlParametros.Controls.Add(Me.GroupBox3)
+        Me.pnlParametros.Controls.Add(Me.GroupBox5)
+        Me.pnlParametros.Controls.Add(Me.gboxCorrida)
+        Me.pnlParametros.Controls.Add(Me.GroupBox2)
+        Me.pnlParametros.Controls.Add(Me.GroupBox8)
+        Me.pnlParametros.Controls.Add(Me.GroupBox7)
+        Me.pnlParametros.Controls.Add(Me.GroupBox15)
+        Me.pnlParametros.Controls.Add(Me.GroupBox1)
+        Me.pnlParametros.Controls.Add(Me.GroupBox14)
+        Me.pnlParametros.Controls.Add(Me.gboxPedidos)
+        Me.pnlParametros.Controls.Add(Me.GroupBox6)
+        Me.pnlParametros.Controls.Add(Me.Panel6)
+        Me.pnlParametros.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlParametros.Location = New System.Drawing.Point(0, 59)
+        Me.pnlParametros.Name = "pnlParametros"
+        Me.pnlParametros.Size = New System.Drawing.Size(1310, 323)
+        Me.pnlParametros.TabIndex = 12
+        '
+        'chkVerUbicaciones
+        '
+        Me.chkVerUbicaciones.AutoSize = True
+        Me.chkVerUbicaciones.Location = New System.Drawing.Point(104, 278)
+        Me.chkVerUbicaciones.Name = "chkVerUbicaciones"
+        Me.chkVerUbicaciones.Size = New System.Drawing.Size(102, 17)
+        Me.chkVerUbicaciones.TabIndex = 116
+        Me.chkVerUbicaciones.Text = "Ver ubicaciones"
+        Me.chkVerUbicaciones.UseVisualStyleBackColor = True
+        '
+        'lblTotalApartadosCanceladosHoy
+        '
+        Me.lblTotalApartadosCanceladosHoy.AutoSize = True
+        Me.lblTotalApartadosCanceladosHoy.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalApartadosCanceladosHoy.ForeColor = System.Drawing.Color.Red
+        Me.lblTotalApartadosCanceladosHoy.Location = New System.Drawing.Point(184, 301)
+        Me.lblTotalApartadosCanceladosHoy.Name = "lblTotalApartadosCanceladosHoy"
+        Me.lblTotalApartadosCanceladosHoy.Size = New System.Drawing.Size(14, 13)
+        Me.lblTotalApartadosCanceladosHoy.TabIndex = 106
+        Me.lblTotalApartadosCanceladosHoy.Text = "0"
+        Me.lblTotalApartadosCanceladosHoy.Visible = False
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Panel2)
+        Me.GroupBox4.Controls.Add(Me.btnMarca)
+        Me.GroupBox4.Location = New System.Drawing.Point(226, 181)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(160, 137)
+        Me.GroupBox4.TabIndex = 115
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Marca"
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.grdMarca)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel2.Location = New System.Drawing.Point(3, 36)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(154, 98)
+        Me.Panel2.TabIndex = 2
+        '
+        'grdMarca
+        '
+        Appearance1.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdMarca.DisplayLayout.Appearance = Appearance1
+        Me.grdMarca.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdMarca.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdMarca.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdMarca.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdMarca.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdMarca.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdMarca.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdMarca.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance2.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdMarca.DisplayLayout.Override.RowAlternateAppearance = Appearance2
+        Me.grdMarca.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdMarca.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdMarca.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdMarca.Location = New System.Drawing.Point(0, 0)
+        Me.grdMarca.Name = "grdMarca"
+        Me.grdMarca.Size = New System.Drawing.Size(154, 98)
+        Me.grdMarca.TabIndex = 2
+        '
+        'chkVerTallas
+        '
+        Me.chkVerTallas.AutoSize = True
+        Me.chkVerTallas.Location = New System.Drawing.Point(26, 278)
+        Me.chkVerTallas.Name = "chkVerTallas"
+        Me.chkVerTallas.Size = New System.Drawing.Size(69, 17)
+        Me.chkVerTallas.TabIndex = 114
+        Me.chkVerTallas.Text = "Ver tallas"
+        Me.chkVerTallas.UseVisualStyleBackColor = True
+        '
+        'GroupBox11
+        '
+        Me.GroupBox11.Controls.Add(Me.Panel17)
+        Me.GroupBox11.Controls.Add(Me.btnOperador)
+        Me.GroupBox11.Location = New System.Drawing.Point(1136, 34)
+        Me.GroupBox11.Name = "GroupBox11"
+        Me.GroupBox11.Size = New System.Drawing.Size(160, 140)
+        Me.GroupBox11.TabIndex = 100
+        Me.GroupBox11.TabStop = False
+        Me.GroupBox11.Text = "Operador"
+        '
+        'Panel17
+        '
+        Me.Panel17.Controls.Add(Me.grdOperador)
+        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel17.Location = New System.Drawing.Point(3, 39)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(154, 98)
+        Me.Panel17.TabIndex = 2
+        '
+        'grdOperador
+        '
+        Appearance3.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdOperador.DisplayLayout.Appearance = Appearance3
+        Me.grdOperador.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdOperador.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdOperador.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdOperador.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdOperador.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdOperador.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdOperador.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdOperador.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance4.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdOperador.DisplayLayout.Override.RowAlternateAppearance = Appearance4
+        Me.grdOperador.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdOperador.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdOperador.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdOperador.Location = New System.Drawing.Point(0, 0)
+        Me.grdOperador.Name = "grdOperador"
+        Me.grdOperador.Size = New System.Drawing.Size(154, 98)
+        Me.grdOperador.TabIndex = 2
+        '
+        'chkImpreso
+        '
+        Me.chkImpreso.AutoSize = True
+        Me.chkImpreso.Checked = True
+        Me.chkImpreso.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkImpreso.Location = New System.Drawing.Point(26, 232)
+        Me.chkImpreso.Name = "chkImpreso"
+        Me.chkImpreso.Size = New System.Drawing.Size(63, 17)
+        Me.chkImpreso.TabIndex = 113
+        Me.chkImpreso.Text = "Impreso"
+        Me.chkImpreso.UseVisualStyleBackColor = True
+        '
+        'lblTextoApartadosCanceladosHoy
+        '
+        Me.lblTextoApartadosCanceladosHoy.AutoSize = True
+        Me.lblTextoApartadosCanceladosHoy.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTextoApartadosCanceladosHoy.ForeColor = System.Drawing.Color.Red
+        Me.lblTextoApartadosCanceladosHoy.Location = New System.Drawing.Point(23, 301)
+        Me.lblTextoApartadosCanceladosHoy.Name = "lblTextoApartadosCanceladosHoy"
+        Me.lblTextoApartadosCanceladosHoy.Size = New System.Drawing.Size(161, 13)
+        Me.lblTextoApartadosCanceladosHoy.TabIndex = 105
+        Me.lblTextoApartadosCanceladosHoy.Text = "Apartados cancelados hoy:"
+        Me.lblTextoApartadosCanceladosHoy.Visible = False
+        '
+        'chkUrgente
+        '
+        Me.chkUrgente.AutoSize = True
+        Me.chkUrgente.Checked = True
+        Me.chkUrgente.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkUrgente.Location = New System.Drawing.Point(119, 232)
+        Me.chkUrgente.Name = "chkUrgente"
+        Me.chkUrgente.Size = New System.Drawing.Size(64, 17)
+        Me.chkUrgente.TabIndex = 112
+        Me.chkUrgente.Text = "Urgente"
+        Me.chkUrgente.UseVisualStyleBackColor = True
+        '
+        'chkDetallada
+        '
+        Me.chkDetallada.AutoSize = True
+        Me.chkDetallada.Location = New System.Drawing.Point(26, 255)
+        Me.chkDetallada.Name = "chkDetallada"
+        Me.chkDetallada.Size = New System.Drawing.Size(162, 17)
+        Me.chkDetallada.TabIndex = 111
+        Me.chkDetallada.Text = "Mostrar detalles del apartado"
+        Me.chkDetallada.UseVisualStyleBackColor = True
+        '
+        'cmbOrigenApartado
+        '
+        Me.cmbOrigenApartado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbOrigenApartado.FormattingEnabled = True
+        Me.cmbOrigenApartado.Items.AddRange(New Object() {"", "PPCP", "VENTAS"})
+        Me.cmbOrigenApartado.Location = New System.Drawing.Point(33, 205)
+        Me.cmbOrigenApartado.Name = "cmbOrigenApartado"
+        Me.cmbOrigenApartado.Size = New System.Drawing.Size(166, 21)
+        Me.cmbOrigenApartado.TabIndex = 110
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.Color.Black
+        Me.Label15.Location = New System.Drawing.Point(11, 190)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(100, 13)
+        Me.Label15.TabIndex = 109
+        Me.Label15.Text = "Origen del apartado"
+        '
+        'cmbStatusApartados
+        '
+        Me.cmbStatusApartados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbStatusApartados.FormattingEnabled = True
+        Me.cmbStatusApartados.Items.AddRange(New Object() {"", "ACTIVO", "CANCELADO", "CONFIRMADO", "EN EJECUCIÓN", "PARCIALMENTE CONFIRMADO"})
+        Me.cmbStatusApartados.Location = New System.Drawing.Point(33, 164)
+        Me.cmbStatusApartados.Name = "cmbStatusApartados"
+        Me.cmbStatusApartados.Size = New System.Drawing.Size(166, 21)
+        Me.cmbStatusApartados.TabIndex = 108
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.Black
+        Me.Label10.Location = New System.Drawing.Point(7, 150)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(97, 13)
+        Me.Label10.TabIndex = 107
+        Me.Label10.Text = "Status de apartado"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.dtpFechaEntregaDel)
+        Me.GroupBox3.Controls.Add(Me.rdbFechaConfirmacion)
+        Me.GroupBox3.Controls.Add(Me.lblEntregaDel)
+        Me.GroupBox3.Controls.Add(Me.rdbFechaPreparacion)
+        Me.GroupBox3.Controls.Add(Me.dtpFechaEntregaAl)
+        Me.GroupBox3.Controls.Add(Me.rdbFechaSolicitada)
+        Me.GroupBox3.Controls.Add(Me.lblEntregaAl)
+        Me.GroupBox3.Controls.Add(Me.rdbFechaCaptura)
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 33)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(214, 112)
+        Me.GroupBox3.TabIndex = 99
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Fecha"
+        '
+        'dtpFechaEntregaDel
+        '
+        Me.dtpFechaEntregaDel.CustomFormat = ""
+        Me.dtpFechaEntregaDel.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaEntregaDel.Location = New System.Drawing.Point(122, 41)
+        Me.dtpFechaEntregaDel.Name = "dtpFechaEntregaDel"
+        Me.dtpFechaEntregaDel.Size = New System.Drawing.Size(86, 20)
+        Me.dtpFechaEntregaDel.TabIndex = 66
+        Me.dtpFechaEntregaDel.Value = New Date(2016, 1, 8, 0, 0, 0, 0)
+        '
+        'rdbFechaConfirmacion
+        '
+        Me.rdbFechaConfirmacion.AutoSize = True
+        Me.rdbFechaConfirmacion.Location = New System.Drawing.Point(12, 90)
+        Me.rdbFechaConfirmacion.Name = "rdbFechaConfirmacion"
+        Me.rdbFechaConfirmacion.Size = New System.Drawing.Size(86, 17)
+        Me.rdbFechaConfirmacion.TabIndex = 91
+        Me.rdbFechaConfirmacion.Text = "Confirmación"
+        Me.rdbFechaConfirmacion.UseVisualStyleBackColor = True
+        '
+        'lblEntregaDel
+        '
+        Me.lblEntregaDel.AutoSize = True
+        Me.lblEntregaDel.ForeColor = System.Drawing.Color.Black
+        Me.lblEntregaDel.Location = New System.Drawing.Point(95, 47)
+        Me.lblEntregaDel.Name = "lblEntregaDel"
+        Me.lblEntregaDel.Size = New System.Drawing.Size(23, 13)
+        Me.lblEntregaDel.TabIndex = 67
+        Me.lblEntregaDel.Text = "Del"
+        '
+        'rdbFechaPreparacion
+        '
+        Me.rdbFechaPreparacion.AutoSize = True
+        Me.rdbFechaPreparacion.BackColor = System.Drawing.Color.AliceBlue
+        Me.rdbFechaPreparacion.Location = New System.Drawing.Point(12, 44)
+        Me.rdbFechaPreparacion.Name = "rdbFechaPreparacion"
+        Me.rdbFechaPreparacion.Size = New System.Drawing.Size(82, 17)
+        Me.rdbFechaPreparacion.TabIndex = 90
+        Me.rdbFechaPreparacion.Text = "Preparación"
+        Me.rdbFechaPreparacion.UseVisualStyleBackColor = False
+        '
+        'dtpFechaEntregaAl
+        '
+        Me.dtpFechaEntregaAl.CustomFormat = ""
+        Me.dtpFechaEntregaAl.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaEntregaAl.Location = New System.Drawing.Point(122, 67)
+        Me.dtpFechaEntregaAl.Name = "dtpFechaEntregaAl"
+        Me.dtpFechaEntregaAl.Size = New System.Drawing.Size(86, 20)
+        Me.dtpFechaEntregaAl.TabIndex = 69
+        Me.dtpFechaEntregaAl.Value = New Date(2016, 1, 8, 0, 0, 0, 0)
+        '
+        'rdbFechaSolicitada
+        '
+        Me.rdbFechaSolicitada.AutoSize = True
+        Me.rdbFechaSolicitada.Location = New System.Drawing.Point(12, 67)
+        Me.rdbFechaSolicitada.Name = "rdbFechaSolicitada"
+        Me.rdbFechaSolicitada.Size = New System.Drawing.Size(71, 17)
+        Me.rdbFechaSolicitada.TabIndex = 89
+        Me.rdbFechaSolicitada.Text = "Solicitada"
+        Me.rdbFechaSolicitada.UseVisualStyleBackColor = True
+        '
+        'lblEntregaAl
+        '
+        Me.lblEntregaAl.AutoSize = True
+        Me.lblEntregaAl.ForeColor = System.Drawing.Color.Black
+        Me.lblEntregaAl.Location = New System.Drawing.Point(95, 73)
+        Me.lblEntregaAl.Name = "lblEntregaAl"
+        Me.lblEntregaAl.Size = New System.Drawing.Size(16, 13)
+        Me.lblEntregaAl.TabIndex = 70
+        Me.lblEntregaAl.Text = "Al"
+        '
+        'rdbFechaCaptura
+        '
+        Me.rdbFechaCaptura.AutoSize = True
+        Me.rdbFechaCaptura.Checked = True
+        Me.rdbFechaCaptura.Location = New System.Drawing.Point(12, 21)
+        Me.rdbFechaCaptura.Name = "rdbFechaCaptura"
+        Me.rdbFechaCaptura.Size = New System.Drawing.Size(62, 17)
+        Me.rdbFechaCaptura.TabIndex = 88
+        Me.rdbFechaCaptura.TabStop = True
+        Me.rdbFechaCaptura.Text = "Captura"
+        Me.rdbFechaCaptura.UseVisualStyleBackColor = True
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.Panel9)
+        Me.GroupBox5.Controls.Add(Me.btnCorrida)
+        Me.GroupBox5.Location = New System.Drawing.Point(1060, 180)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(236, 137)
+        Me.GroupBox5.TabIndex = 96
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Corrida:"
+        '
+        'Panel9
+        '
+        Me.Panel9.Controls.Add(Me.grdCorrida)
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel9.Location = New System.Drawing.Point(3, 36)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(230, 98)
+        Me.Panel9.TabIndex = 2
+        '
+        'grdCorrida
+        '
+        Appearance5.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdCorrida.DisplayLayout.Appearance = Appearance5
+        Me.grdCorrida.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdCorrida.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdCorrida.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdCorrida.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdCorrida.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdCorrida.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdCorrida.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdCorrida.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance6.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdCorrida.DisplayLayout.Override.RowAlternateAppearance = Appearance6
+        Me.grdCorrida.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdCorrida.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdCorrida.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdCorrida.Location = New System.Drawing.Point(0, 0)
+        Me.grdCorrida.Name = "grdCorrida"
+        Me.grdCorrida.Size = New System.Drawing.Size(230, 98)
+        Me.grdCorrida.TabIndex = 1
+        '
+        'gboxCorrida
+        '
+        Me.gboxCorrida.Controls.Add(Me.Panel8)
+        Me.gboxCorrida.Controls.Add(Me.btnTienda)
+        Me.gboxCorrida.Location = New System.Drawing.Point(894, 34)
+        Me.gboxCorrida.Name = "gboxCorrida"
+        Me.gboxCorrida.Size = New System.Drawing.Size(239, 139)
+        Me.gboxCorrida.TabIndex = 95
+        Me.gboxCorrida.TabStop = False
+        Me.gboxCorrida.Text = "Tiendas / Embarques / CEDIS"
+        '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.grdTienda)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel8.Location = New System.Drawing.Point(3, 38)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(233, 98)
+        Me.Panel8.TabIndex = 2
+        '
+        'grdTienda
+        '
+        Appearance7.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdTienda.DisplayLayout.Appearance = Appearance7
+        Me.grdTienda.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdTienda.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdTienda.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdTienda.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdTienda.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdTienda.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdTienda.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdTienda.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance8.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdTienda.DisplayLayout.Override.RowAlternateAppearance = Appearance8
+        Me.grdTienda.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdTienda.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdTienda.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdTienda.Location = New System.Drawing.Point(0, 0)
+        Me.grdTienda.Name = "grdTienda"
+        Me.grdTienda.Size = New System.Drawing.Size(233, 98)
+        Me.grdTienda.TabIndex = 1
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Panel7)
+        Me.GroupBox2.Controls.Add(Me.btnCliente)
+        Me.GroupBox2.Location = New System.Drawing.Point(724, 33)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(160, 140)
+        Me.GroupBox2.TabIndex = 67
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Cliente"
+        '
+        'Panel7
+        '
+        Me.Panel7.Controls.Add(Me.grdCliente)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel7.Location = New System.Drawing.Point(3, 39)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(154, 98)
+        Me.Panel7.TabIndex = 2
+        '
+        'grdCliente
+        '
+        Appearance9.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdCliente.DisplayLayout.Appearance = Appearance9
+        Me.grdCliente.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdCliente.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdCliente.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdCliente.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdCliente.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdCliente.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdCliente.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdCliente.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance10.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdCliente.DisplayLayout.Override.RowAlternateAppearance = Appearance10
+        Me.grdCliente.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdCliente.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdCliente.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdCliente.Location = New System.Drawing.Point(0, 0)
+        Me.grdCliente.Name = "grdCliente"
+        Me.grdCliente.Size = New System.Drawing.Size(154, 98)
+        Me.grdCliente.TabIndex = 2
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.Controls.Add(Me.Panel11)
+        Me.GroupBox8.Controls.Add(Me.btnColor)
+        Me.GroupBox8.Location = New System.Drawing.Point(894, 181)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(160, 137)
+        Me.GroupBox8.TabIndex = 94
+        Me.GroupBox8.TabStop = False
+        Me.GroupBox8.Text = "Color"
+        '
+        'Panel11
+        '
+        Me.Panel11.Controls.Add(Me.grdColor)
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel11.Location = New System.Drawing.Point(3, 36)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(154, 98)
+        Me.Panel11.TabIndex = 2
+        '
+        'grdColor
+        '
+        Appearance11.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdColor.DisplayLayout.Appearance = Appearance11
+        Me.grdColor.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdColor.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdColor.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdColor.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdColor.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdColor.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdColor.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdColor.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance12.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdColor.DisplayLayout.Override.RowAlternateAppearance = Appearance12
+        Me.grdColor.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdColor.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdColor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdColor.Location = New System.Drawing.Point(0, 0)
+        Me.grdColor.Name = "grdColor"
+        Me.grdColor.Size = New System.Drawing.Size(154, 98)
+        Me.grdColor.TabIndex = 2
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.Panel10)
+        Me.GroupBox7.Controls.Add(Me.btnPiel)
+        Me.GroupBox7.Location = New System.Drawing.Point(724, 181)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(160, 137)
+        Me.GroupBox7.TabIndex = 94
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "Piel"
+        '
+        'Panel10
+        '
+        Me.Panel10.Controls.Add(Me.grdPiel)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel10.Location = New System.Drawing.Point(3, 36)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(154, 98)
+        Me.Panel10.TabIndex = 2
+        '
+        'grdPiel
+        '
+        Appearance13.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdPiel.DisplayLayout.Appearance = Appearance13
+        Me.grdPiel.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdPiel.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdPiel.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdPiel.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdPiel.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdPiel.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdPiel.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdPiel.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance14.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdPiel.DisplayLayout.Override.RowAlternateAppearance = Appearance14
+        Me.grdPiel.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdPiel.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdPiel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdPiel.Location = New System.Drawing.Point(0, 0)
+        Me.grdPiel.Name = "grdPiel"
+        Me.grdPiel.Size = New System.Drawing.Size(154, 98)
+        Me.grdPiel.TabIndex = 2
+        '
+        'GroupBox15
+        '
+        Me.GroupBox15.Controls.Add(Me.Panel25)
+        Me.GroupBox15.Controls.Add(Me.txtPedidoSICY)
+        Me.GroupBox15.Location = New System.Drawing.Point(390, 34)
+        Me.GroupBox15.Name = "GroupBox15"
+        Me.GroupBox15.Size = New System.Drawing.Size(160, 140)
+        Me.GroupBox15.TabIndex = 55
+        Me.GroupBox15.TabStop = False
+        Me.GroupBox15.Text = "Pedido SICY"
+        '
+        'Panel25
+        '
+        Me.Panel25.Controls.Add(Me.grdPedidoSICY)
+        Me.Panel25.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel25.Location = New System.Drawing.Point(3, 39)
+        Me.Panel25.Name = "Panel25"
+        Me.Panel25.Size = New System.Drawing.Size(154, 98)
+        Me.Panel25.TabIndex = 2
+        '
+        'grdPedidoSICY
+        '
+        Appearance15.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdPedidoSICY.DisplayLayout.Appearance = Appearance15
+        Me.grdPedidoSICY.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdPedidoSICY.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdPedidoSICY.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdPedidoSICY.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdPedidoSICY.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdPedidoSICY.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdPedidoSICY.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdPedidoSICY.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance16.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdPedidoSICY.DisplayLayout.Override.RowAlternateAppearance = Appearance16
+        Me.grdPedidoSICY.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdPedidoSICY.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdPedidoSICY.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdPedidoSICY.Location = New System.Drawing.Point(0, 0)
+        Me.grdPedidoSICY.Name = "grdPedidoSICY"
+        Me.grdPedidoSICY.Size = New System.Drawing.Size(154, 98)
+        Me.grdPedidoSICY.TabIndex = 1
+        '
+        'txtPedidoSICY
+        '
+        Me.txtPedidoSICY.Location = New System.Drawing.Point(6, 14)
+        Me.txtPedidoSICY.Mask = "99999999999999999"
+        Me.txtPedidoSICY.Name = "txtPedidoSICY"
+        Me.txtPedidoSICY.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.txtPedidoSICY.Size = New System.Drawing.Size(112, 20)
+        Me.txtPedidoSICY.TabIndex = 0
+        Me.txtPedidoSICY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Panel1)
+        Me.GroupBox1.Controls.Add(Me.txtFolioApartado)
+        Me.GroupBox1.Location = New System.Drawing.Point(556, 33)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(160, 140)
+        Me.GroupBox1.TabIndex = 55
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Folio Apartado"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.grdFolioApartado)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(3, 39)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(154, 98)
+        Me.Panel1.TabIndex = 2
+        '
+        'grdFolioApartado
+        '
+        Appearance17.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdFolioApartado.DisplayLayout.Appearance = Appearance17
+        Me.grdFolioApartado.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdFolioApartado.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdFolioApartado.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdFolioApartado.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdFolioApartado.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdFolioApartado.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdFolioApartado.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdFolioApartado.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance18.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdFolioApartado.DisplayLayout.Override.RowAlternateAppearance = Appearance18
+        Me.grdFolioApartado.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdFolioApartado.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdFolioApartado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdFolioApartado.Location = New System.Drawing.Point(0, 0)
+        Me.grdFolioApartado.Name = "grdFolioApartado"
+        Me.grdFolioApartado.Size = New System.Drawing.Size(154, 98)
+        Me.grdFolioApartado.TabIndex = 1
+        '
+        'txtFolioApartado
+        '
+        Me.txtFolioApartado.Location = New System.Drawing.Point(6, 14)
+        Me.txtFolioApartado.Mask = "99999999999999999"
+        Me.txtFolioApartado.Name = "txtFolioApartado"
+        Me.txtFolioApartado.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.txtFolioApartado.Size = New System.Drawing.Size(112, 20)
+        Me.txtFolioApartado.TabIndex = 0
+        Me.txtFolioApartado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'GroupBox14
+        '
+        Me.GroupBox14.Controls.Add(Me.Panel24)
+        Me.GroupBox14.Controls.Add(Me.btnColeccion)
+        Me.GroupBox14.Location = New System.Drawing.Point(390, 181)
+        Me.GroupBox14.Name = "GroupBox14"
+        Me.GroupBox14.Size = New System.Drawing.Size(160, 137)
+        Me.GroupBox14.TabIndex = 94
+        Me.GroupBox14.TabStop = False
+        Me.GroupBox14.Text = "Colección"
+        '
+        'Panel24
+        '
+        Me.Panel24.Controls.Add(Me.grdColeccion)
+        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel24.Location = New System.Drawing.Point(3, 36)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(154, 98)
+        Me.Panel24.TabIndex = 2
+        '
+        'grdColeccion
+        '
+        Appearance19.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdColeccion.DisplayLayout.Appearance = Appearance19
+        Me.grdColeccion.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdColeccion.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdColeccion.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdColeccion.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdColeccion.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdColeccion.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdColeccion.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdColeccion.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance20.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdColeccion.DisplayLayout.Override.RowAlternateAppearance = Appearance20
+        Me.grdColeccion.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdColeccion.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdColeccion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdColeccion.Location = New System.Drawing.Point(0, 0)
+        Me.grdColeccion.Name = "grdColeccion"
+        Me.grdColeccion.Size = New System.Drawing.Size(154, 98)
+        Me.grdColeccion.TabIndex = 2
+        '
+        'gboxPedidos
+        '
+        Me.gboxPedidos.Controls.Add(Me.Panel5)
+        Me.gboxPedidos.Controls.Add(Me.txtPedidoSAY)
+        Me.gboxPedidos.Location = New System.Drawing.Point(226, 33)
+        Me.gboxPedidos.Name = "gboxPedidos"
+        Me.gboxPedidos.Size = New System.Drawing.Size(160, 140)
+        Me.gboxPedidos.TabIndex = 54
+        Me.gboxPedidos.TabStop = False
+        Me.gboxPedidos.Text = "Pedido SAY"
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.grdPedidoSAY)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel5.Location = New System.Drawing.Point(3, 39)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(154, 98)
+        Me.Panel5.TabIndex = 2
+        '
+        'grdPedidoSAY
+        '
+        Appearance21.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdPedidoSAY.DisplayLayout.Appearance = Appearance21
+        Me.grdPedidoSAY.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdPedidoSAY.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdPedidoSAY.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdPedidoSAY.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdPedidoSAY.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdPedidoSAY.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdPedidoSAY.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdPedidoSAY.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance22.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdPedidoSAY.DisplayLayout.Override.RowAlternateAppearance = Appearance22
+        Me.grdPedidoSAY.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdPedidoSAY.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdPedidoSAY.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdPedidoSAY.Location = New System.Drawing.Point(0, 0)
+        Me.grdPedidoSAY.Name = "grdPedidoSAY"
+        Me.grdPedidoSAY.Size = New System.Drawing.Size(154, 98)
+        Me.grdPedidoSAY.TabIndex = 1
+        '
+        'txtPedidoSAY
+        '
+        Me.txtPedidoSAY.Location = New System.Drawing.Point(6, 14)
+        Me.txtPedidoSAY.Mask = "99999999999999999"
+        Me.txtPedidoSAY.Name = "txtPedidoSAY"
+        Me.txtPedidoSAY.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.txtPedidoSAY.Size = New System.Drawing.Size(112, 20)
+        Me.txtPedidoSAY.TabIndex = 0
+        Me.txtPedidoSAY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.Panel4)
+        Me.GroupBox6.Controls.Add(Me.btnModelo)
+        Me.GroupBox6.Location = New System.Drawing.Point(556, 181)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(160, 137)
+        Me.GroupBox6.TabIndex = 94
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Modelo"
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.grdModelo)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel4.Location = New System.Drawing.Point(3, 36)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(154, 98)
+        Me.Panel4.TabIndex = 2
+        '
+        'grdModelo
+        '
+        Appearance23.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdModelo.DisplayLayout.Appearance = Appearance23
+        Me.grdModelo.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.grdModelo.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.grdModelo.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Cell
+        Me.grdModelo.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.UseColumnEditor
+        Me.grdModelo.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.grdModelo.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.grdModelo.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.grdModelo.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance24.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.grdModelo.DisplayLayout.Override.RowAlternateAppearance = Appearance24
+        Me.grdModelo.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.grdModelo.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.grdModelo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdModelo.Location = New System.Drawing.Point(0, 0)
+        Me.grdModelo.Name = "grdModelo"
+        Me.grdModelo.Size = New System.Drawing.Size(154, 98)
+        Me.grdModelo.TabIndex = 2
+        '
+        'lblTitulo
+        '
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitulo.ForeColor = System.Drawing.Color.SteelBlue
+        Me.lblTitulo.Location = New System.Drawing.Point(214, 20)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New System.Drawing.Size(238, 20)
+        Me.lblTitulo.TabIndex = 46
+        Me.lblTitulo.Text = "Administración de apartados"
+        Me.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblActualizarDatos
+        '
+        Me.lblActualizarDatos.AutoSize = True
+        Me.lblActualizarDatos.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblActualizarDatos.Location = New System.Drawing.Point(474, 40)
+        Me.lblActualizarDatos.Name = "lblActualizarDatos"
+        Me.lblActualizarDatos.Size = New System.Drawing.Size(46, 13)
+        Me.lblActualizarDatos.TabIndex = 52
+        Me.lblActualizarDatos.Text = "Exportar"
+        '
+        'lblTextoImprimirApartado
+        '
+        Me.lblTextoImprimirApartado.AutoSize = True
+        Me.lblTextoImprimirApartado.Enabled = False
+        Me.lblTextoImprimirApartado.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblTextoImprimirApartado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.lblTextoImprimirApartado.Location = New System.Drawing.Point(14, 40)
+        Me.lblTextoImprimirApartado.Name = "lblTextoImprimirApartado"
+        Me.lblTextoImprimirApartado.Size = New System.Drawing.Size(42, 13)
+        Me.lblTextoImprimirApartado.TabIndex = 9
+        Me.lblTextoImprimirApartado.Text = "Imprimir"
+        '
+        'pnlAccionesCabecera
+        '
+        Me.pnlAccionesCabecera.Controls.Add(Me.lblEtiquetas)
+        Me.pnlAccionesCabecera.Controls.Add(Me.btnEtiquetas)
+        Me.pnlAccionesCabecera.Controls.Add(Me.lblTextoInventarioDisponible)
+        Me.pnlAccionesCabecera.Controls.Add(Me.btnInventarioDisponible)
+        Me.pnlAccionesCabecera.Controls.Add(Me.lblTextoCancelarApartado)
+        Me.pnlAccionesCabecera.Controls.Add(Me.btnExportarExcelApartados)
+        Me.pnlAccionesCabecera.Controls.Add(Me.btnConfirmarApartado)
+        Me.pnlAccionesCabecera.Controls.Add(Me.lblTextoConfirmarApartado)
+        Me.pnlAccionesCabecera.Controls.Add(Me.lblActualizarDatos)
+        Me.pnlAccionesCabecera.Controls.Add(Me.btnCancelarApartados)
+        Me.pnlAccionesCabecera.Controls.Add(Me.Label8)
+        Me.pnlAccionesCabecera.Controls.Add(Me.btnVerDetallesApartados)
+        Me.pnlAccionesCabecera.Controls.Add(Me.lblTextoImprimirApartado)
+        Me.pnlAccionesCabecera.Controls.Add(Me.lblTextoMarcarUrgente)
+        Me.pnlAccionesCabecera.Controls.Add(Me.btnImprimirApartado)
+        Me.pnlAccionesCabecera.Controls.Add(Me.btnMarcarUrgente)
+        Me.pnlAccionesCabecera.Controls.Add(Me.lblTextoAsignarPrioridad)
+        Me.pnlAccionesCabecera.Controls.Add(Me.btnAsignarPrioridad)
+        Me.pnlAccionesCabecera.Dock = System.Windows.Forms.DockStyle.Left
+        Me.pnlAccionesCabecera.Location = New System.Drawing.Point(0, 0)
+        Me.pnlAccionesCabecera.Name = "pnlAccionesCabecera"
+        Me.pnlAccionesCabecera.Size = New System.Drawing.Size(747, 59)
+        Me.pnlAccionesCabecera.TabIndex = 2
+        '
+        'lblEtiquetas
+        '
+        Me.lblEtiquetas.AutoSize = True
+        Me.lblEtiquetas.Enabled = False
+        Me.lblEtiquetas.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEtiquetas.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblEtiquetas.Location = New System.Drawing.Point(650, 40)
+        Me.lblEtiquetas.Name = "lblEtiquetas"
+        Me.lblEtiquetas.Size = New System.Drawing.Size(51, 13)
+        Me.lblEtiquetas.TabIndex = 65
+        Me.lblEtiquetas.Text = "Etiquetas"
+        '
+        'lblTextoInventarioDisponible
+        '
+        Me.lblTextoInventarioDisponible.AutoSize = True
+        Me.lblTextoInventarioDisponible.Enabled = False
+        Me.lblTextoInventarioDisponible.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTextoInventarioDisponible.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblTextoInventarioDisponible.Location = New System.Drawing.Point(531, 40)
+        Me.lblTextoInventarioDisponible.Name = "lblTextoInventarioDisponible"
+        Me.lblTextoInventarioDisponible.Size = New System.Drawing.Size(106, 13)
+        Me.lblTextoInventarioDisponible.TabIndex = 63
+        Me.lblTextoInventarioDisponible.Text = "Inventario Disponible"
+        '
+        'lblTextoCancelarApartado
+        '
+        Me.lblTextoCancelarApartado.AutoSize = True
+        Me.lblTextoCancelarApartado.Enabled = False
+        Me.lblTextoCancelarApartado.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblTextoCancelarApartado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.lblTextoCancelarApartado.Location = New System.Drawing.Point(302, 40)
+        Me.lblTextoCancelarApartado.Name = "lblTextoCancelarApartado"
+        Me.lblTextoCancelarApartado.Size = New System.Drawing.Size(94, 13)
+        Me.lblTextoCancelarApartado.TabIndex = 62
+        Me.lblTextoCancelarApartado.Text = "Cancelar apartado"
+        '
+        'lblTextoConfirmarApartado
+        '
+        Me.lblTextoConfirmarApartado.AutoSize = True
+        Me.lblTextoConfirmarApartado.Enabled = False
+        Me.lblTextoConfirmarApartado.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblTextoConfirmarApartado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.lblTextoConfirmarApartado.Location = New System.Drawing.Point(245, 40)
+        Me.lblTextoConfirmarApartado.Name = "lblTextoConfirmarApartado"
+        Me.lblTextoConfirmarApartado.Size = New System.Drawing.Size(51, 13)
+        Me.lblTextoConfirmarApartado.TabIndex = 54
+        Me.lblTextoConfirmarApartado.Text = "Confirmar"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label8.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label8.Location = New System.Drawing.Point(403, 40)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(64, 13)
+        Me.Label8.TabIndex = 56
+        Me.Label8.Text = "Ver Detalles"
+        '
+        'lblTextoMarcarUrgente
+        '
+        Me.lblTextoMarcarUrgente.AutoSize = True
+        Me.lblTextoMarcarUrgente.Enabled = False
+        Me.lblTextoMarcarUrgente.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblTextoMarcarUrgente.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.lblTextoMarcarUrgente.Location = New System.Drawing.Point(158, 40)
+        Me.lblTextoMarcarUrgente.Name = "lblTextoMarcarUrgente"
+        Me.lblTextoMarcarUrgente.Size = New System.Drawing.Size(79, 13)
+        Me.lblTextoMarcarUrgente.TabIndex = 60
+        Me.lblTextoMarcarUrgente.Text = "Marcar urgente"
+        '
+        'lblTextoAsignarPrioridad
+        '
+        Me.lblTextoAsignarPrioridad.AutoSize = True
+        Me.lblTextoAsignarPrioridad.Enabled = False
+        Me.lblTextoAsignarPrioridad.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblTextoAsignarPrioridad.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.lblTextoAsignarPrioridad.Location = New System.Drawing.Point(70, 40)
+        Me.lblTextoAsignarPrioridad.Name = "lblTextoAsignarPrioridad"
+        Me.lblTextoAsignarPrioridad.Size = New System.Drawing.Size(85, 13)
+        Me.lblTextoAsignarPrioridad.TabIndex = 58
+        Me.lblTextoAsignarPrioridad.Text = "Asignar prioridad"
+        '
+        'pnlEncabezado
+        '
+        Me.pnlEncabezado.BackColor = System.Drawing.Color.White
+        Me.pnlEncabezado.Controls.Add(Me.pnlAccionesCabecera)
+        Me.pnlEncabezado.Controls.Add(Me.pnlTitulo)
+        Me.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlEncabezado.Location = New System.Drawing.Point(0, 0)
+        Me.pnlEncabezado.Name = "pnlEncabezado"
+        Me.pnlEncabezado.Size = New System.Drawing.Size(1310, 59)
+        Me.pnlEncabezado.TabIndex = 11
+        '
+        'pnlTitulo
+        '
+        Me.pnlTitulo.Controls.Add(Me.lblTitulo)
+        Me.pnlTitulo.Controls.Add(Me.pbYuyin)
+        Me.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlTitulo.Location = New System.Drawing.Point(768, 0)
+        Me.pnlTitulo.Name = "pnlTitulo"
+        Me.pnlTitulo.Size = New System.Drawing.Size(542, 59)
+        Me.pnlTitulo.TabIndex = 0
+        '
+        'pnlPie
+        '
+        Me.pnlPie.Controls.Add(Me.lblTextoUltimaActualizacion)
+        Me.pnlPie.Controls.Add(Me.lblFechaUltimaActualización)
+        Me.pnlPie.Controls.Add(Me.GroupBox13)
+        Me.pnlPie.Controls.Add(Me.GroupBox12)
+        Me.pnlPie.Controls.Add(Me.GroupBox10)
+        Me.pnlPie.Controls.Add(Me.GroupBox9)
+        Me.pnlPie.Controls.Add(Me.pnlDatosBotones)
+        Me.pnlPie.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.pnlPie.Location = New System.Drawing.Point(0, 549)
+        Me.pnlPie.Name = "pnlPie"
+        Me.pnlPie.Size = New System.Drawing.Size(1310, 60)
+        Me.pnlPie.TabIndex = 17
+        '
+        'lblTextoUltimaActualizacion
+        '
+        Me.lblTextoUltimaActualizacion.AutoSize = True
+        Me.lblTextoUltimaActualizacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTextoUltimaActualizacion.Location = New System.Drawing.Point(1031, 8)
+        Me.lblTextoUltimaActualizacion.Name = "lblTextoUltimaActualizacion"
+        Me.lblTextoUltimaActualizacion.Size = New System.Drawing.Size(104, 13)
+        Me.lblTextoUltimaActualizacion.TabIndex = 104
+        Me.lblTextoUltimaActualizacion.Text = "Última actualización:"
+        Me.lblTextoUltimaActualizacion.Visible = False
+        '
+        'lblFechaUltimaActualización
+        '
+        Me.lblFechaUltimaActualización.AutoSize = True
+        Me.lblFechaUltimaActualización.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaUltimaActualización.Location = New System.Drawing.Point(1019, 25)
+        Me.lblFechaUltimaActualización.Name = "lblFechaUltimaActualización"
+        Me.lblFechaUltimaActualización.Size = New System.Drawing.Size(10, 13)
+        Me.lblFechaUltimaActualización.TabIndex = 105
+        Me.lblFechaUltimaActualización.Text = "-"
+        Me.lblFechaUltimaActualización.Visible = False
+        '
+        'GroupBox13
+        '
+        Me.GroupBox13.Controls.Add(Me.Label16)
+        Me.GroupBox13.Controls.Add(Me.Panel21)
+        Me.GroupBox13.Controls.Add(Me.Label17)
+        Me.GroupBox13.Controls.Add(Me.Label18)
+        Me.GroupBox13.Controls.Add(Me.Panel22)
+        Me.GroupBox13.Controls.Add(Me.Panel23)
+        Me.GroupBox13.Location = New System.Drawing.Point(794, 2)
+        Me.GroupBox13.Name = "GroupBox13"
+        Me.GroupBox13.Size = New System.Drawing.Size(205, 53)
+        Me.GroupBox13.TabIndex = 103
+        Me.GroupBox13.TabStop = False
+        Me.GroupBox13.Text = "Etiqueta Especial (EE)"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(138, 17)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(63, 26)
+        Me.Label16.TabIndex = 24
+        Me.Label16.Text = "Sin etiqueta" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "especial"
+        '
+        'Panel21
+        '
+        Me.Panel21.BackColor = System.Drawing.Color.Transparent
+        Me.Panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel21.ForeColor = System.Drawing.Color.Black
+        Me.Panel21.Location = New System.Drawing.Point(119, 23)
+        Me.Panel21.Name = "Panel21"
+        Me.Panel21.Size = New System.Drawing.Size(15, 15)
+        Me.Panel21.TabIndex = 25
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(40, 37)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(61, 13)
+        Me.Label17.TabIndex = 22
+        Me.Label17.Text = "Por solicitar"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(40, 16)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(53, 13)
+        Me.Label18.TabIndex = 22
+        Me.Label18.Text = "Solicitada"
+        '
+        'Panel22
+        '
+        Me.Panel22.BackColor = System.Drawing.Color.LightCoral
+        Me.Panel22.Controls.Add(Me.pnlEtiquetaNoSolicitada)
+        Me.Panel22.ForeColor = System.Drawing.Color.Black
+        Me.Panel22.Location = New System.Drawing.Point(22, 36)
+        Me.Panel22.Name = "Panel22"
+        Me.Panel22.Size = New System.Drawing.Size(15, 15)
+        Me.Panel22.TabIndex = 23
+        '
+        'pnlEtiquetaNoSolicitada
+        '
+        Me.pnlEtiquetaNoSolicitada.AutoSize = True
+        Me.pnlEtiquetaNoSolicitada.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlEtiquetaNoSolicitada.ForeColor = System.Drawing.Color.Black
+        Me.pnlEtiquetaNoSolicitada.Location = New System.Drawing.Point(0, 0)
+        Me.pnlEtiquetaNoSolicitada.Name = "pnlEtiquetaNoSolicitada"
+        Me.pnlEtiquetaNoSolicitada.Size = New System.Drawing.Size(16, 13)
+        Me.pnlEtiquetaNoSolicitada.TabIndex = 27
+        Me.pnlEtiquetaNoSolicitada.Text = "N"
+        '
+        'Panel23
+        '
+        Me.Panel23.BackColor = System.Drawing.Color.SeaGreen
+        Me.Panel23.Controls.Add(Me.pnlEtiquetaSolicitada)
+        Me.Panel23.ForeColor = System.Drawing.Color.Black
+        Me.Panel23.Location = New System.Drawing.Point(22, 15)
+        Me.Panel23.Name = "Panel23"
+        Me.Panel23.Size = New System.Drawing.Size(15, 15)
+        Me.Panel23.TabIndex = 23
+        '
+        'pnlEtiquetaSolicitada
+        '
+        Me.pnlEtiquetaSolicitada.AutoSize = True
+        Me.pnlEtiquetaSolicitada.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.pnlEtiquetaSolicitada.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlEtiquetaSolicitada.ForeColor = System.Drawing.Color.Black
+        Me.pnlEtiquetaSolicitada.Location = New System.Drawing.Point(1, 0)
+        Me.pnlEtiquetaSolicitada.Name = "pnlEtiquetaSolicitada"
+        Me.pnlEtiquetaSolicitada.Size = New System.Drawing.Size(15, 13)
+        Me.pnlEtiquetaSolicitada.TabIndex = 26
+        Me.pnlEtiquetaSolicitada.Text = "S"
+        '
+        'GroupBox12
+        '
+        Me.GroupBox12.Controls.Add(Me.Label2)
+        Me.GroupBox12.Controls.Add(Me.pnlEstatusConfirmacionIncompleta)
+        Me.GroupBox12.Controls.Add(Me.Label25)
+        Me.GroupBox12.Controls.Add(Me.pnlEstatusEnEjecucion)
+        Me.GroupBox12.Controls.Add(Me.Label11)
+        Me.GroupBox12.Controls.Add(Me.pnlEstatusParcialmenteConfirmado)
+        Me.GroupBox12.Controls.Add(Me.Label4)
+        Me.GroupBox12.Controls.Add(Me.Label12)
+        Me.GroupBox12.Controls.Add(Me.pnlEstatusCancelado)
+        Me.GroupBox12.Controls.Add(Me.pnlEstatusActivo)
+        Me.GroupBox12.Controls.Add(Me.pnlEstatusConfirmado)
+        Me.GroupBox12.Controls.Add(Me.Label13)
+        Me.GroupBox12.Location = New System.Drawing.Point(442, 1)
+        Me.GroupBox12.Name = "GroupBox12"
+        Me.GroupBox12.Size = New System.Drawing.Size(349, 55)
+        Me.GroupBox12.TabIndex = 102
+        Me.GroupBox12.TabStop = False
+        Me.GroupBox12.Text = "Status Apartado (ST)"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(134, 40)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(122, 13)
+        Me.Label2.TabIndex = 30
+        Me.Label2.Text = "Confirmación incompleta"
+        '
+        'pnlEstatusConfirmacionIncompleta
+        '
+        Me.pnlEstatusConfirmacionIncompleta.BackColor = System.Drawing.Color.DarkOrange
+        Me.pnlEstatusConfirmacionIncompleta.ForeColor = System.Drawing.Color.Black
+        Me.pnlEstatusConfirmacionIncompleta.Location = New System.Drawing.Point(116, 38)
+        Me.pnlEstatusConfirmacionIncompleta.Name = "pnlEstatusConfirmacionIncompleta"
+        Me.pnlEstatusConfirmacionIncompleta.Size = New System.Drawing.Size(15, 15)
+        Me.pnlEstatusConfirmacionIncompleta.TabIndex = 31
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(40, 38)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(69, 13)
+        Me.Label25.TabIndex = 28
+        Me.Label25.Text = "En ejecución"
+        '
+        'pnlEstatusEnEjecucion
+        '
+        Me.pnlEstatusEnEjecucion.BackColor = System.Drawing.Color.DodgerBlue
+        Me.pnlEstatusEnEjecucion.ForeColor = System.Drawing.Color.Black
+        Me.pnlEstatusEnEjecucion.Location = New System.Drawing.Point(22, 36)
+        Me.pnlEstatusEnEjecucion.Name = "pnlEstatusEnEjecucion"
+        Me.pnlEstatusEnEjecucion.Size = New System.Drawing.Size(15, 15)
+        Me.pnlEstatusEnEjecucion.TabIndex = 29
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(219, 20)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(123, 13)
+        Me.Label11.TabIndex = 26
+        Me.Label11.Text = "Parcialmente confirmado"
+        '
+        'pnlEstatusParcialmenteConfirmado
+        '
+        Me.pnlEstatusParcialmenteConfirmado.BackColor = System.Drawing.Color.Indigo
+        Me.pnlEstatusParcialmenteConfirmado.ForeColor = System.Drawing.Color.Black
+        Me.pnlEstatusParcialmenteConfirmado.Location = New System.Drawing.Point(201, 18)
+        Me.pnlEstatusParcialmenteConfirmado.Name = "pnlEstatusParcialmenteConfirmado"
+        Me.pnlEstatusParcialmenteConfirmado.Size = New System.Drawing.Size(15, 15)
+        Me.pnlEstatusParcialmenteConfirmado.TabIndex = 27
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(284, 40)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(58, 13)
+        Me.Label4.TabIndex = 22
+        Me.Label4.Text = "Cancelado"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(41, 18)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(37, 13)
+        Me.Label12.TabIndex = 22
+        Me.Label12.Text = "Activo"
+        '
+        'pnlEstatusCancelado
+        '
+        Me.pnlEstatusCancelado.BackColor = System.Drawing.Color.Red
+        Me.pnlEstatusCancelado.ForeColor = System.Drawing.Color.Black
+        Me.pnlEstatusCancelado.Location = New System.Drawing.Point(266, 38)
+        Me.pnlEstatusCancelado.Name = "pnlEstatusCancelado"
+        Me.pnlEstatusCancelado.Size = New System.Drawing.Size(15, 15)
+        Me.pnlEstatusCancelado.TabIndex = 23
+        '
+        'pnlEstatusActivo
+        '
+        Me.pnlEstatusActivo.BackColor = System.Drawing.Color.Green
+        Me.pnlEstatusActivo.ForeColor = System.Drawing.Color.Black
+        Me.pnlEstatusActivo.Location = New System.Drawing.Point(23, 16)
+        Me.pnlEstatusActivo.Name = "pnlEstatusActivo"
+        Me.pnlEstatusActivo.Size = New System.Drawing.Size(15, 15)
+        Me.pnlEstatusActivo.TabIndex = 23
+        '
+        'pnlEstatusConfirmado
+        '
+        Me.pnlEstatusConfirmado.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.pnlEstatusConfirmado.ForeColor = System.Drawing.Color.Black
+        Me.pnlEstatusConfirmado.Location = New System.Drawing.Point(116, 17)
+        Me.pnlEstatusConfirmado.Name = "pnlEstatusConfirmado"
+        Me.pnlEstatusConfirmado.Size = New System.Drawing.Size(15, 15)
+        Me.pnlEstatusConfirmado.TabIndex = 25
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(135, 19)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(60, 13)
+        Me.Label13.TabIndex = 24
+        Me.Label13.Text = "Confirmado"
+        '
+        'GroupBox10
+        '
+        Me.GroupBox10.Controls.Add(Me.Label19)
+        Me.GroupBox10.Controls.Add(Me.Label7)
+        Me.GroupBox10.Controls.Add(Me.pnlClienteBloqueado)
+        Me.GroupBox10.Controls.Add(Me.Label6)
+        Me.GroupBox10.Controls.Add(Me.pnlImpreso)
+        Me.GroupBox10.Controls.Add(Me.pnlUrgente)
+        Me.GroupBox10.Controls.Add(Me.Label5)
+        Me.GroupBox10.Location = New System.Drawing.Point(252, 1)
+        Me.GroupBox10.Name = "GroupBox10"
+        Me.GroupBox10.Size = New System.Drawing.Size(188, 55)
+        Me.GroupBox10.TabIndex = 101
+        Me.GroupBox10.TabStop = False
+        Me.GroupBox10.Text = "Apartado"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(111, 39)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(61, 13)
+        Me.Label19.TabIndex = 30
+        Me.Label19.Text = "/ Priorizado"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(111, 11)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(73, 26)
+        Me.Label7.TabIndex = 28
+        Me.Label7.Text = "Cliente" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "bloqueado (B)"
+        '
+        'pnlClienteBloqueado
+        '
+        Me.pnlClienteBloqueado.BackColor = System.Drawing.Color.Tomato
+        Me.pnlClienteBloqueado.Controls.Add(Me.Label14)
+        Me.pnlClienteBloqueado.ForeColor = System.Drawing.Color.Black
+        Me.pnlClienteBloqueado.Location = New System.Drawing.Point(94, 16)
+        Me.pnlClienteBloqueado.Name = "pnlClienteBloqueado"
+        Me.pnlClienteBloqueado.Size = New System.Drawing.Size(15, 15)
+        Me.pnlClienteBloqueado.TabIndex = 29
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.Black
+        Me.Label14.Location = New System.Drawing.Point(0, 1)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(15, 13)
+        Me.Label14.TabIndex = 27
+        Me.Label14.Text = "S"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(27, 18)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(62, 13)
+        Me.Label6.TabIndex = 26
+        Me.Label6.Text = "Impreso ( I )"
+        '
+        'pnlImpreso
+        '
+        Me.pnlImpreso.BackColor = System.Drawing.Color.RoyalBlue
+        Me.pnlImpreso.ForeColor = System.Drawing.Color.Black
+        Me.pnlImpreso.Location = New System.Drawing.Point(9, 15)
+        Me.pnlImpreso.Name = "pnlImpreso"
+        Me.pnlImpreso.Size = New System.Drawing.Size(15, 15)
+        Me.pnlImpreso.TabIndex = 27
+        '
+        'pnlUrgente
+        '
+        Me.pnlUrgente.BackColor = System.Drawing.Color.Yellow
+        Me.pnlUrgente.ForeColor = System.Drawing.Color.Black
+        Me.pnlUrgente.Location = New System.Drawing.Point(9, 37)
+        Me.pnlUrgente.Name = "pnlUrgente"
+        Me.pnlUrgente.Size = New System.Drawing.Size(15, 15)
+        Me.pnlUrgente.TabIndex = 25
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(27, 39)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(62, 13)
+        Me.Label5.TabIndex = 24
+        Me.Label5.Text = "Urgente (U)"
+        '
+        'GroupBox9
+        '
+        Me.GroupBox9.Controls.Add(Me.Label9)
+        Me.GroupBox9.Controls.Add(Me.pnlEntregaInmediata)
+        Me.GroupBox9.Controls.Add(Me.lblNoFacturado)
+        Me.GroupBox9.Controls.Add(Me.pnlEntregaVencida)
+        Me.GroupBox9.Controls.Add(Me.Label1)
+        Me.GroupBox9.Controls.Add(Me.pnlEntregaVenceHoy)
+        Me.GroupBox9.Controls.Add(Me.Label3)
+        Me.GroupBox9.Controls.Add(Me.pnlAlMenos1DiaEntrega)
+        Me.GroupBox9.Location = New System.Drawing.Point(7, 1)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(242, 55)
+        Me.GroupBox9.TabIndex = 100
+        Me.GroupBox9.TabStop = False
+        Me.GroupBox9.Text = "Entrega (E)"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(149, 35)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(92, 13)
+        Me.Label9.TabIndex = 24
+        Me.Label9.Text = "Entrega inmediata"
+        '
+        'pnlEntregaInmediata
+        '
+        Me.pnlEntregaInmediata.BackColor = System.Drawing.Color.DarkRed
+        Me.pnlEntregaInmediata.ForeColor = System.Drawing.Color.Black
+        Me.pnlEntregaInmediata.Location = New System.Drawing.Point(131, 34)
+        Me.pnlEntregaInmediata.Name = "pnlEntregaInmediata"
+        Me.pnlEntregaInmediata.Size = New System.Drawing.Size(15, 15)
+        Me.pnlEntregaInmediata.TabIndex = 25
+        '
+        'lblNoFacturado
+        '
+        Me.lblNoFacturado.AutoSize = True
+        Me.lblNoFacturado.Location = New System.Drawing.Point(149, 16)
+        Me.lblNoFacturado.Name = "lblNoFacturado"
+        Me.lblNoFacturado.Size = New System.Drawing.Size(46, 13)
+        Me.lblNoFacturado.TabIndex = 18
+        Me.lblNoFacturado.Text = "Vencido"
+        '
+        'pnlEntregaVencida
+        '
+        Me.pnlEntregaVencida.BackColor = System.Drawing.Color.Tomato
+        Me.pnlEntregaVencida.ForeColor = System.Drawing.Color.Black
+        Me.pnlEntregaVencida.Location = New System.Drawing.Point(131, 14)
+        Me.pnlEntregaVencida.Name = "pnlEntregaVencida"
+        Me.pnlEntregaVencida.Size = New System.Drawing.Size(15, 15)
+        Me.pnlEntregaVencida.TabIndex = 19
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(24, 15)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(103, 13)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "Falta al menos 1 día"
+        '
+        'pnlEntregaVenceHoy
+        '
+        Me.pnlEntregaVenceHoy.BackColor = System.Drawing.Color.Goldenrod
+        Me.pnlEntregaVenceHoy.ForeColor = System.Drawing.Color.Black
+        Me.pnlEntregaVenceHoy.Location = New System.Drawing.Point(6, 33)
+        Me.pnlEntregaVenceHoy.Name = "pnlEntregaVenceHoy"
+        Me.pnlEntregaVenceHoy.Size = New System.Drawing.Size(15, 15)
+        Me.pnlEntregaVenceHoy.TabIndex = 21
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(24, 34)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(103, 13)
+        Me.Label3.TabIndex = 20
+        Me.Label3.Text = "Vence el día de hoy"
+        '
+        'pnlAlMenos1DiaEntrega
+        '
+        Me.pnlAlMenos1DiaEntrega.BackColor = System.Drawing.Color.YellowGreen
+        Me.pnlAlMenos1DiaEntrega.ForeColor = System.Drawing.Color.Black
+        Me.pnlAlMenos1DiaEntrega.Location = New System.Drawing.Point(6, 14)
+        Me.pnlAlMenos1DiaEntrega.Name = "pnlAlMenos1DiaEntrega"
+        Me.pnlAlMenos1DiaEntrega.Size = New System.Drawing.Size(15, 15)
+        Me.pnlAlMenos1DiaEntrega.TabIndex = 23
+        '
+        'pnlDatosBotones
+        '
+        Me.pnlDatosBotones.Controls.Add(Me.btnLimpiar)
+        Me.pnlDatosBotones.Controls.Add(Me.lblLimpiar)
+        Me.pnlDatosBotones.Controls.Add(Me.btnCerrar)
+        Me.pnlDatosBotones.Controls.Add(Me.lblAceptar)
+        Me.pnlDatosBotones.Controls.Add(Me.lblCerrar)
+        Me.pnlDatosBotones.Controls.Add(Me.btnAceptar)
+        Me.pnlDatosBotones.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlDatosBotones.Location = New System.Drawing.Point(1160, 0)
+        Me.pnlDatosBotones.Name = "pnlDatosBotones"
+        Me.pnlDatosBotones.Size = New System.Drawing.Size(150, 60)
+        Me.pnlDatosBotones.TabIndex = 1
+        '
+        'lblLimpiar
+        '
+        Me.lblLimpiar.AutoSize = True
+        Me.lblLimpiar.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblLimpiar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.lblLimpiar.Location = New System.Drawing.Point(64, 40)
+        Me.lblLimpiar.Name = "lblLimpiar"
+        Me.lblLimpiar.Size = New System.Drawing.Size(40, 13)
+        Me.lblLimpiar.TabIndex = 4
+        Me.lblLimpiar.Text = "Limpiar"
+        '
+        'lblAceptar
+        '
+        Me.lblAceptar.AutoSize = True
+        Me.lblAceptar.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblAceptar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.lblAceptar.Location = New System.Drawing.Point(18, 40)
+        Me.lblAceptar.Name = "lblAceptar"
+        Me.lblAceptar.Size = New System.Drawing.Size(42, 13)
+        Me.lblAceptar.TabIndex = 0
+        Me.lblAceptar.Text = "Mostrar"
+        '
+        'lblCerrar
+        '
+        Me.lblCerrar.AutoSize = True
+        Me.lblCerrar.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblCerrar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.lblCerrar.Location = New System.Drawing.Point(110, 40)
+        Me.lblCerrar.Name = "lblCerrar"
+        Me.lblCerrar.Size = New System.Drawing.Size(35, 13)
+        Me.lblCerrar.TabIndex = 0
+        Me.lblCerrar.Text = "Cerrar"
+        '
+        'pnlPriorida1
+        '
+        Me.pnlPriorida1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.pnlPriorida1.ForeColor = System.Drawing.Color.Black
+        Me.pnlPriorida1.Location = New System.Drawing.Point(116, 17)
+        Me.pnlPriorida1.Name = "pnlPriorida1"
+        Me.pnlPriorida1.Size = New System.Drawing.Size(15, 15)
+        Me.pnlPriorida1.TabIndex = 25
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.gridApartados)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 382)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1310, 167)
+        Me.Panel3.TabIndex = 18
+        '
+        'gridApartados
+        '
+        Appearance25.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.gridApartados.DisplayLayout.Appearance = Appearance25
+        Me.gridApartados.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Me.gridApartados.DisplayLayout.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.[False]
+        Me.gridApartados.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[False]
+        Me.gridApartados.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.RowAndCell
+        Me.gridApartados.DisplayLayout.Override.FilterOperandStyle = Infragistics.Win.UltraWinGrid.FilterOperandStyle.Combo
+        Me.gridApartados.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.gridApartados.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden
+        Me.gridApartados.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
+        Me.gridApartados.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Appearance26.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.gridApartados.DisplayLayout.Override.RowAlternateAppearance = Appearance26
+        Me.gridApartados.DisplayLayout.Override.RowFilterMode = Infragistics.Win.UltraWinGrid.RowFilterMode.AllRowsInBand
+        Me.gridApartados.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[True]
+        Me.gridApartados.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gridApartados.Location = New System.Drawing.Point(0, 0)
+        Me.gridApartados.Name = "gridApartados"
+        Me.gridApartados.Size = New System.Drawing.Size(1310, 167)
+        Me.gridApartados.TabIndex = 3
+        '
+        'cmsOpcionesAlmacen
+        '
+        Me.cmsOpcionesAlmacen.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiEtiquetaSolicitada, Me.tsmiAsignarOperador, Me.tsmiDesasignarOperador})
+        Me.cmsOpcionesAlmacen.Name = "cmsOpcionesAlmacen"
+        Me.cmsOpcionesAlmacen.Size = New System.Drawing.Size(183, 70)
+        '
+        'tsmiEtiquetaSolicitada
+        '
+        Me.tsmiEtiquetaSolicitada.Name = "tsmiEtiquetaSolicitada"
+        Me.tsmiEtiquetaSolicitada.Size = New System.Drawing.Size(182, 22)
+        Me.tsmiEtiquetaSolicitada.Text = "Etiqueta Solicitada"
+        '
+        'tsmiAsignarOperador
+        '
+        Me.tsmiAsignarOperador.Name = "tsmiAsignarOperador"
+        Me.tsmiAsignarOperador.Size = New System.Drawing.Size(182, 22)
+        Me.tsmiAsignarOperador.Text = "Asignar operador"
+        '
+        'tsmiDesasignarOperador
+        '
+        Me.tsmiDesasignarOperador.Name = "tsmiDesasignarOperador"
+        Me.tsmiDesasignarOperador.Size = New System.Drawing.Size(182, 22)
+        Me.tsmiDesasignarOperador.Text = "Desasignar operador"
+        '
+        'btnLimpiar
+        '
+        Me.btnLimpiar.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnLimpiar.Image = Global.Ventas.Vista.My.Resources.Resources.limpiar_32
+        Me.btnLimpiar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnLimpiar.Location = New System.Drawing.Point(67, 8)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(32, 32)
+        Me.btnLimpiar.TabIndex = 2
+        Me.btnLimpiar.UseVisualStyleBackColor = True
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnCerrar.Image = Global.Ventas.Vista.My.Resources.Resources.salir_32
+        Me.btnCerrar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnCerrar.Location = New System.Drawing.Point(111, 8)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(32, 32)
+        Me.btnCerrar.TabIndex = 1
+        Me.btnCerrar.UseVisualStyleBackColor = True
+        '
+        'btnAceptar
+        '
+        Me.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnAceptar.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnAceptar.Image = Global.Ventas.Vista.My.Resources.Resources.buscar_32
+        Me.btnAceptar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnAceptar.Location = New System.Drawing.Point(23, 8)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(32, 32)
+        Me.btnAceptar.TabIndex = 0
+        Me.btnAceptar.UseVisualStyleBackColor = True
+        '
+        'btnMarca
+        '
+        Me.btnMarca.Image = CType(resources.GetObject("btnMarca.Image"), System.Drawing.Image)
+        Me.btnMarca.Location = New System.Drawing.Point(132, 11)
+        Me.btnMarca.Name = "btnMarca"
+        Me.btnMarca.Size = New System.Drawing.Size(22, 22)
+        Me.btnMarca.TabIndex = 0
+        Me.btnMarca.UseVisualStyleBackColor = True
+        '
+        'btnOperador
+        '
+        Me.btnOperador.Image = CType(resources.GetObject("btnOperador.Image"), System.Drawing.Image)
+        Me.btnOperador.Location = New System.Drawing.Point(132, 12)
+        Me.btnOperador.Name = "btnOperador"
+        Me.btnOperador.Size = New System.Drawing.Size(22, 22)
+        Me.btnOperador.TabIndex = 0
+        Me.btnOperador.UseVisualStyleBackColor = True
+        '
+        'btnCorrida
+        '
+        Me.btnCorrida.Image = CType(resources.GetObject("btnCorrida.Image"), System.Drawing.Image)
+        Me.btnCorrida.Location = New System.Drawing.Point(208, 12)
+        Me.btnCorrida.Name = "btnCorrida"
+        Me.btnCorrida.Size = New System.Drawing.Size(22, 22)
+        Me.btnCorrida.TabIndex = 0
+        Me.btnCorrida.UseVisualStyleBackColor = True
+        '
+        'btnTienda
+        '
+        Me.btnTienda.Image = CType(resources.GetObject("btnTienda.Image"), System.Drawing.Image)
+        Me.btnTienda.Location = New System.Drawing.Point(211, 11)
+        Me.btnTienda.Name = "btnTienda"
+        Me.btnTienda.Size = New System.Drawing.Size(22, 22)
+        Me.btnTienda.TabIndex = 0
+        Me.btnTienda.UseVisualStyleBackColor = True
+        '
+        'btnCliente
+        '
+        Me.btnCliente.Image = CType(resources.GetObject("btnCliente.Image"), System.Drawing.Image)
+        Me.btnCliente.Location = New System.Drawing.Point(132, 11)
+        Me.btnCliente.Name = "btnCliente"
+        Me.btnCliente.Size = New System.Drawing.Size(22, 22)
+        Me.btnCliente.TabIndex = 0
+        Me.btnCliente.UseVisualStyleBackColor = True
+        '
+        'btnColor
+        '
+        Me.btnColor.Image = CType(resources.GetObject("btnColor.Image"), System.Drawing.Image)
+        Me.btnColor.Location = New System.Drawing.Point(132, 11)
+        Me.btnColor.Name = "btnColor"
+        Me.btnColor.Size = New System.Drawing.Size(22, 22)
+        Me.btnColor.TabIndex = 0
+        Me.btnColor.UseVisualStyleBackColor = True
+        '
+        'btnPiel
+        '
+        Me.btnPiel.Image = CType(resources.GetObject("btnPiel.Image"), System.Drawing.Image)
+        Me.btnPiel.Location = New System.Drawing.Point(132, 11)
+        Me.btnPiel.Name = "btnPiel"
+        Me.btnPiel.Size = New System.Drawing.Size(22, 22)
+        Me.btnPiel.TabIndex = 0
+        Me.btnPiel.UseVisualStyleBackColor = True
+        '
+        'btnColeccion
+        '
+        Me.btnColeccion.Image = CType(resources.GetObject("btnColeccion.Image"), System.Drawing.Image)
+        Me.btnColeccion.Location = New System.Drawing.Point(132, 10)
+        Me.btnColeccion.Name = "btnColeccion"
+        Me.btnColeccion.Size = New System.Drawing.Size(22, 22)
+        Me.btnColeccion.TabIndex = 0
+        Me.btnColeccion.UseVisualStyleBackColor = True
+        '
+        'btnModelo
+        '
+        Me.btnModelo.Image = CType(resources.GetObject("btnModelo.Image"), System.Drawing.Image)
+        Me.btnModelo.Location = New System.Drawing.Point(132, 11)
+        Me.btnModelo.Name = "btnModelo"
+        Me.btnModelo.Size = New System.Drawing.Size(22, 22)
+        Me.btnModelo.TabIndex = 0
+        Me.btnModelo.UseVisualStyleBackColor = True
+        '
+        'btnArriba
+        '
+        Me.btnArriba.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnArriba.BackColor = System.Drawing.Color.White
+        Me.btnArriba.BackgroundImage = Global.Ventas.Vista.My.Resources.Resources._1373584033_navigate_up
+        Me.btnArriba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnArriba.Location = New System.Drawing.Point(1250, 3)
+        Me.btnArriba.Name = "btnArriba"
+        Me.btnArriba.Size = New System.Drawing.Size(20, 20)
+        Me.btnArriba.TabIndex = 38
+        Me.btnArriba.UseVisualStyleBackColor = False
+        '
+        'btnAbajo
+        '
+        Me.btnAbajo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnAbajo.BackColor = System.Drawing.Color.White
+        Me.btnAbajo.BackgroundImage = Global.Ventas.Vista.My.Resources.Resources._1373584074_navigate_down
+        Me.btnAbajo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnAbajo.Location = New System.Drawing.Point(1276, 3)
+        Me.btnAbajo.Name = "btnAbajo"
+        Me.btnAbajo.Size = New System.Drawing.Size(20, 20)
+        Me.btnAbajo.TabIndex = 37
+        Me.btnAbajo.UseVisualStyleBackColor = False
+        '
+        'btnEtiquetas
+        '
+        Me.btnEtiquetas.Enabled = False
+        'Me.btnEtiquetas.Image = Global.Ventas.Vista.My.Resources.Resources.ImprimirEtiquetas
+        Me.btnEtiquetas.Location = New System.Drawing.Point(660, 8)
+        Me.btnEtiquetas.Name = "btnEtiquetas"
+        Me.btnEtiquetas.Size = New System.Drawing.Size(32, 32)
+        Me.btnEtiquetas.TabIndex = 66
+        Me.btnEtiquetas.UseVisualStyleBackColor = True
+        '
+        'btnInventarioDisponible
+        '
+        Me.btnInventarioDisponible.Enabled = False
+        Me.btnInventarioDisponible.Image = CType(resources.GetObject("btnInventarioDisponible.Image"), System.Drawing.Image)
+        Me.btnInventarioDisponible.Location = New System.Drawing.Point(566, 8)
+        Me.btnInventarioDisponible.Name = "btnInventarioDisponible"
+        Me.btnInventarioDisponible.Size = New System.Drawing.Size(32, 32)
+        Me.btnInventarioDisponible.TabIndex = 64
+        Me.btnInventarioDisponible.UseVisualStyleBackColor = True
+        '
+        'btnExportarExcelApartados
+        '
+        Me.btnExportarExcelApartados.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnExportarExcelApartados.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnExportarExcelApartados.Image = Global.Ventas.Vista.My.Resources.Resources.excel_32
+        Me.btnExportarExcelApartados.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnExportarExcelApartados.Location = New System.Drawing.Point(480, 8)
+        Me.btnExportarExcelApartados.Name = "btnExportarExcelApartados"
+        Me.btnExportarExcelApartados.Size = New System.Drawing.Size(32, 32)
+        Me.btnExportarExcelApartados.TabIndex = 53
+        Me.btnExportarExcelApartados.UseVisualStyleBackColor = True
+        '
+        'btnConfirmarApartado
+        '
+        Me.btnConfirmarApartado.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnConfirmarApartado.Enabled = False
+        Me.btnConfirmarApartado.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnConfirmarApartado.Image = Global.Ventas.Vista.My.Resources.Resources.autorizar_32
+        Me.btnConfirmarApartado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnConfirmarApartado.Location = New System.Drawing.Point(254, 8)
+        Me.btnConfirmarApartado.Name = "btnConfirmarApartado"
+        Me.btnConfirmarApartado.Size = New System.Drawing.Size(32, 32)
+        Me.btnConfirmarApartado.TabIndex = 55
+        Me.btnConfirmarApartado.UseVisualStyleBackColor = True
+        '
+        'btnCancelarApartados
+        '
+        Me.btnCancelarApartados.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnCancelarApartados.Enabled = False
+        Me.btnCancelarApartados.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnCancelarApartados.Image = Global.Ventas.Vista.My.Resources.Resources.cancelar321
+        Me.btnCancelarApartados.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnCancelarApartados.Location = New System.Drawing.Point(331, 8)
+        Me.btnCancelarApartados.Name = "btnCancelarApartados"
+        Me.btnCancelarApartados.Size = New System.Drawing.Size(32, 32)
+        Me.btnCancelarApartados.TabIndex = 61
+        Me.btnCancelarApartados.UseVisualStyleBackColor = True
+        '
+        'btnVerDetallesApartados
+        '
+        Me.btnVerDetallesApartados.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnVerDetallesApartados.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnVerDetallesApartados.Image = Global.Ventas.Vista.My.Resources.Resources.catalogos_32
+        Me.btnVerDetallesApartados.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnVerDetallesApartados.Location = New System.Drawing.Point(418, 8)
+        Me.btnVerDetallesApartados.Name = "btnVerDetallesApartados"
+        Me.btnVerDetallesApartados.Size = New System.Drawing.Size(32, 32)
+        Me.btnVerDetallesApartados.TabIndex = 57
+        Me.btnVerDetallesApartados.UseVisualStyleBackColor = True
+        '
+        'btnImprimirApartado
+        '
+        Me.btnImprimirApartado.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnImprimirApartado.Enabled = False
+        Me.btnImprimirApartado.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnImprimirApartado.Image = Global.Ventas.Vista.My.Resources.Resources.imprimir_32
+        Me.btnImprimirApartado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnImprimirApartado.Location = New System.Drawing.Point(19, 8)
+        Me.btnImprimirApartado.Name = "btnImprimirApartado"
+        Me.btnImprimirApartado.Size = New System.Drawing.Size(32, 32)
+        Me.btnImprimirApartado.TabIndex = 10
+        Me.btnImprimirApartado.UseVisualStyleBackColor = True
+        '
+        'btnMarcarUrgente
+        '
+        Me.btnMarcarUrgente.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnMarcarUrgente.Enabled = False
+        Me.btnMarcarUrgente.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnMarcarUrgente.Image = Global.Ventas.Vista.My.Resources.Resources.urgente
+        Me.btnMarcarUrgente.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnMarcarUrgente.Location = New System.Drawing.Point(182, 8)
+        Me.btnMarcarUrgente.Name = "btnMarcarUrgente"
+        Me.btnMarcarUrgente.Size = New System.Drawing.Size(32, 32)
+        Me.btnMarcarUrgente.TabIndex = 59
+        Me.btnMarcarUrgente.UseVisualStyleBackColor = True
+        '
+        'btnAsignarPrioridad
+        '
+        Me.btnAsignarPrioridad.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnAsignarPrioridad.Enabled = False
+        Me.btnAsignarPrioridad.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnAsignarPrioridad.Image = Global.Ventas.Vista.My.Resources.Resources.prioridad
+        Me.btnAsignarPrioridad.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnAsignarPrioridad.Location = New System.Drawing.Point(97, 8)
+        Me.btnAsignarPrioridad.Name = "btnAsignarPrioridad"
+        Me.btnAsignarPrioridad.Size = New System.Drawing.Size(32, 32)
+        Me.btnAsignarPrioridad.TabIndex = 55
+        Me.btnAsignarPrioridad.UseVisualStyleBackColor = True
+        '
+        'pbYuyin
+        '
+        Me.pbYuyin.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pbYuyin.Image = CType(resources.GetObject("pbYuyin.Image"), System.Drawing.Image)
+        Me.pbYuyin.Location = New System.Drawing.Point(474, 0)
+        Me.pbYuyin.Name = "pbYuyin"
+        Me.pbYuyin.Size = New System.Drawing.Size(68, 59)
+        Me.pbYuyin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbYuyin.TabIndex = 45
+        Me.pbYuyin.TabStop = False
+        '
+        'AdministracionApartadosForm
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1310, 609)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.pnlPie)
+        Me.Controls.Add(Me.pnlParametros)
+        Me.Controls.Add(Me.pnlEncabezado)
+        Me.Name = "AdministracionApartadosForm"
+        Me.Text = "Administración de apartados"
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.pnlParametros.ResumeLayout(False)
+        Me.pnlParametros.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.grdMarca, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox11.ResumeLayout(False)
+        Me.Panel17.ResumeLayout(False)
+        CType(Me.grdOperador, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
+        CType(Me.grdCorrida, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gboxCorrida.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
+        CType(Me.grdTienda, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.Panel7.ResumeLayout(False)
+        CType(Me.grdCliente, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox8.ResumeLayout(False)
+        Me.Panel11.ResumeLayout(False)
+        CType(Me.grdColor, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.Panel10.ResumeLayout(False)
+        CType(Me.grdPiel, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox15.ResumeLayout(False)
+        Me.GroupBox15.PerformLayout()
+        Me.Panel25.ResumeLayout(False)
+        CType(Me.grdPedidoSICY, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.grdFolioApartado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox14.ResumeLayout(False)
+        Me.Panel24.ResumeLayout(False)
+        CType(Me.grdColeccion, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gboxPedidos.ResumeLayout(False)
+        Me.gboxPedidos.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        CType(Me.grdPedidoSAY, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        CType(Me.grdModelo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlAccionesCabecera.ResumeLayout(False)
+        Me.pnlAccionesCabecera.PerformLayout()
+        Me.pnlEncabezado.ResumeLayout(False)
+        Me.pnlTitulo.ResumeLayout(False)
+        Me.pnlTitulo.PerformLayout()
+        Me.pnlPie.ResumeLayout(False)
+        Me.pnlPie.PerformLayout()
+        Me.GroupBox13.ResumeLayout(False)
+        Me.GroupBox13.PerformLayout()
+        Me.Panel22.ResumeLayout(False)
+        Me.Panel22.PerformLayout()
+        Me.Panel23.ResumeLayout(False)
+        Me.Panel23.PerformLayout()
+        Me.GroupBox12.ResumeLayout(False)
+        Me.GroupBox12.PerformLayout()
+        Me.GroupBox10.ResumeLayout(False)
+        Me.GroupBox10.PerformLayout()
+        Me.pnlClienteBloqueado.ResumeLayout(False)
+        Me.pnlClienteBloqueado.PerformLayout()
+        Me.GroupBox9.ResumeLayout(False)
+        Me.GroupBox9.PerformLayout()
+        Me.pnlDatosBotones.ResumeLayout(False)
+        Me.pnlDatosBotones.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        CType(Me.gridApartados, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.cmsOpcionesAlmacen.ResumeLayout(False)
+        CType(Me.pbYuyin, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents chboxSeleccionarTodo As System.Windows.Forms.CheckBox
+    Friend WithEvents Panel6 As System.Windows.Forms.Panel
+    Friend WithEvents btnArriba As System.Windows.Forms.Button
+    Friend WithEvents btnAbajo As System.Windows.Forms.Button
+    Friend WithEvents pbYuyin As System.Windows.Forms.PictureBox
+    Friend WithEvents btnExportarExcelApartados As System.Windows.Forms.Button
+    Friend WithEvents pnlParametros As System.Windows.Forms.Panel
+    Friend WithEvents lblTitulo As System.Windows.Forms.Label
+    Friend WithEvents lblActualizarDatos As System.Windows.Forms.Label
+    Friend WithEvents lblTextoImprimirApartado As System.Windows.Forms.Label
+    Friend WithEvents pnlAccionesCabecera As System.Windows.Forms.Panel
+    Friend WithEvents btnImprimirApartado As System.Windows.Forms.Button
+    Friend WithEvents pnlEncabezado As System.Windows.Forms.Panel
+    Friend WithEvents pnlTitulo As System.Windows.Forms.Panel
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents grdFolioApartado As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents txtFolioApartado As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents gboxPedidos As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents grdPedidoSAY As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents txtPedidoSAY As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel7 As System.Windows.Forms.Panel
+    Friend WithEvents grdCliente As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents btnCliente As System.Windows.Forms.Button
+    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel9 As System.Windows.Forms.Panel
+    Friend WithEvents grdCorrida As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents btnCorrida As System.Windows.Forms.Button
+    Friend WithEvents gboxCorrida As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel8 As System.Windows.Forms.Panel
+    Friend WithEvents grdTienda As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents btnTienda As System.Windows.Forms.Button
+    Friend WithEvents GroupBox8 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel11 As System.Windows.Forms.Panel
+    Friend WithEvents grdColor As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents btnColor As System.Windows.Forms.Button
+    Friend WithEvents GroupBox7 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel10 As System.Windows.Forms.Panel
+    Friend WithEvents grdPiel As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents btnPiel As System.Windows.Forms.Button
+    Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents grdModelo As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents btnModelo As System.Windows.Forms.Button
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents dtpFechaEntregaDel As System.Windows.Forms.DateTimePicker
+    Friend WithEvents rdbFechaConfirmacion As System.Windows.Forms.RadioButton
+    Friend WithEvents lblEntregaDel As System.Windows.Forms.Label
+    Friend WithEvents rdbFechaPreparacion As System.Windows.Forms.RadioButton
+    Friend WithEvents dtpFechaEntregaAl As System.Windows.Forms.DateTimePicker
+    Friend WithEvents rdbFechaSolicitada As System.Windows.Forms.RadioButton
+    Friend WithEvents lblEntregaAl As System.Windows.Forms.Label
+    Friend WithEvents rdbFechaCaptura As System.Windows.Forms.RadioButton
+    Friend WithEvents btnConfirmarApartado As System.Windows.Forms.Button
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents btnVerDetallesApartados As System.Windows.Forms.Button
+    Friend WithEvents GroupBox11 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel17 As System.Windows.Forms.Panel
+    Friend WithEvents grdOperador As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents btnOperador As System.Windows.Forms.Button
+    Friend WithEvents lblTextoConfirmarApartado As System.Windows.Forms.Label
+    Friend WithEvents btnAsignarPrioridad As System.Windows.Forms.Button
+    Friend WithEvents lblTextoAsignarPrioridad As System.Windows.Forms.Label
+    Friend WithEvents cmbOrigenApartado As System.Windows.Forms.ComboBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents cmbStatusApartados As System.Windows.Forms.ComboBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents lblTextoMarcarUrgente As System.Windows.Forms.Label
+    Friend WithEvents btnMarcarUrgente As System.Windows.Forms.Button
+    Friend WithEvents chkDetallada As System.Windows.Forms.CheckBox
+    Friend WithEvents GroupBox15 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel25 As System.Windows.Forms.Panel
+    Friend WithEvents grdPedidoSICY As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents txtPedidoSICY As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents GroupBox14 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel24 As System.Windows.Forms.Panel
+    Friend WithEvents grdColeccion As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents btnColeccion As System.Windows.Forms.Button
+    Friend WithEvents chkImpreso As System.Windows.Forms.CheckBox
+    Friend WithEvents chkUrgente As System.Windows.Forms.CheckBox
+    Friend WithEvents lblTextoCancelarApartado As System.Windows.Forms.Label
+    Friend WithEvents btnCancelarApartados As System.Windows.Forms.Button
+    Friend WithEvents chkVerTallas As System.Windows.Forms.CheckBox
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents grdMarca As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents btnMarca As System.Windows.Forms.Button
+    Friend WithEvents pnlPie As System.Windows.Forms.Panel
+    Friend WithEvents lblTextoUltimaActualizacion As System.Windows.Forms.Label
+    Friend WithEvents lblFechaUltimaActualización As System.Windows.Forms.Label
+    Friend WithEvents GroupBox13 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Panel21 As System.Windows.Forms.Panel
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Panel22 As System.Windows.Forms.Panel
+    Friend WithEvents pnlEtiquetaNoSolicitada As System.Windows.Forms.Label
+    Friend WithEvents Panel23 As System.Windows.Forms.Panel
+    Friend WithEvents pnlEtiquetaSolicitada As System.Windows.Forms.Label
+    Friend WithEvents GroupBox12 As System.Windows.Forms.GroupBox
+    Friend WithEvents lblTotalApartadosCanceladosHoy As System.Windows.Forms.Label
+    Friend WithEvents lblTextoApartadosCanceladosHoy As System.Windows.Forms.Label
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents pnlEstatusEnEjecucion As System.Windows.Forms.Panel
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents pnlEstatusParcialmenteConfirmado As System.Windows.Forms.Panel
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents pnlEstatusCancelado As System.Windows.Forms.Panel
+    Friend WithEvents pnlEstatusActivo As System.Windows.Forms.Panel
+    Friend WithEvents pnlPriorida1 As System.Windows.Forms.Panel
+    Friend WithEvents pnlEstatusConfirmado As System.Windows.Forms.Panel
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox10 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents pnlImpreso As System.Windows.Forms.Panel
+    Friend WithEvents pnlUrgente As System.Windows.Forms.Panel
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox9 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents pnlEntregaInmediata As System.Windows.Forms.Panel
+    Friend WithEvents lblNoFacturado As System.Windows.Forms.Label
+    Friend WithEvents pnlEntregaVencida As System.Windows.Forms.Panel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents pnlEntregaVenceHoy As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents pnlAlMenos1DiaEntrega As System.Windows.Forms.Panel
+    Friend WithEvents pnlDatosBotones As System.Windows.Forms.Panel
+    Friend WithEvents btnLimpiar As System.Windows.Forms.Button
+    Friend WithEvents lblLimpiar As System.Windows.Forms.Label
+    Friend WithEvents btnCerrar As System.Windows.Forms.Button
+    Friend WithEvents lblAceptar As System.Windows.Forms.Label
+    Friend WithEvents lblCerrar As System.Windows.Forms.Label
+    Friend WithEvents btnAceptar As System.Windows.Forms.Button
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents gridApartados As Infragistics.Win.UltraWinGrid.UltraGrid
+    Friend WithEvents cmsOpcionesAlmacen As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents tsmiEtiquetaSolicitada As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsmiAsignarOperador As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsmiDesasignarOperador As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents pnlEstatusConfirmacionIncompleta As System.Windows.Forms.Panel
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents pnlClienteBloqueado As System.Windows.Forms.Panel
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents lblTextoInventarioDisponible As System.Windows.Forms.Label
+    Friend WithEvents btnInventarioDisponible As System.Windows.Forms.Button
+    Friend WithEvents chkVerUbicaciones As System.Windows.Forms.CheckBox
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents lblEtiquetas As System.Windows.Forms.Label
+    Friend WithEvents btnEtiquetas As System.Windows.Forms.Button
+End Class

@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="CadenaConexionPoolSICYTEST" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=192.168.2.5;Initial Catalog=Yuyin_Respaldo;Pooling=true;Max Pool Size=100;Min Pool Size=1;User ID=sa;Password=poder335</Value>
+    </Setting>
+    <Setting Name="CadenaConexionPool" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=192.168.2.2;Initial Catalog=YuyinERP;Pooling=true;Max Pool Size=100;Min Pool Size=1;User ID=say;Password=Yuyin2017</Value>
+    </Setting>
+    <Setting Name="CadenaConexionPoolSICY" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=192.168.2.2;Initial Catalog=Yuyin_Respaldo;Pooling=true;Max Pool Size=100;Min Pool Size=1;User ID=sicy_app;Password=Yuyin2019</Value>
+    </Setting>
+    <Setting Name="CadenaConexionPoolPruebas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=192.168.2.5;Initial Catalog=YuyinERP;Pooling=true;Max Pool Size=100;Min Pool Size=1;User ID=sa;Password=poder335</Value>
+    </Setting>
+    <Setting Name="CadenaConexionContpaq" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=192.168.20.227\COMPAC;Initial Catalog=master;Pooling=true;Max Pool Size=100;Min Pool Size=1;User ID=sa;Password=Poder335</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

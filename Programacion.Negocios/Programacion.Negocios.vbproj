@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{33C1AD49-27FC-49A8-AA1F-C465D6D3E3AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Programacion.Negocios</RootNamespace>
+    <AssemblyName>Programacion.Negocios</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Programacion.Negocios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Programacion.Negocios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Stimulsoft.Base">
+      <HintPath>..\..\..\..\Program Files (x86)\Stimulsoft Reports.Ultimate 2014.1\Bin\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report">
+      <HintPath>..\..\..\..\Program Files (x86)\Stimulsoft Reports.Ultimate 2014.1\Bin\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BalanceoNaves\BalanceoNavesBU.vb" />
+    <Compile Include="Catalogos\AsuntosMuestrasBU.vb" />
+    <Compile Include="Catalogos\AgenteBU.vb" />
+    <Compile Include="Catalogos\AsuntoBU.vb" />
+    <Compile Include="Catalogos\CategoriasBU.vb" />
+    <Compile Include="Catalogos\ClientesProgramacionBU.vb" />
+    <Compile Include="Catalogos\CodigosAMECEBU.vb" />
+    <Compile Include="Catalogos\CodigosClienteBU.vb" />
+    <Compile Include="Catalogos\CodigosEspecialesClienteBU.vb" />
+    <Compile Include="Catalogos\ColeccionBU.vb" />
+    <Compile Include="Catalogos\ColoresBU.vb" />
+    <Compile Include="Catalogos\ColoresClientesBU.vb" />
+    <Compile Include="Catalogos\ColoresSuelaBU.vb" />
+    <Compile Include="Catalogos\EstatusMuestraBU.vb" />
+    <Compile Include="Catalogos\FamiliaProyeccionBU.vb" />
+    <Compile Include="Catalogos\FamiliasBU.vb" />
+    <Compile Include="Catalogos\ForrosBU.vb" />
+    <Compile Include="Catalogos\GruposBU.vb" />
+    <Compile Include="Catalogos\HormasBU.vb" />
+    <Compile Include="Catalogos\LineasBU.vb" />
+    <Compile Include="Catalogos\MarcasBU.vb" />
+    <Compile Include="Catalogos\ModeloReferenciaBU.vb" />
+    <Compile Include="Catalogos\PielesBU.vb" />
+    <Compile Include="Catalogos\PielesClientesBU.vb" />
+    <Compile Include="Catalogos\PielesMuestraBU.vb" />
+    <Compile Include="Catalogos\ProductosBU.vb" />
+    <Compile Include="Catalogos\RedimencionarImagenBU.vb" />
+    <Compile Include="Catalogos\SubfamiliasBU.vb" />
+    <Compile Include="Catalogos\SuelaProgramacionBU.vb" />
+    <Compile Include="Catalogos\SuelasBU.vb" />
+    <Compile Include="Catalogos\TallasBU.vb" />
+    <Compile Include="Catalogos\TemporadasBU.vb" />
+    <Compile Include="ColocacionSemanal\ColeccionNaveBU.vb" />
+    <Compile Include="ColocacionSemanal\Programacion_ArticuloNave_BU.vb" />
+    <Compile Include="ColocacionSemanal\Programacion_FamiliaNave_BU.vb" />
+    <Compile Include="ColocacionSemanal\Programacion_MapaOcupacionBU.vb" />
+    <Compile Include="ColocacionSemanal\Programacion_ModeloNave_BU.vb" />
+    <Compile Include="EtiquetasPruebas\EtiquetasPruebasEspecialesBU.vb" />
+    <Compile Include="Etiquetas\CartasInformativas\CartasInformativasBU.vb" />
+    <Compile Include="Etiquetas\EtiquetasBU.vb" />
+    <Compile Include="EvaluacionNaves4\Programacion_Reportes_EvaluacionNaves_BU.vb" />
+    <Compile Include="Licencias\LicenciasBU.vb" />
+    <Compile Include="MovimientosPPCP\MovimientosPPCPBU.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PedidosMuestras\EntradaSalidaMuestrasBU.vb" />
+    <Compile Include="PedidosMuestras\EnvioRecepcionMuestras\EnvioRecepcionMuestrasBU.vb" />
+    <Compile Include="PedidosMuestras\MovimientoMuestrasBU.vb" />
+    <Compile Include="PedidosMuestras\PedidosMuestrasOP.vb" />
+    <Compile Include="Pedidos\FraccionesArtancelariasBU.vb" />
+    <Compile Include="Pedidos\PedidoMuestraBU.vb" />
+    <Compile Include="Pedidos\TransferenciaFTPBU.vb" />
+    <Compile Include="PlandeFabricacion\PlanFabricacionBU.vb" />
+    <Compile Include="Planeacion\MaterialesPorProgramaBU.vb" />
+    <Compile Include="Reportes\MaterialesPorArticuloBU.vb" />
+    <Compile Include="Reportes\Programacion_Reportes_ParesProgramadosPorTallaBU.vb" />
+    <Compile Include="Reportes\ProyeccionProduccionBU.vb" />
+    <Compile Include="Simulador\CargaEquivalenciaBU.vb" />
+    <Compile Include="Simulador\CargaNaveArticuloBU.vb" />
+    <Compile Include="Simulador\CargaSimulacionBU.vb" />
+    <Compile Include="Simulador\CargaSuelaGlobalBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\BitacoraImportacionBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\BloqueoBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\CalendarioBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\CatalogoJustificacionesBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\ClientesEspecialesBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\ClientesPrefGenBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\EspacioReservadoBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\FechaEntregaBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\HormasCapacidadesBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\InventarioIdealBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\LimiteCapacidadBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\LineasProduccionBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\NaveAuxBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\OpcionesProgramacionBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\OpcionesSimlacionBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\OrdenNaveAuxBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\PedidosBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\productosCapacidadBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\ArticulosPreferentesBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\ProgramasBU.vb" />
+    <Compile Include="Transacciones\SimuladorPedidos\SimulacionBU.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesFachada\EntidadesFachada.csproj">
+      <Project>{6165d514-a2fa-4261-a3b5-b6384c23804f}</Project>
+      <Name>EntidadesFachada</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{01976fd5-cf48-4406-8118-782f1fcaaf18}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Negocios\Framework.Negocios.vbproj">
+      <Project>{44693732-f211-43d1-b164-72e528e990dc}</Project>
+      <Name>Framework.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Programacion.Datos\Programacion.Datos.vbproj">
+      <Project>{2e859fa7-0587-430f-8ff7-a782692fbc64}</Project>
+      <Name>Programacion.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolServicios\ToolServicios.csproj">
+      <Project>{ef601e3f-e67f-46c0-ad83-1813e1f1fb76}</Project>
+      <Name>ToolServicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

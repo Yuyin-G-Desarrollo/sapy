@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Conexión Ref="2" type="Stimulsoft.Report.Dictionary.StiOleDbDatabase" isKey="true">
+        <Alias>Conexión</Alias>
+        <ConnectionStringEncrypted>4N716+8We8hpWtCc6lhim8I6z+tWTNnRRRr5iOQUd2PRIIFMxln7mekV7ex7PSWn79R1ydlRo/lpXJzcTmyxo41wmy/NAXMBYhmhzE6IZXPD2Nlj11GpRe1P2SxhDeG742zhy2FX051vbbSN5Cn1L9l44UhPW0JdcVyEbE5J43/D7rNITQ==</ConnectionStringEncrypted>
+        <Name>Conexión</Name>
+      </Conexión>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <CredencialesJeans2 Ref="3" type="Stimulsoft.Report.Dictionary.StiOleDbSource" isKey="true">
+        <Alias>CredencialesJeans2</Alias>
+        <Columns isList="true" count="8">
+          <value>codr_colaboradorid,System.Int32</value>
+          <value>codigo,System.String</value>
+          <value>codr_nombre,System.String</value>
+          <value>apellidos,System.String</value>
+          <value>grup_name,System.String</value>
+          <value>area_nombre,System.String</value>
+          <value>pues_nombre,System.String</value>
+          <value>foto,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>CredencialesJeans2</Name>
+        <NameInSource>Conexión</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>execute Nomina.SP_imprimir_credencialesCOMERCIALIZADORA {Colaboradorid}</SqlCommand>
+      </CredencialesJeans2>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="2">
+      <value>,Colaboradorid,Colaboradorid,System.Int32,_x0038_1,False,False</value>
+      <value>,URLSOURCEHTTP,URLSOURCEHTTP,System.String,http:_x002F__x002F_192.168.7.16_x002F_yuyinerp_x002F_Nomina_x002F_Credenciales_x002F_Comercializadora_x002F_TI_x002F_CREDENCIAL_SISTEMAS.JPG,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand2 Ref="5" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,19,9.4</ClientRectangle>
+          <Components isList="true" count="6">
+            <Image1 Ref="6" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.2,11,9</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ImageURL>{URLSOURCEHTTP}</ImageURL>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Stretch>True</Stretch>
+            </Image1>
+            <Image3 Ref="7" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.2,1.65,1.73,2.08</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DataColumn>CredencialesJeans2.foto</DataColumn>
+              <Guid>1d985ee9b4b04a0c86f44075e011cbf9</Guid>
+              <ImageURL>{CredencialesJeans2.foto}</ImageURL>
+              <Name>Image3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Stretch>True</Stretch>
+            </Image3>
+            <Text5 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,4.75,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Corbel,9,Bold,Point,False,0</Font>
+              <Guid>3f009948cd6f4f57865d914aab1ac010</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{CredencialesJeans2.codr_nombre}</Text>
+              <TextBrush>White</TextBrush>
+            </Text5>
+            <Text7 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,5.1,4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Corbel,6,Regular,Point,False,0</Font>
+              <Guid>925c0a45f15e4bbaab87b2f790a59990</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{CredencialesJeans2.apellidos}</Text>
+              <TextBrush>White</TextBrush>
+            </Text7>
+            <BarCode1 Ref="10" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <BackColor>Transparent</BackColor>
+              <BarCodeType Ref="11" type="Stimulsoft.Report.BarCodes.StiCode93BarCodeType" isKey="true" />
+              <ClientRectangle>1.2,6.6,4,0.6</ClientRectangle>
+              <Code>{CredencialesJeans2.codigo}</Code>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8.25,Bold,Point,False,0</Font>
+              <ForeColor>Black</ForeColor>
+              <HorAlignment>Center</HorAlignment>
+              <Name>BarCode1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </BarCode1>
+            <Text1 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,5.6,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,5.5,Bold,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{CredencialesJeans2.grup_name}</Text>
+              <TextBrush>MidnightBlue</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>CredencialesJeans2</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>0beadda52d5f4ba8a12ffe1c2c87a2de</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="13" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="14" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>6/17/2014 5:19:20 PM</ReportChanged>
+  <ReportCreated>4/22/2014 4:12:34 PM</ReportCreated>
+  <ReportFile>C:\Users\SISTEMAS7\Downloads\CredencialComercializadora.mrt</ReportFile>
+  <ReportGuid>d143d877c0fd468baf52fd519254aacd</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.1.1900</ReportVersion>
+  <Script>
+    using System;
+    using System.Drawing;
+    using System.Windows.Forms;
+    using System.Data;
+    using Stimulsoft.Controls;
+    using Stimulsoft.Base.Drawing;
+    using Stimulsoft.Report;
+    using Stimulsoft.Report.Dialogs;
+    using Stimulsoft.Report.Components;
+
+    namespace Reports
+    {
+    public class Report : Stimulsoft.Report.StiReport
+    {
+    public Report()        {
+    this.InitializeComponent();
+    }
+
+    #region StiReport Designer generated code - do not modify
+    #endregion StiReport Designer generated code - do not modify
+    }
+    }
+  </Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

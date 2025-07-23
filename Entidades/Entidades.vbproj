@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{01976FD5-CF48-4406-8118-782F1FCAAF18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Entidades</RootNamespace>
+    <AssemblyName>Entidades</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Entidades.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Entidades.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen\Bahia.vb" />
+    <Compile Include="Almacen\Carrito.vb" />
+    <Compile Include="Almacen\ClientesAlmacen.vb" />
+    <Compile Include="Almacen\ConfiguracionBahia.vb" />
+    <Compile Include="Almacen\ConfiguracionClientesAtado.vb" />
+    <Compile Include="Almacen\Corridas.vb" />
+    <Compile Include="Almacen\Devoluciones\ComponentesPantallas.vb" />
+    <Compile Include="Almacen\Devoluciones\DevolucionCliente.vb" />
+    <Compile Include="Almacen\Devoluciones\DevolucionCliente_Codigos.vb" />
+    <Compile Include="Almacen\Devoluciones\DevolucionCliente_Detalles.vb" />
+    <Compile Include="Almacen\Devoluciones\DevolucionCliente_PermisosPantallas.vb" />
+    <Compile Include="Almacen\Devoluciones\DevolucionCliente_PermisosPorPantalla.vb" />
+    <Compile Include="Almacen\Devoluciones\FiltroAdministradorDevoluciones.vb" />
+    <Compile Include="Almacen\Devoluciones\IntegracionInventario\Atado.vb" />
+    <Compile Include="Almacen\Devoluciones\IntegracionInventario\FolioDevolucion_Detalle.vb" />
+    <Compile Include="Almacen\Devoluciones\IntegracionInventario\InfoAtadosEspeciales.vb" />
+    <Compile Include="Almacen\Devoluciones\IntegracionInventario\LoteGranel.vb" />
+    <Compile Include="Almacen\Devoluciones\IntegracionInventario\TallasPorDocena.vb" />
+    <Compile Include="Almacen\Devoluciones\TallasDevoluciones.vb" />
+    <Compile Include="Almacen\DocenasPares.vb" />
+    <Compile Include="Almacen\EntradasAlmacen.vb" />
+    <Compile Include="Almacen\Estibas.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\ContenidoEmbarque.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\DatosZapateriaStylo.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\DocumentosEmbarque.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\ErrorEmbarque.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\InformacionEmbarque.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\ListadoDocumentosEmbarque.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\ListadoTallasEmbarque.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\NivelDocumentos.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\NumerosGuia.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\SessionGuiaEmbarque.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\SheetsExcel.vb" />
+    <Compile Include="Almacen\GuiasEmbarque\TallasEmbarques.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\CapturaIncidenciaPar.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\CatalogoInsidencias.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\infoFolioDevolucion.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\InformacionParLeido.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\InspeccionCalidadValidaFolio.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\LecturaParInspeccionado.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\LotesInspeccionados.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\Reportes\ConsultaLotesPiloto.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\ResumenInspeccion.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\TipoIncidencia.vb" />
+    <Compile Include="Almacen\InspeccionCalidad\ValidacionCodigoLeido.vb" />
+    <Compile Include="Almacen\InventariosCiclicos\InvenatariosCiclicosCaracteristicas.vb" />
+    <Compile Include="Almacen\InventariosCiclicos\InventarioCiclicoBusqueda.vb" />
+    <Compile Include="Almacen\InventariosCiclicos\InventarioCiclicoDetalle.vb" />
+    <Compile Include="Almacen\InventariosCiclicos\InventariosCiclicos.vb" />
+    <Compile Include="Almacen\LecturaCapturadoAtadoPar.vb" />
+    <Compile Include="Almacen\LocalizacionProducto.vb" />
+    <Compile Include="Almacen\OTCoppel\DetallesDeSalida.vb" />
+    <Compile Include="Almacen\OTCoppel\SalidaDePares.vb" />
+    <Compile Include="Almacen\OTCoppel\ValidacionPar.vb" />
+    <Compile Include="Almacen\Reportes\Inventario\ReporteDeInventarioPrecioBase.vb" />
+    <Compile Include="Almacen\SalidaNavesLotes\CapturaAtadoValido.vb" />
+    <Compile Include="Almacen\SalidaNavesLotes\FiltrosSalidaNavesProduccion.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\CapturaParValido.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\CodigosErroneos.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\ConfiguracionNaveSalida.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\FiltrosParesEmbarquesSalidas.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\FiltrosSalidas.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\GeneracionEmbarque.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\GeneracionIncidencia.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\GeneracionSalida.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\InformacionLoteSalidaNave.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\InfoSalidaNave.vb" />
+    <Compile Include="Almacen\SalidasAlmacen\PlataformaEntrada.vb" />
+    <Compile Include="Almacen\Stock.vb" />
+    <Compile Include="Almacen\TipoCarrito.vb" />
+    <Compile Include="Almacen\VerificacionSalidas\InfoVerificacionFolio.vb" />
+    <Compile Include="Almacen\VerificacionSalidas\LotesAndreaFolioVerificacion.vb" />
+    <Compile Include="Almacen\VerificacionSalidas\OTPendienteVerificar.vb" />
+    <Compile Include="CFDI\xml.vb" />
+    <Compile Include="Consumos\ComponenteClasificacion.vb" />
+    <Compile Include="Consumos\Consumos.vb" />
+    <Compile Include="Consumos\Fracciones.vb" />
+    <Compile Include="Consumos\Maquinaria.vb" />
+    <Compile Include="Contabilidad\CatalogosNomina\DepartamentosByPatron.vb" />
+    <Compile Include="Contabilidad\CatalogosNomina\DiasNoLaborales.vb" />
+    <Compile Include="Contabilidad\CatalogosNomina\Patron.vb" />
+    <Compile Include="Contabilidad\CatalogosNomina\PeriodoNominaFiscal.vb" />
+    <Compile Include="Contabilidad\CatalogosNomina\PuestoFiscal.vb" />
+    <Compile Include="Contabilidad\CatalogosNomina\SalariosMinimosyUMAS.vb" />
+    <Compile Include="Contabilidad\CatalogosNomina\TablasSPE.vb" />
+    <Compile Include="Contabilidad\CatalogosNomina\TablasTarifas.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\AltaColaboradorIMSS.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\CierreNominaFiscal.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\ColaboradorCambioPatron.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\ColaboradorExterno.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\ComisionMensual.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\CreditoInfonavit.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\DatosSPEMensual.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\FiniquitoFiscal.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\FiniquitoRetencionISR.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\FiniquitoRetencionUSMO.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\InformacionIDSE_SUA.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\ModificacionSalario.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\ModificacionSalarioMixto.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\ReciboNomina.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\RetencionIMSS.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\RetencionISR_SPE.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\SubsidioEmpleo.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\TarifaMensualSemanal.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\Timbrado\TimbreCfdiRelacionados.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\Timbrado\TimbreDeduccion.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\Timbrado\TimbreHorasExtra.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\Timbrado\TimbreIncapacidad.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\Timbrado\TimbreNominaFiscal.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\Timbrado\TimbreOtrosPagos.vb" />
+    <Compile Include="Contabilidad\NominaFiscal\Timbrado\TimbrePercepcion.vb" />
+    <Compile Include="Contabilidad\Polizas\CuentaBancaria.vb" />
+    <Compile Include="Contabilidad\Polizas\CuentaContable.vb" />
+    <Compile Include="Contabilidad\Polizas\CuentaContableGeneral.vb" />
+    <Compile Include="Contabilidad\Polizas\EmpresaSAY_SICY.vb" />
+    <Compile Include="Contabilidad\Polizas\Polizas.vb" />
+    <Compile Include="Contabilidad\Polizas\TipoPoliza.vb" />
+    <Compile Include="Facturacion\3.3\Cancelacion\FacturaCancelada.vb" />
+    <Compile Include="Facturacion\3.3\ConceptosDocumento.vb" />
+    <Compile Include="Facturacion\3.3\DatosFactura.vb" />
+    <Compile Include="Facturacion\3.3\Empresas.vb" />
+    <Compile Include="Facturacion\3.3\Reportes\CFDIRelacionadosDocumento.vb" />
+    <Compile Include="Facturacion\3.3\Reportes\Reportes33.vb" />
+    <Compile Include="Facturacion\3.3\RutasDocumentosFacturacion.vb" />
+    <Compile Include="Facturacion\Addenda.vb" />
+    <Compile Include="Facturacion\AddendaDetalles.vb" />
+    <Compile Include="Facturacion\ClientesCFDI.vb" />
+    <Compile Include="Facturacion\Conceptos.vb" />
+    <Compile Include="Facturacion\EmpresasFacturacion.vb" />
+    <Compile Include="Facturacion\Factura.vb" />
+    <Compile Include="Facturacion\ProductosFacturacion.vb" />
+    <Compile Include="Facturacion\Remision.vb" />
+    <Compile Include="Facturacion\SolicitudCancelacion\DocumentoFactura.vb" />
+    <Compile Include="Facturacion\SucursalEmpresa.vb" />
+    <Compile Include="Facturacion\SucursalesFacturacion.vb" />
+    <Compile Include="Facturacion\SucursalUsuario.vb" />
+    <Compile Include="Framework\Catalogos\CatalogoCondicionesAreaOperativa.vb" />
+    <Compile Include="Framework\Catalogos\CatalogoCondicionesCatalogo.vb" />
+    <Compile Include="Framework\Catalogos\CatalogoCondicionesCondicion.vb" />
+    <Compile Include="Framework\Catalogos\CatalogoCondicionesTipo.vb" />
+    <Compile Include="Framework\Catalogos\CatalogosDias.vb" />
+    <Compile Include="Framework\Catalogos\ListaColaboradorPorNave.vb" />
+    <Compile Include="Framework\Catalogos\ListaTipoValidaciones.vb" />
+    <Compile Include="Framework\Condicion.vb" />
+    <Compile Include="Framework\CondicionCatalogo.vb" />
+    <Compile Include="Framework\CondicionPersona.vb" />
+    <Compile Include="Framework\Convenios.vb" />
+    <Compile Include="Framework\DatosCorreo.vb" />
+    <Compile Include="Framework\Dias.vb" />
+    <Compile Include="Framework\Email.vb" />
+    <Compile Include="Framework\Proveedor.vb" />
+    <Compile Include="Framework\RelacionesPersonas.vb" />
+    <Compile Include="Framework\Reportes.vb" />
+    <Compile Include="Framework\RutasGenerales.vb" />
+    <Compile Include="Framework\Telefono.vb" />
+    <Compile Include="Framework\TipoCondicion.vb" />
+    <Compile Include="Framework\TipoPersona.vb" />
+    <Compile Include="Framework\TipoTelefono.vb" />
+    <Compile Include="Framework\Validacion.vb" />
+    <Compile Include="Framework\ValidacionTipo.vb" />
+    <Compile Include="Inventario\InventarioNave.vb" />
+    <Compile Include="Inventario\UnidadesDeMedida.vb" />
+    <Compile Include="ListaPreciosProd\ListaPrecioProd.vb" />
+    <Compile Include="ListaPreciosProd\ListaPrecioProdDetalles.vb" />
+    <Compile Include="Materiales\Caracteristicas.vb" />
+    <Compile Include="Materiales\Material.vb" />
+    <Compile Include="Materiales\MaterialInventario.vb" />
+    <Compile Include="Materiales\PrecioMaterial.vb" />
+    <Compile Include="Materiales\SKU.vb" />
+    <Compile Include="Mensajeria\Mensajeria.vb" />
+    <Compile Include="Mensajeria\TipoFleteMensajeria.vb" />
+    <Compile Include="Mercadotecnia\EditarMaterialesMercadotecniaPOP.vb" />
+    <Compile Include="Mercadotecnia\EditarOrdenCompra_MaterialesMerca.vb" />
+    <Compile Include="Nomina\CalculoNominaReal.vb" />
+    <Compile Include="Nomina\CierreNominaReal.vb" />
+    <Compile Include="Nomina\ControlAsistencia\ConfiguracionPermisos.vb" />
+    <Compile Include="Nomina\ControlAsistencia\RegistroExcepciones.vb" />
+    <Compile Include="Framework\Acciones.vb" />
+    <Compile Include="Framework\Bancos.vb" />
+    <Compile Include="Framework\Ciudades.vb" />
+    <Compile Include="Nomina\ControlAsistencia\ConfiguracionAsistencia.vb" />
+    <Compile Include="Framework\ConfiguracionGeneral.vb" />
+    <Compile Include="Framework\Departamentos.vb" />
+    <Compile Include="Framework\Domicilio.vb" />
+    <Compile Include="Framework\EnviosCorreo.vb" />
+    <Compile Include="Framework\Estados.vb" />
+    <Compile Include="Framework\Historial.vb" />
+    <Compile Include="Framework\Modulos.vb" />
+    <Compile Include="Framework\Naves.vb" />
+    <Compile Include="Framework\NavesUsuario.vb" />
+    <Compile Include="Framework\Paises.vb" />
+    <Compile Include="Framework\Perfiles.vb" />
+    <Compile Include="Framework\PerfilesUsuario.vb" />
+    <Compile Include="Framework\PermisosPerfil.vb" />
+    <Compile Include="Framework\PermisosUsuario.vb" />
+    <Compile Include="Framework\Persona.vb" />
+    <Compile Include="Framework\Poblacion.vb" />
+    <Compile Include="Framework\Puestos.vb" />
+    <Compile Include="Framework\SMTP.vb" />
+    <Compile Include="Framework\Sucursales.vb" />
+    <Compile Include="Nomina\AcademicosColaborador.vb" />
+    <Compile Include="Nomina\Areas.vb" />
+    <Compile Include="Nomina\AutorizacionPrestamo.vb" />
+    <Compile Include="Nomina\CajaAhorro\CajaAhorro.vb" />
+    <Compile Include="Nomina\CajaAhorro\ColaboradorPeriodoCaja.vb" />
+    <Compile Include="Nomina\CajaAhorro\ConfiguracionCajaNave.vb" />
+    <Compile Include="Nomina\CajaAhorro\ReporteCajaAhorro.vb" />
+    <Compile Include="Nomina\CajaColaborador.vb" />
+    <Compile Include="Nomina\Cajas.vb" />
+    <Compile Include="Nomina\CalcularAguinaldos.vb" />
+    <Compile Include="Nomina\CalcularDestajos.vb" />
+    <Compile Include="Nomina\CalcularNominaReal.vb" />
+    <Compile Include="Nomina\CalcularPrimaVacacional.vb" />
+    <Compile Include="Nomina\CalculoNominaFiscal.vb" />
+    <Compile Include="Nomina\Celulas.vb" />
+    <Compile Include="Nomina\CobranzaPrestamos.vb" />
+    <Compile Include="Nomina\Colaboradores.vb" />
+    <Compile Include="Nomina\ColaboradorExpediente.vb" />
+    <Compile Include="Nomina\ColaboradorLaboral.vb" />
+    <Compile Include="Nomina\ColaboradorMedica.vb" />
+    <Compile Include="Nomina\ColaboradorNomina.vb" />
+    <Compile Include="Nomina\ColaboradorReal.vb" />
+    <Compile Include="Nomina\ColaboradorReferencias.vb" />
+    <Compile Include="Nomina\ConfiguracionGratificaciones.vb" />
+    <Compile Include="Nomina\ConfiguracionNaveNomina.vb" />
+    <Compile Include="Nomina\ConfiguracionPrestamos.vb" />
+    <Compile Include="Nomina\ControlAsistencia\ControlAsistencia.vb" />
+    <Compile Include="Nomina\ControlAsistencia\CorteChecador.vb" />
+    <Compile Include="Nomina\CorteNominaReal.vb" />
+    <Compile Include="Nomina\Credenciales.vb" />
+    <Compile Include="Nomina\Deducciones.vb" />
+    <Compile Include="Nomina\DeduccionRealImss.vb" />
+    <Compile Include="Nomina\ControlAsistencia\DetalleHorario.vb" />
+    <Compile Include="Nomina\Destajos\CorteDestajos.vb" />
+    <Compile Include="Nomina\EnviodeArchivos.vb" />
+    <Compile Include="Nomina\ControlAsistencia\ExcepcionesHorarios.vb" />
+    <Compile Include="Nomina\ControlAsistencia\ExcepcionesHorariosHoras.vb" />
+    <Compile Include="Nomina\ControlAsistencia\ExcepcionMotivo.vb" />
+    <Compile Include="Nomina\FactoresDeIntegracion.vb" />
+    <Compile Include="Nomina\FiltrosCalculoPercepciones.vb" />
+    <Compile Include="Nomina\FiltrosFichaColaborador.vb" />
+    <Compile Include="Nomina\Finiquitos.vb" />
+    <Compile Include="Nomina\HistorialSalarios.vb" />
+    <Compile Include="Nomina\ControlAsistencia\Horarios.vb" />
+    <Compile Include="Nomina\Horas.vb" />
+    <Compile Include="Nomina\HorasExtras.vb" />
+    <Compile Include="Nomina\ImpuestoSubsidioEmpleo.vb" />
+    <Compile Include="Nomina\Incapacidades\AcusesIncapacidades.vb" />
+    <Compile Include="Nomina\Incapacidades\Incapacidades.vb" />
+    <Compile Include="Nomina\Incentivos.vb" />
+    <Compile Include="Nomina\InteresesPrestamos.vb" />
+    <Compile Include="Nomina\MotivosFiniquito.vb" />
+    <Compile Include="Nomina\MotivosPrestamo.vb" />
+    <Compile Include="Nomina\NominaDestajos\NominaDestajos.vb" />
+    <Compile Include="Nomina\Nominpaq\ColaboradoresReplicar.vb" />
+    <Compile Include="Nomina\Nominpaq\ControlAsistenciaReplicar.vb" />
+    <Compile Include="Nomina\Nominpaq\IncapacidadesReplicar.vb" />
+    <Compile Include="Nomina\PagosPrestamo.vb" />
+    <Compile Include="Nomina\Patrones.vb" />
+    <Compile Include="Nomina\Percepciones.vb" />
+    <Compile Include="Nomina\PeriodosNomina.vb" />
+    <Compile Include="Nomina\RangoSubsidioEmpleo.vb" />
+    <Compile Include="Nomina\ControlAsistencia\RegistroCheck.vb" />
+    <Compile Include="Nomina\SolicitudIncentivos.vb" />
+    <Compile Include="Nomina\SolicitudPrestamo.vb" />
+    <Compile Include="Nomina\Ticket.vb" />
+    <Compile Include="OrdenesDeCompra\ExplosionPreOrden.vb" />
+    <Compile Include="OrdenesDeCompra\MaterialOrdenDeCompra.vb" />
+    <Compile Include="OrdenesDeCompra\OrdenDeCompra.vb" />
+    <Compile Include="OrdenesDeCompra\OrdenDeCompraDetallePreorden.vb" />
+    <Compile Include="OrdenesDeCompra\OrdenDeCompraPreorden.vb" />
+    <Compile Include="OrdenesDeCompra\PreordenDeCompra.vb" />
+    <Compile Include="OrdenesDeCompra\PreordenDeCompraDetalle.vb" />
+    <Compile Include="Produccion\ArticuloCargaSuela.vb" />
+    <Compile Include="Produccion\AvancesProduccionSuelas\AvanceProduccionSuelas.vb" />
+    <Compile Include="Produccion\AvancesProduccionSuelas\Avances.vb" />
+    <Compile Include="Produccion\AvancesProduccionSuelas\AvanceSuelas.vb" />
+    <Compile Include="Produccion\AvancesProduccionSuelas\EncabezadoSuelas.vb" />
+    <Compile Include="Produccion\AvancesProduccionSuelas\MaquinasProduccion.vb" />
+    <Compile Include="Produccion\AvancesProduccionSuelas\UltimoAvance.vb" />
+    <Compile Include="Produccion\AvancesProduccionSuelas\ValidaColaborador.vb" />
+    <Compile Include="Produccion\CelulasProduccion.vb" />
+    <Compile Include="Produccion\Consumo.vb" />
+    <Compile Include="Produccion\CortadoresPielForro.vb" />
+    <Compile Include="Produccion\DepartamentosProduccion.vb" />
+    <Compile Include="Produccion\DiasAtrasadosDep.vb" />
+    <Compile Include="Produccion\Enumerados.vb" />
+    <Compile Include="Produccion\EstiloArchivosTecnicos.vb" />
+    <Compile Include="Produccion\FiltroOrdenesEnProceso.vb" />
+    <Compile Include="Produccion\FraccionesPorPuesto.vb" />
+    <Compile Include="Produccion\InventarioProduccion.vb" />
+    <Compile Include="Produccion\Lote.vb" />
+    <Compile Include="Produccion\LotesAvances.vb" />
+    <Compile Include="Produccion\LotesAvancesEmpleadosDepto.vb" />
+    <Compile Include="Produccion\MaterialConsumos.vb" />
+    <Compile Include="Produccion\TarjetaProduccion.vb" />
+    <Compile Include="Programacion\AsuntosMuestras.vb" />
+    <Compile Include="Programacion\Categorias.vb" />
+    <Compile Include="Programacion\CodigosCliente.vb" />
+    <Compile Include="Programacion\Coleccion.vb" />
+    <Compile Include="Programacion\ColocacionSemanal\BitacoraCancelaciones.vb" />
+    <Compile Include="Programacion\ColorCliente.vb" />
+    <Compile Include="Programacion\Colores.vb" />
+    <Compile Include="Programacion\ColorSuela.vb" />
+    <Compile Include="Programacion\EnvioRecepcionMuestras\FiltrosEnvioRecepcionMuestras.vb" />
+    <Compile Include="Programacion\Etiquetas\ConfiguracionEtiqueta.vb" />
+    <Compile Include="Programacion\Etiquetas\ImpresorasZebra.vb" />
+    <Compile Include="Programacion\Etiquetas\ModeloTallas.vb" />
+    <Compile Include="Programacion\Etiquetas\Pares.vb" />
+    <Compile Include="Programacion\Etiquetas\TallasExtranjerasClienteDetalle.vb" />
+    <Compile Include="Programacion\FamiliaProyeccion.vb" />
+    <Compile Include="Programacion\Familias.vb" />
+    <Compile Include="Programacion\FiltrosBloqueos.vb" />
+    <Compile Include="Programacion\Forros.vb" />
+    <Compile Include="Programacion\Grupos.vb" />
+    <Compile Include="Programacion\Hormas.vb" />
+    <Compile Include="Programacion\HormasCapacidad.vb" />
+    <Compile Include="Programacion\InventarioIdeal.vb" />
+    <Compile Include="Programacion\LimiteCapacidad.vb" />
+    <Compile Include="Programacion\Lineas.vb" />
+    <Compile Include="Programacion\Marcas.vb" />
+    <Compile Include="Programacion\MuestrasWeb\Asunto.vb" />
+    <Compile Include="Programacion\MuestrasWeb\MensajesPedidosMuestra.vb" />
+    <Compile Include="Programacion\MuestrasWeb\PedidoMuestra.vb" />
+    <Compile Include="Programacion\MuestrasWeb\PedidoMuestraDetalle.vb" />
+    <Compile Include="Programacion\MuestrasWeb\PedidoMuestraDetalleEstatus.vb" />
+    <Compile Include="Programacion\OpcionesProgramacion.vb" />
+    <Compile Include="Programacion\OrdenesProduccionMuestras.vb" />
+    <Compile Include="Programacion\PielCliente.vb" />
+    <Compile Include="Programacion\Pieles.vb" />
+    <Compile Include="Programacion\PielesMuestra.vb" />
+    <Compile Include="Programacion\ProductoCapacidad.vb" />
+    <Compile Include="Programacion\Productos.vb" />
+    <Compile Include="Programacion\ProgramacionCatalogoJustificaciones.vb" />
+    <Compile Include="Programacion\Subfamilias.vb" />
+    <Compile Include="Programacion\Suelas.vb" />
+    <Compile Include="Programacion\Tallas.vb" />
+    <Compile Include="Programacion\Temporadas.vb" />
+    <Compile Include="Proveedor\BitacoraDeMovimiento.vb" />
+    <Compile Include="Materiales\CategoriaClasificacion.vb" />
+    <Compile Include="Materiales\ClasificacionColores.vb" />
+    <Compile Include="Materiales\ClasificacionTamanovb.vb" />
+    <Compile Include="Proveedor\ConfiguracionPorcentajesMaquilas.vb" />
+    <Compile Include="Proveedor\CostosPorMaquilaNavesGrupos.vb" />
+    <Compile Include="Proveedor\CxPSaldos.vb" />
+    <Compile Include="Proveedor\DatosCobradorSICY.vb" />
+    <Compile Include="Proveedor\DatosContacto.vb" />
+    <Compile Include="Proveedor\DatosContactoSICY.vb" />
+    <Compile Include="Proveedor\DatosDeCuentaBancaria.vb" />
+    <Compile Include="Proveedor\DatosDeCuentaBancariaSICY.vb" />
+    <Compile Include="Proveedor\DatosGenerales.vb" />
+    <Compile Include="Proveedor\DatosGeneralesSICY.vb" />
+    <Compile Include="Proveedor\DatosPago.vb" />
+    <Compile Include="Proveedor\DatosProveedor.vb" />
+    <Compile Include="Proveedor\DatosProveedorSICY.vb" />
+    <Compile Include="Proveedor\DevComprasPT_XML.vb" />
+    <Compile Include="Proveedor\DevolucionMaquila.vb" />
+    <Compile Include="Proveedor\EditarSemanaPagoProveedor.vb" />
+    <Compile Include="Proveedor\EntregaPagosProveedor.vb" />
+    <Compile Include="Proveedor\FacturaComplementoXML.vb" />
+    <Compile Include="Proveedor\FacturaPTIngresado.vb" />
+    <Compile Include="Proveedor\FacturaPTIngresadoDetalle.vb" />
+    <Compile Include="Proveedor\Giro.vb" />
+    <Compile Include="Proveedor\HistorialDeCompras.vb" />
+    <Compile Include="Proveedor\MaquilaComprobante.vb" />
+    <Compile Include="Proveedor\NaveProveedor.vb" />
+    <Compile Include="Proveedor\PlazoPago.vb" />
+    <Compile Include="Proveedor\PlazoProveedor.vb" />
+    <Compile Include="Proveedor\PlazoProveedoresSICY.vb" />
+    <Compile Include="Proveedor\ProveedorNave.vb" />
+    <Compile Include="Proveedor\UsuarioProveedor.vb" />
+    <Compile Include="Sesiones\SesionError.vb" />
+    <Compile Include="Sesiones\SesionUsuario.vb" />
+    <Compile Include="Framework\Usuarios.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Soporte\AsignacionEquipos.vb" />
+    <Compile Include="Soporte\CatalogoEquipo.vb" />
+    <Compile Include="Soporte\CompraEquipos.vb" />
+    <Compile Include="Soporte\MantenimientoEquipo.vb" />
+    <Compile Include="Soporte\SoftwareEquipo.vb" />
+    <Compile Include="Ventas\Almacen.vb" />
+    <Compile Include="Ventas\Apartados\ApartadoPorGenerar_PPCP.vb" />
+    <Compile Include="Ventas\Apartados\FiltrosAdministradorApartados.vb" />
+    <Compile Include="Ventas\Apartados\FiltrosApartados.vb" />
+    <Compile Include="Ventas\Apartados\FiltrosGeneracionApartadosPPCP.vb" />
+    <Compile Include="Ventas\Apartados\ParesConfirmarApartado.vb" />
+    <Compile Include="Ventas\Catalogos\CatalogoMotivoCancelacion.vb" />
+    <Compile Include="Ventas\Catalogos\CategoriaMotivoIncidencia.vb" />
+    <Compile Include="Ventas\Catalogos\CatalogoClasificacionesCliente.vb" />
+    <Compile Include="Ventas\Catalogos\CatalogoMaterialesMercadotecnia.vb" />
+    <Compile Include="Ventas\Catalogos\CatalogoMotivosIncidencias.vb" />
+    <Compile Include="Ventas\Catalogos\CatalogoRamos.vb" />
+    <Compile Include="Ventas\Catalogos\CatalogoRequerimientosEspeciales.vb" />
+    <Compile Include="Ventas\Catalogos\CatalogoRutas.vb" />
+    <Compile Include="Ventas\Catalogos\CatalogoTiposDeTienda.vb" />
+    <Compile Include="Ventas\Catalogos\TipoMaterialesMercadotecnia.vb" />
+    <Compile Include="Ventas\Catalogos\TipoRequerimientosEspeciales.vb" />
+    <Compile Include="Ventas\ClasePersona.vb" />
+    <Compile Include="Ventas\ClasificacionPersona.vb" />
+    <Compile Include="Ventas\Cliente.vb" />
+    <Compile Include="Ventas\ClienteRamo.vb" />
+    <Compile Include="Ventas\ClienteRFC.vb" />
+    <Compile Include="Ventas\ClienteTienda.vb" />
+    <Compile Include="Ventas\ConsultasVentas\DatosCargarProyeccion.vb" />
+    <Compile Include="Ventas\DescuentoCliente.vb" />
+    <Compile Include="Ventas\Documento.vb" />
+    <Compile Include="Ventas\Empresa.vb" />
+    <Compile Include="Ventas\EtiquetaCliente.vb" />
+    <Compile Include="Ventas\FacturacionAnticipada\BodegaCoppel.vb" />
+    <Compile Include="Ventas\FacturacionAnticipada\DistribucionPedido.vb" />
+    <Compile Include="Ventas\FacturacionAnticipada\DistribucionPedidoCoppel.vb" />
+    <Compile Include="Ventas\FacturacionAnticipada\TiendaCoppel.vb" />
+    <Compile Include="Ventas\Facturacion\CancelacionDocumento.vb" />
+    <Compile Include="Ventas\Facturacion\FacturacionDatosCliente.vb" />
+    <Compile Include="Ventas\Facturacion\FiltrosAdministradorDocumentos.vb" />
+    <Compile Include="Ventas\Facturacion\FiltrosAdministradorSoliciturCancelacion.vb" />
+    <Compile Include="Ventas\Facturacion\Respuesta.vb" />
+    <Compile Include="Ventas\FormaEntrega.vb" />
+    <Compile Include="Ventas\FormaPago.vb" />
+    <Compile Include="Ventas\Fracciones_Arancelarias.vb" />
+    <Compile Include="Ventas\Fracciones_Arancelarias_Detalles.vb" />
+    <Compile Include="Ventas\FuenteInformacionEtiqueta.vb" />
+    <Compile Include="Ventas\HorarioContrarecibo.vb" />
+    <Compile Include="Ventas\Incoterms.vb" />
+    <Compile Include="Ventas\InformacionClienteCobranza.vb" />
+    <Compile Include="Ventas\InformacionClienteVentas.vb" />
+    <Compile Include="Ventas\ListaDePrecios\ListaBase.vb" />
+    <Compile Include="Ventas\ListaDePrecios\ListaVentas.vb" />
+    <Compile Include="Ventas\ListaDePrecios\ListaVentasCliente.vb" />
+    <Compile Include="Ventas\LugarDescuento.vb" />
+    <Compile Include="Ventas\LugarEntrega.vb" />
+    <Compile Include="Ventas\MaterialMKT.vb" />
+    <Compile Include="Ventas\MaterialMKTCliente.vb" />
+    <Compile Include="Ventas\MetodoPago.vb" />
+    <Compile Include="Ventas\Moneda.vb" />
+    <Compile Include="Ventas\MotivoDescuento.vb" />
+    <Compile Include="Ventas\NivelSocioEconomico.vb" />
+    <Compile Include="Ventas\OT\OrdenTrabajo.vb" />
+    <Compile Include="Ventas\OT\OrdenTrabajoCitaEntrega.vb" />
+    <Compile Include="Ventas\OT\OrdenTrabajoDireccionEntrega.vb" />
+    <Compile Include="Ventas\OT\OrdenTrabajoEmbarqueEntrega.vb" />
+    <Compile Include="Ventas\OT\OrdenTrabajoReporteTermino.vb" />
+    <Compile Include="Ventas\PapelEnvolvente.vb" />
+    <Compile Include="Ventas\PedidosMuestras\PedidosMuestras.vb" />
+    <Compile Include="Ventas\PedidosMuestras\PedidosMuestrsaDetalles.vb" />
+    <Compile Include="Ventas\PedidosVirtuales\PedidoVirtual.vb" />
+    <Compile Include="Ventas\PedidosWeb.vb" />
+    <Compile Include="Ventas\PedidosWebDetalles.vb" />
+    <Compile Include="Ventas\Pedidos\FiltroAdministradorPedido.vb" />
+    <Compile Include="Ventas\Pedidos\InfoPedido.vb" />
+    <Compile Include="Ventas\PoliticaEmbarque.vb" />
+    <Compile Include="Ventas\PoliticaPago.vb" />
+    <Compile Include="Ventas\PoliticaVenta.vb" />
+    <Compile Include="Ventas\ProductoEstilo.vb" />
+    <Compile Include="Ventas\Prospecta\ProspectaDetalle.vb" />
+    <Compile Include="Ventas\Prospecta\ProspectaDetalleDias.vb" />
+    <Compile Include="Ventas\Prospecta\ProspectaDias.vb" />
+    <Compile Include="Ventas\Prospecta\ProspectaInformacion.vb" />
+    <Compile Include="Ventas\Prospecta\ProspectaInformacionEdicionUsuarios.vb" />
+    <Compile Include="Ventas\ProtectorFleje.vb" />
+    <Compile Include="Ventas\ProyeccionEntregas\ProyeccionEntregas.vb" />
+    <Compile Include="Ventas\ProyeccionEntregas\ProyeccionEntregasPorNivel.vb" />
+    <Compile Include="Ventas\Ramo.vb" />
+    <Compile Include="Ventas\RequerimientoEspCliente.vb" />
+    <Compile Include="Ventas\RequerimientoEspecial.vb" />
+    <Compile Include="Ventas\Restriccion.vb" />
+    <Compile Include="Ventas\RestriccionCliente.vb" />
+    <Compile Include="Ventas\Ruta.vb" />
+    <Compile Include="Ventas\Sapica\Evento.vb" />
+    <Compile Include="Ventas\Sapica\TelefonoVisitante.vb" />
+    <Compile Include="Ventas\Sapica\Visitante.vb" />
+    <Compile Include="Ventas\TallasExtranjerasCliente.vb" />
+    <Compile Include="Ventas\TamanoEmpaque.vb" />
+    <Compile Include="Ventas\TamanoEtiqueta.vb" />
+    <Compile Include="Ventas\TiendaEmbarqueCedis.vb" />
+    <Compile Include="Ventas\TipoCliente.vb" />
+    <Compile Include="Ventas\TipoDocumento.vb" />
+    <Compile Include="Ventas\TipoEmpaque.vb" />
+    <Compile Include="Ventas\TipoEntrega.vb" />
+    <Compile Include="Ventas\TipoEtiqueta.vb" />
+    <Compile Include="Ventas\TipoFleje.vb" />
+    <Compile Include="Ventas\TipoFlete.vb" />
+    <Compile Include="Ventas\TipoHorario.vb" />
+    <Compile Include="Ventas\TipoIVA.vb" />
+    <Compile Include="Ventas\TipoMaterialMKT.vb" />
+    <Compile Include="Ventas\TipoRequerimientoEspecial.vb" />
+    <Compile Include="Ventas\TipoRestriccion.vb" />
+    <Compile Include="Ventas\TipoTienda.vb" />
+    <Compile Include="Ventas\TipoValidacion.vb" />
+    <Compile Include="Ventas\TipoValor.vb" />
+    <Compile Include="Ventas\UbicacionEtiqueta.vb" />
+    <Compile Include="Ventas\UnidadVenta.vb" />
+    <Compile Include="Ventas\ValidacionCliente.vb" />
+    <Compile Include="Ventas\ValidacionCompartidaWeb.vb" />
+    <Compile Include="Ventas\ZapateriaCompetencia.vb" />
+    <Compile Include="Ventas\ZapateriaCompetenciaCliente.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

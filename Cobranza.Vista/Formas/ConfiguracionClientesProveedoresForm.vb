@@ -1,0 +1,3 @@
+﻿Public Class ConfiguracionClientesProveedoresForm
+
+End Class

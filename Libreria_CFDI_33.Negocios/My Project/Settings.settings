@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServidorRestLocal" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:7639/</Value>
+    </Setting>
+    <Setting Name="ServidorRestPruebasPruebas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.2.4:8037/</Value>
+    </Setting>
+    <Setting Name="ServidorPdf" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.2.4/cfdi/</Value>
+    </Setting>
+    <Setting Name="ServidorRestPruebasProduccion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.2.4:8040/</Value>
+    </Setting>
+    <Setting Name="ServidorRestProduccion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.2.158:8040/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

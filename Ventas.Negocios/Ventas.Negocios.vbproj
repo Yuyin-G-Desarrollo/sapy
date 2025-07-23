@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{09374844-A205-4E5B-9E7F-6B63E9715D5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ventas.Negocios</RootNamespace>
+    <AssemblyName>Ventas.Negocios</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ventas.Negocios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ventas.Negocios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizacionMasivaAgentesBU.vb" />
+    <Compile Include="AlmacenBU.vb" />
+    <Compile Include="Apartados\ApartadosBU.vb" />
+    <Compile Include="Catalogos\CatalogoCategoriaMotivoIncidenciaBU.vb" />
+    <Compile Include="Catalogos\CatalogoClasificacionClienteBU.vb" />
+    <Compile Include="Catalogos\CatalogoEmpresasBU.vb" />
+    <Compile Include="Catalogos\CatalogoEventoBU.vb" />
+    <Compile Include="Catalogos\CatalogoFraccionesArancelariasBU.vb" />
+    <Compile Include="Catalogos\CatalogoMaterialesMercadotecniaBU.vb" />
+    <Compile Include="Catalogos\CatalogoMotivoCancelacionBU.vb" />
+    <Compile Include="Catalogos\CatalogoMotivosIncidenciaBU.vb" />
+    <Compile Include="Catalogos\CatalogoRamosBU.vb" />
+    <Compile Include="Catalogos\CatalogoRequerimientosEspecialesBU.vb" />
+    <Compile Include="Catalogos\CatalogoRutasBU.vb" />
+    <Compile Include="Catalogos\CatalogoTiposDeTiendaBU.vb" />
+    <Compile Include="ClientesBU.vb" />
+    <Compile Include="ClientesDatosBU.vb" />
+    <Compile Include="DashBoardVentas\VentasSicyBU.vb" />
+    <Compile Include="EtiquetaBU.vb" />
+    <Compile Include="FacturacionAnticipada\FacturacionAnticipadaBU.vb" />
+    <Compile Include="FacturacionAnticipada\FacturacionAnticipadaCoppelBU.vb" />
+    <Compile Include="Facturacion\AdministradorComplementoRecepcionPagosBU.vb" />
+    <Compile Include="Facturacion\AdministradorDocumentosBU.vb" />
+    <Compile Include="Facturacion\AdministradorExcepcionFacturacionBU.vb" />
+    <Compile Include="Facturacion\AdministradorOTFacturacionBU.vb" />
+    <Compile Include="Facturacion\AdministrarComplementoPagoCompensacionBU.vb" />
+    <Compile Include="Facturacion\CancelacionDocumentosBU.vb" />
+    <Compile Include="Facturacion\DocumentosDinamicosBU.vb" />
+    <Compile Include="Facturacion\GlobalesFacturacion.vb" />
+    <Compile Include="Facturacion\ModificacionPrecioFacturacionBU.vb" />
+    <Compile Include="Facturacion\MotivoExcepcionBU.vb" />
+    <Compile Include="Facturacion\ReporteDocumentosExcepcionBU.vb" />
+    <Compile Include="Facturacion\SolicitarCancelacionBU.vb" />
+    <Compile Include="Facturacion\VistaPreviaDocumentosBU.vb" />
+    <Compile Include="IncotermsBU.vb" />
+    <Compile Include="Inventario\inventarioBU.vb" />
+    <Compile Include="ListaDePrecios\AuditoriaPrecioBaseBU.vb" />
+    <Compile Include="ListaDePrecios\ListaBaseBU.vb" />
+    <Compile Include="ListaDePrecios\ListaPreciosClientesEspBU.vb" />
+    <Compile Include="ListaDePrecios\ListaPreciosVentaClienteBU.vb" />
+    <Compile Include="ListaDePrecios\ListaVentasBU.vb" />
+    <Compile Include="ListaDePrecios\ListaVentasClienteBU.vb" />
+    <Compile Include="LugarEntregaBU.vb" />
+    <Compile Include="NivelSocioEconomicoBU.vb" />
+    <Compile Include="OT\OrdenTrabajoBU.vb" />
+    <Compile Include="ParesApartadosFacturados\ConsultaParesFacturados_BU.vb" />
+    <Compile Include="PedidosMuestras\PedidosMuestrasBU.vb" />
+    <Compile Include="PedidosVirtuales\PedidosVirtualesBU.vb" />
+    <Compile Include="PedidosWeb\AdministradorCotizacionesBU.vb" />
+    <Compile Include="PedidosWeb\AdministradorPedidosBU.vb" />
+    <Compile Include="PedidosWeb\CotizacionesBu.vb" />
+    <Compile Include="PedidosWeb\ImportacionArchivosBU.vb" />
+    <Compile Include="PedidosWeb\PedidosBu.vb" />
+    <Compile Include="PedidosWeb\ProductosBu.vb" />
+    <Compile Include="PedidosWeb\ReportesPedidosBU.vb" />
+    <Compile Include="Pedidos\AdministradorPedidosEscritorioBU.vb" />
+    <Compile Include="Pedidos\FolioCancelacionBU.vb" />
+    <Compile Include="Pedidos\ReasignacionOTBU.vb" />
+    <Compile Include="Prospecta\ProspectaBU.vb" />
+    <Compile Include="ProyeccionEntregas\ProyeccionEntregasBU.vb" />
+    <Compile Include="RegistrarInventarioSAPBU.vb" />
+    <Compile Include="ReplicaClientes\ReplicaClientesBU.vb" />
+    <Compile Include="Reportes\CargaProyeccionBU.vb" />
+    <Compile Include="Reportes\CoberturaColeccionesBU.vb" />
+    <Compile Include="Reportes\EnfoqueVentas\ReporteEnfoqueVentasBU.vb" />
+    <Compile Include="Reportes\EstadisticasVentasBU.vb" />
+    <Compile Include="Reportes\EstadisticaVentasFamiliaBU.vb" />
+    <Compile Include="Reportes\EstadisticoPedidosBU.vb" />
+    <Compile Include="Reportes\PedidoCapturadoBU.vb" />
+    <Compile Include="Reportes\ReporteGeneralVentasAgenteBU.vb" />
+    <Compile Include="Reportes\ReportePartidasParesProcesoBU.vb" />
+    <Compile Include="Reportes\ReportePedidosFacturacionBU.vb" />
+    <Compile Include="Reportes\ReporteResumenClienteBU.vb" />
+    <Compile Include="Reportes\ResumenVentasSemanalBU.vb" />
+    <Compile Include="Reportes\SeguimientoVentasBU.vb" />
+    <Compile Include="Reportes\SpeedTrackBU.vb" />
+    <Compile Include="Reportes\TableroGeneralVentasBU.vb" />
+    <Compile Include="SapicaWeb\AdministradorPedidosSapicaBU.vb" />
+    <Compile Include="SapicaWeb\AdmonPedidosSapicaBU.vb" />
+    <Compile Include="SapicaWeb\AutorizacionPedidosSapicaBU.vb" />
+    <Compile Include="SapicaWeb\EnfoqueVentasBU.vb" />
+    <Compile Include="SapicaWeb\PlanContingenciaBU.vb" />
+    <Compile Include="SapicaWeb\ReportesSapicaBU.vb" />
+    <Compile Include="SapicaWeb\VisitanteBU.vb" />
+    <Compile Include="PoliticaEmbarqueBU.vb" />
+    <Compile Include="PoliticaPagoBU.vb" />
+    <Compile Include="FormaPagoBU.vb" />
+    <Compile Include="MetodoPagoBU.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrecioBU.vb" />
+    <Compile Include="ProtectorFlejeBU.vb" />
+    <Compile Include="RamoBU.vb" />
+    <Compile Include="RestriccionesBU.vb" />
+    <Compile Include="RutaBU.vb" />
+    <Compile Include="TamanoEmpaqueBU.vb" />
+    <Compile Include="TipoClienteBU.vb" />
+    <Compile Include="TipoEmpaqueBU.vb" />
+    <Compile Include="TipoFlejeBU.vb" />
+    <Compile Include="TipoFleteBU.vb" />
+    <Compile Include="TipoTiendaBU.vb" />
+    <Compile Include="TipoValorBU.vb" />
+    <Compile Include="UnidadVentaBU.vb" />
+    <Compile Include="VentasPoliticasBU.vb" />
+    <Compile Include="VigenciaArticulos\VigenciaArticulosBU.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{01976FD5-CF48-4406-8118-782F1FCAAF18}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Negocios\Framework.Negocios.vbproj">
+      <Project>{44693732-f211-43d1-b164-72e528e990dc}</Project>
+      <Name>Framework.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolServicios\ToolServicios.csproj">
+      <Project>{ef601e3f-e67f-46c0-ad83-1813e1f1fb76}</Project>
+      <Name>ToolServicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ventas.Datos\Ventas.Datos.vbproj">
+      <Project>{C5352C2A-DE52-4CC3-9872-0B5E53C057E0}</Project>
+      <Name>Ventas.Datos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ventas\Datos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

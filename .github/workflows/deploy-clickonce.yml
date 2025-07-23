@@ -1,0 +1,103 @@
+permissions:
+  contents: write
+
+name: Publicación
+
+on:
+  workflow_dispatch:  # Ejecutable manualmente desde GitHub
+    inputs:
+       usarVersionMinimaActual:
+        description: "Marcar esta publicación como requerida"
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: clickonce-deploy-sapy-main
+  cancel-in-progress: true  # Rechaza ejecuciones simultáneas
+
+jobs:
+  build:
+    name: Publicar aplicación main
+    runs-on: self-hosted  # Necesario para acceder a la red local
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar MSBuild
+        uses: microsoft/setup-msbuild@v1
+        
+      - name: Establecer MinimumRequiredVersion desde ApplicationVersion + ApplicationRevision
+        if: ${{ github.event.inputs.usarVersionMinimaActual == 'true' }}
+        run: |
+          $archivo = "Framework.Vista\Framework.Vista.vbproj"
+          $contenido = Get-Content $archivo
+
+          # Obtener ApplicationVersion
+          $versionBase = ""
+          foreach ($linea in $contenido) {
+            if ($linea -match '<ApplicationVersion>(.*?)</ApplicationVersion>') {
+              $versionBase = $matches[1] -replace '%2a', '' -replace '\*', ''
+              break
+            }
+          }
+
+          if (-not $versionBase) {
+            Write-Error "No se encontró ApplicationVersion"
+            exit 1
+          }
+
+          # Obtener ApplicationRevision
+          $revision = ""
+          foreach ($linea in $contenido) {
+            if ($linea -match '<ApplicationRevision>(\d+)</ApplicationRevision>') {
+              $revision = $matches[1]
+              break
+            }
+          }
+
+          if (-not $revision) {
+            Write-Error "No se encontró ApplicationRevision"
+            exit 1
+          }
+
+          # Armar versión completa
+          $versionCompleta = "$versionBase$revision"
+          Write-Output "Versión final: $versionCompleta"
+ 
+          # Insertar o reemplazar MinimumRequiredVersion
+          if ($contenido -match '<MinimumRequiredVersion>.*?</MinimumRequiredVersion>') {
+            $contenido = $contenido -replace '<MinimumRequiredVersion>.*?</MinimumRequiredVersion>', "<MinimumRequiredVersion>$versionCompleta</MinimumRequiredVersion>"
+          }
+
+          Set-Content $archivo -Value $contenido -Encoding UTF8
+
+
+      - name: Publicar con ClickOnce
+        run: msbuild Framework.Vista/Framework.Vista.vbproj /target:Publish /p:Configuration=Debug /p:PublishDir="C:\inetpub\wwwroot\SAPY_2024\"
+
+
+      - name: Incrementar ApplicationRevision en .vbproj
+        run: |
+          $archivo = "Framework.Vista\Framework.Vista.vbproj"
+          $contenido = Get-Content $archivo
+          $linea = $contenido | Where-Object { $_ -match '<ApplicationRevision>(\d+)</ApplicationRevision>' }
+      
+          if ($linea -match '<ApplicationRevision>(\d+)</ApplicationRevision>') {
+            $rev = [int]$matches[1] + 1
+            $nuevoValor = "<ApplicationRevision>$rev</ApplicationRevision>"
+      
+            $contenido = $contenido -replace '<ApplicationRevision>\d+</ApplicationRevision>', $nuevoValor
+            Set-Content $archivo -Value $contenido -Encoding UTF8
+      
+            Write-Output "Revision incrementada: $rev"
+          }
+
+      - name: Commit y push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add Framework.Vista\Framework.Vista.vbproj
+          git commit -m "Auto: Cambio de revision"
+          git push origin main

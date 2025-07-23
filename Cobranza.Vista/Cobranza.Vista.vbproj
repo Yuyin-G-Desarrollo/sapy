@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FB8DA49-3991-4275-8BB5-DF969376E7BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cobranza.Vista</RootNamespace>
+    <AssemblyName>Cobranza.Vista</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Cobranza.Vista.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Cobranza.Vista.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Charts.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Drawing.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Data.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.PivotGrid.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v24.2.Export, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Data.Desktop.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Utils.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v24.2.UI, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Utils.v24.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraCharts.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.2.UI, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraCharts.v24.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.2.Wizard, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraCharts.v24.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraEditors.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraGrid.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraPrinting.v24.2.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Reports.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Reports.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Shared.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.AppStylistSupport.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.Misc.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.SupportDialogs.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.SupportDialogs.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinDock.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinEditors.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.DocumentExport.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.DocumentExport.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.ExcelExport.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Libreria_CFDI_33.Negocios">
+      <HintPath>..\Libreria_CFDI_33.Negocios\bin\Debug\Libreria_CFDI_33.Negocios.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formas\ConsultaInventario\Administracion_Inventario_ConsultaInventario.Designer.vb">
+      <DependentUpon>Administracion_Inventario_ConsultaInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ConsultaInventario\Administracion_Inventario_ConsultaInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ConsultaInventario\Administracion_Inventario_ConsultaInventarioDetalles.Designer.vb">
+      <DependentUpon>Administracion_Inventario_ConsultaInventarioDetalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ConsultaInventario\Administracion_Inventario_ConsultaInventarioDetalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EnvioCorreosFacturacionForm.Designer.vb">
+      <DependentUpon>EnvioCorreosFacturacionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EnvioCorreosFacturacionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Facturacion\EntregaYRecepcionDeDocumentosForm.Designer.vb">
+      <DependentUpon>EntregaYRecepcionDeDocumentosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Facturacion\EntregaYRecepcionDeDocumentosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListadoParametrosProyeccionEntregasForm.Designer.vb">
+      <DependentUpon>ListadoParametrosProyeccionEntregasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListadoParametrosProyeccionEntregasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NotasCredito\Cobranza_NC_PendientesTimbrarForm.Designer.vb">
+      <DependentUpon>Cobranza_NC_PendientesTimbrarForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NotasCredito\Cobranza_NC_PendientesTimbrarForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_AdministradorDocumentos_Detalles.Designer.vb">
+      <DependentUpon>Cobranza_AdministradorDocumentos_Detalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_AdministradorDocumentos_Detalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_ReporteListadodeCobranza_DepositosForm.Designer.vb">
+      <DependentUpon>Cobranza_ReporteListadodeCobranza_DepositosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_ReporteListadodeCobranza_DepositosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_ReporteProyeccionForm.Designer.vb">
+      <DependentUpon>Cobranza_ReporteProyeccionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_ReporteProyeccionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_Reportes_AdministradorDocumentos_Form.Designer.vb">
+      <DependentUpon>Cobranza_Reportes_AdministradorDocumentos_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_Reportes_AdministradorDocumentos_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_Reporte_EstadosdeCuentaporAgente.Designer.vb">
+      <DependentUpon>Cobranza_Reporte_EstadosdeCuentaporAgente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\Cobranza_Reporte_EstadosdeCuentaporAgente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\EnvioEstadosCuentaForm.Designer.vb">
+      <DependentUpon>EnvioEstadosCuentaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\EnvioEstadosCuentaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\EstadosCuentaGeneracionManualForm.Designer.vb">
+      <DependentUpon>EstadosCuentaGeneracionManualForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\EstadosCuentaGeneracionManualForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\ListadoParametrosProyeccionCobranza.Designer.vb">
+      <DependentUpon>ListadoParametrosProyeccionCobranza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\ListadoParametrosProyeccionCobranza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\ListadoParametrosReportes.Designer.vb">
+      <DependentUpon>ListadoParametrosReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\ListadoParametrosReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Reportes\VencimientosDeClientesPotencialesForm.Designer.vb">
+      <DependentUpon>VencimientosDeClientesPotencialesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Reportes\VencimientosDeClientesPotencialesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formas\ConsultaInventario\Administracion_Inventario_ConsultaInventario.resx">
+      <DependentUpon>Administracion_Inventario_ConsultaInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ConsultaInventario\Administracion_Inventario_ConsultaInventarioDetalles.resx">
+      <DependentUpon>Administracion_Inventario_ConsultaInventarioDetalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EnvioCorreosFacturacionForm.resx">
+      <DependentUpon>EnvioCorreosFacturacionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Facturacion\EntregaYRecepcionDeDocumentosForm.resx">
+      <DependentUpon>EntregaYRecepcionDeDocumentosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListadoParametrosProyeccionEntregasForm.resx">
+      <DependentUpon>ListadoParametrosProyeccionEntregasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NotasCredito\Cobranza_NC_PendientesTimbrarForm.resx">
+      <DependentUpon>Cobranza_NC_PendientesTimbrarForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\Cobranza_AdministradorDocumentos_Detalles.resx">
+      <DependentUpon>Cobranza_AdministradorDocumentos_Detalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\Cobranza_ReporteListadodeCobranza_DepositosForm.resx">
+      <DependentUpon>Cobranza_ReporteListadodeCobranza_DepositosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\Cobranza_ReporteProyeccionForm.resx">
+      <DependentUpon>Cobranza_ReporteProyeccionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\Cobranza_Reportes_AdministradorDocumentos_Form.resx">
+      <DependentUpon>Cobranza_Reportes_AdministradorDocumentos_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\Cobranza_Reporte_EstadosdeCuentaporAgente.resx">
+      <DependentUpon>Cobranza_Reporte_EstadosdeCuentaporAgente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\EnvioEstadosCuentaForm.resx">
+      <DependentUpon>EnvioEstadosCuentaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\EstadosCuentaGeneracionManualForm.resx">
+      <DependentUpon>EstadosCuentaGeneracionManualForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\ListadoParametrosProyeccionCobranza.resx">
+      <DependentUpon>ListadoParametrosProyeccionCobranza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\ListadoParametrosReportes.resx">
+      <DependentUpon>ListadoParametrosReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Reportes\VencimientosDeClientesPotencialesForm.resx">
+      <DependentUpon>VencimientosDeClientesPotencialesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{01976fd5-cf48-4406-8118-782f1fcaaf18}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturacion.Negocios\Facturacion.Negocios.vbproj">
+      <Project>{00657bed-ae91-4283-ae0e-0b222e6bc45c}</Project>
+      <Name>Facturacion.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Negocios\Framework.Negocios.vbproj">
+      <Project>{44693732-f211-43d1-b164-72e528e990dc}</Project>
+      <Name>Framework.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolServicios\ToolServicios.csproj">
+      <Project>{ef601e3f-e67f-46c0-ad83-1813e1f1fb76}</Project>
+      <Name>ToolServicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vbproj">
+      <Project>{400f3e25-60b7-4f1c-b8fc-c063d6c563ea}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enviar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1373584033_navigate-up.png" />
+    <Content Include="Resources\1373584074_navigate-down.png" />
+    <Content Include="Resources\agregar_321.png" />
+    <Content Include="Resources\catalogos_32.png" />
+    <Content Include="Resources\limpiar_32.png" />
+    <Content Include="Resources\logoYuyin.jpg" />
+    <Content Include="Resources\reporteDeducciones-.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

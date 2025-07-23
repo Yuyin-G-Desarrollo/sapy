@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{9F30130E-379A-42F9-8B66-EC255333BDFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Nomina.Datos</RootNamespace>
+    <AssemblyName>Nomina.Datos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Nomina.Datos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Nomina.Datos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Transacciones\ArchivosDA.vb" />
+    <Compile Include="Transacciones\AreasDA.vb" />
+    <Compile Include="Transacciones\AutorizacionPrestamoDA.vb" />
+    <Compile Include="Transacciones\CajaAhorro\CajaAhorroDA.vb" />
+    <Compile Include="Transacciones\CajaAhorro\ColaboradorPeriodoCajaDA.vb" />
+    <Compile Include="Transacciones\CajaAhorro\ConfiguracionCajaNaveDA.vb" />
+    <Compile Include="Transacciones\CajaAhorro\ReporteCajaAhorroDA.vb" />
+    <Compile Include="Transacciones\CajaColaboradorDA.vb" />
+    <Compile Include="Transacciones\CajasDA.vb" />
+    <Compile Include="Transacciones\CalcularAguinaldoDA.vb" />
+    <Compile Include="Transacciones\CalcularDestajosDA.vb" />
+    <Compile Include="Transacciones\CalcularNominaRealDA.vb" />
+    <Compile Include="Transacciones\CalcularPrimaVacacionalDA.vb" />
+    <Compile Include="Transacciones\CalculoNominaFiscalDA.vb" />
+    <Compile Include="Transacciones\CelulasDA.vb" />
+    <Compile Include="Transacciones\CobranzaPrestamosDA.vb" />
+    <Compile Include="Transacciones\ColaboradorAcademicoDA.vb" />
+    <Compile Include="Transacciones\ColaboradoresDA.vb" />
+    <Compile Include="Transacciones\ColaboradorLaboralDA.vb" />
+    <Compile Include="Transacciones\ColaboradorMedicaDA.vb" />
+    <Compile Include="Transacciones\ColaboradorNominaDA.vb" />
+    <Compile Include="Transacciones\ColaboradorRealDA.vb" />
+    <Compile Include="Transacciones\ColaboradorReferenciasDA.vb" />
+    <Compile Include="Transacciones\ConfiguracionGratificacionDA.vb" />
+    <Compile Include="Transacciones\ConfiguracionNaveNominaDA.vb" />
+    <Compile Include="Transacciones\ConfiguracionPermisosDA.vb" />
+    <Compile Include="Transacciones\ConfiguracionPrestamosDA.vb" />
+    <Compile Include="Transacciones\ConsultaPrestamosDA.vb" />
+    <Compile Include="Transacciones\ControlAsistenciaDA.vb" />
+    <Compile Include="Transacciones\ControlAsistencia\ReporteColaboradoresDA.vb" />
+    <Compile Include="Transacciones\ControlDePeriodosDA.vb" />
+    <Compile Include="Transacciones\CorteChecadorDA.vb" />
+    <Compile Include="Transacciones\CorteNominaRealDA.vb" />
+    <Compile Include="Transacciones\CredencialesDA.vb" />
+    <Compile Include="Transacciones\DeduccionesDA.vb" />
+    <Compile Include="Transacciones\DeduccionRealImssDA.vb" />
+    <Compile Include="Transacciones\Destajos\CorteDestajosDA.vb" />
+    <Compile Include="Transacciones\DetalleHorarioDA.vb" />
+    <Compile Include="Transacciones\ExcepcionesHorariosDA.vb" />
+    <Compile Include="Transacciones\ExcepcionesHorariosHorasDA.vb" />
+    <Compile Include="Transacciones\ExcepcionMotivoDA.vb" />
+    <Compile Include="Transacciones\FactoresDeIntegracionDA.vb" />
+    <Compile Include="Transacciones\FiniquitosDA.vb" />
+    <Compile Include="Transacciones\HistorialSalariosDA.vb" />
+    <Compile Include="Transacciones\HorariosDA.vb" />
+    <Compile Include="Transacciones\HorasDA.vb" />
+    <Compile Include="Transacciones\HorasExtrasDA.vb" />
+    <Compile Include="Transacciones\ImpuestoSubsidioEmpleoDA.vb" />
+    <Compile Include="Transacciones\Incapacidades\IncapacidadesDA.vb" />
+    <Compile Include="Transacciones\IncentivosDA.vb" />
+    <Compile Include="Transacciones\MotivosFiniquitoDA.vb" />
+    <Compile Include="Transacciones\MotivosPrestamoDA.vb" />
+    <Compile Include="Transacciones\NominaDestajos\NominaDestajosDA.vb" />
+    <Compile Include="Transacciones\Nominpaq\ColaboradoresReplicarDA.vb" />
+    <Compile Include="Transacciones\Nominpaq\ControlAsistenciaReplicarDA.vb" />
+    <Compile Include="Transacciones\Nominpaq\IncapacidadesReplicarDA.vb" />
+    <Compile Include="Transacciones\PagoProveedorDA.vb" />
+    <Compile Include="Transacciones\PatronesDA.vb" />
+    <Compile Include="Transacciones\PercepcionesDA.vb" />
+    <Compile Include="Transacciones\RangoSubsidioEmpleoDA.vb" />
+    <Compile Include="Transacciones\RealesFiscalesDA.vb" />
+    <Compile Include="Transacciones\RegistroCheckDA.vb" />
+    <Compile Include="Transacciones\RegistroExcepcionesDA.vb" />
+    <Compile Include="Transacciones\SolicitudNominaConfiguracion\Nomina_SolicitudNominaConfiguracionDA.vb" />
+    <Compile Include="Transacciones\SolicitudPrestamoDA.vb" />
+    <Compile Include="Transacciones\TicketsDA.vb" />
+    <Compile Include="Transacciones\VacacionesDA.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{01976FD5-CF48-4406-8118-782F1FCAAF18}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistencia\Persistencia.vbproj">
+      <Project>{DF0490B2-277F-4DE2-933E-110071D3A630}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

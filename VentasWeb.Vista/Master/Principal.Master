@@ -1,0 +1,130 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Principal.Master.vb" Inherits="VentasWeb.Vista.Site1" %>
+
+<%@ Import Namespace="Entidades" %>
+
+<%@ Import Namespace="Framework.Negocios" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <%--aqui no poner nada--%>
+    </asp:ContentPlaceHolder>
+    <%--contenido del header poner apartir de aqui--%>
+
+    <style type="text/css" rel="stylesheet">
+        #logo {
+            float: left;
+            width: 10.5em;
+            background: #CCCCCC;
+            padding: 0.5em 0.5em 0.5em 1em;
+            margin: 0;
+        }
+
+        .primaryStaticMenu {
+            background-color: transparent;
+            /*float: right;*/
+        }
+
+        .primaryStaticMenuItem {
+            width: 10em;
+            background-color: #59B7D3; /*color de fondo de menu nivel 1*/
+            border-width: 1px;
+            border-color: #efefef #aaab9c #ccc #efefef;
+            border-style: solid;
+            color: #FFF;
+            padding: 0.5em 0em 0.5em 1em;
+            font-family:Arial;
+            font-weight:bold;
+            font-size:small;
+        }
+
+        .primaryStaticHover {
+            color: #800000;
+            background: #f0e7d7;
+        }
+
+        .primaryDynamicMenu {
+            background-color: #f7f2ea;
+            border-bottom: solid 1px #ccc;
+        }
+
+        .primaryDynamicMenuItem {
+            width: 10em;
+            background-color: #89D0E5;
+            color: #FFF;
+            padding: 0.5em 0 0.5em 1em;
+            border-width: 1px;
+            border-color: #f7f2ea #aaab9c #f7f2ea #efefef;
+            border-style: solid;
+            font-family:Arial;
+            font-weight:bold;
+             font-size:small;
+        }
+
+        .primaryDynamicHover {
+            color: #800000;
+            background: #f0e7d7;
+        }
+
+        .secondaryLevelOne {
+            background-color: transparent;
+            background-repeat: repeat-x;
+            margin: 1.5em 0 0 0;
+            padding: 5px 0 0 5px;
+            width: 12em;
+            height: 35px;
+        }
+
+        .secondaryLevelTwo {
+            background: #FAFBFB;
+            padding: 5px 0 5px 5px;
+        }
+
+        .secondaryStaticHover {
+            color: #800000;
+        }
+        #footer {
+            width:100%;
+            height:20px;
+            position:absolute;
+            bottom:0;
+            left:0;
+            background-color: #006390;
+
+        }
+
+        #menuPrincipal {
+            width:100%;
+            height:50px;
+            position:absolute;
+            top:0;
+            left:0;
+            background-color: #0ca3d2;
+           
+        }
+    </style>
+</head>
+<body style="background-color:#E3F0F1;">
+    <form id="form1" runat="server">
+        <div id="menuPrincipal"></div>
+        
+                    <asp:Menu ID="menu" runat="server" Orientation="Horizontal">
+                        <StaticMenuStyle CssClass="primaryStaticMenu" />
+                        <StaticMenuItemStyle CssClass="primaryStaticMenuItem" />
+                        <StaticHoverStyle CssClass="primaryStaticHover" />
+                        <DynamicMenuStyle CssClass="primaryDynamicMenu" />
+                        <DynamicMenuItemStyle CssClass="primaryDynamicMenuItem" />
+                        <DynamicHoverStyle CssClass="primaryDynamicHover" />
+                    </asp:Menu>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer"></div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <section name="Framework.Vista.SAPY.SAPY.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+        </sectionGroup>
+    </configSections>
+    <system.diagnostics>
+        <sources>
+            <!-- En esta sección se define la configuración del registro para My.Application.Log -->
+            <source name="DefaultSource" switchName="DefaultSwitch">
+                <listeners>
+                    <add name="FileLog"/>
+                    <!-- Quite los comentarios de la sección posterior para escribir en el registro de eventos de la aplicación -->
+                    <!--<add name="EventLog"/>-->
+                </listeners>
+            </source>
+        </sources>
+        <switches>
+            <add name="DefaultSwitch" value="Information"/>
+        </switches>
+        <sharedListeners>
+            <add name="FileLog" type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" initializeData="FileLogWriter"/>          
+        </sharedListeners>
+    </system.diagnostics>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8"/>
+  </startup>
+    <system.serviceModel>
+        <bindings/>
+        <client/>
+    </system.serviceModel>
+    <userSettings>
+        <Framework.Vista.SAPY.SAPY.My.MySettings>
+            <setting name="header" serializeAs="String">
+                <value>#FFFFFF</value>
+            </setting>
+            <setting name="grid" serializeAs="String">
+                <value>#F0F8FF</value>
+            </setting>
+            <setting name="fondo" serializeAs="String">
+                <value>#1E90FF</value>
+            </setting>
+            <setting name="etiquetas" serializeAs="String">
+                <value>#4682B4</value>
+            </setting>
+            <setting name="titulo" serializeAs="String">
+                <value>#B0C4DE</value>
+            </setting>
+            <setting name="publicacion" serializeAs="String">
+                <value>SAPY</value>
+            </setting>
+        </Framework.Vista.SAPY.SAPY.My.MySettings>
+    </userSettings>
+</configuration>

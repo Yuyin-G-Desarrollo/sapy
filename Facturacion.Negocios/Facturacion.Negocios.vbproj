@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00657BED-AE91-4283-AE0E-0B222E6BC45C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Facturacion.Negocios</RootNamespace>
+    <AssemblyName>Facturacion.Negocios</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Facturacion.Negocios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Facturacion.Negocios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Stimulsoft.Base, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Stimulsoft.Report.BarCodes" />
+    <Import Include="Stimulsoft.Report.BarCodes.Design" />
+    <Import Include="Stimulsoft.Report.Export" />
+    <Import Include="Stimulsoft.Report.Export.Tools" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalesFacturacionBU.vb" />
+    <Compile Include="Operaciones\3.3\Facturas\ComplementoPagoBU.vb" />
+    <Compile Include="Operaciones\3.3\Facturas\FacturasBU.vb" />
+    <Compile Include="Operaciones\3.3\Facturas\GlobalesFacturacion.vb" />
+    <Compile Include="Operaciones\3.3\Facturas\NotaCreditoBU.vb" />
+    <Compile Include="Operaciones\3.3\Facturas\TimbradoFacturasBU.vb" />
+    <Compile Include="Operaciones\3.3\Facturas\TimbradoNominaBU.vb" />
+    <Compile Include="Operaciones\3.3\Facturas\TrasladosBU.vb" />
+    <Compile Include="Operaciones\3.3\Facturas\UtileriasFacturasBU.vb" />
+    <Compile Include="Operaciones\3.3\Reportes\ReportePDFBU.vb" />
+    <Compile Include="Operaciones\3.3\Timbrado\TimbradoBU.vb" />
+    <Compile Include="Operaciones\RemisionBU.vb" />
+    <Compile Include="Operaciones\WebRemisionBU.vb" />
+    <Compile Include="Operaciones\ClientesCFDIBU.vb" />
+    <Compile Include="Operaciones\EmpresasBU.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Operaciones\FacturaBU.vb" />
+    <Compile Include="Operaciones\ProductosFactBU.vb" />
+    <Compile Include="Operaciones\SucursalesBU.vb" />
+    <Compile Include="Operaciones\TransferenciaFTPBU.vb" />
+    <Compile Include="Operaciones\UtileriasBU.vb" />
+    <Compile Include="Operaciones\WebFacturasBU.vb" />
+    <Compile Include="Web References\mx.com.paxfacturacion.testCancelar\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\mx.com.paxfacturacion.testCanc\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\mx.com.paxfacturacion.test\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\mx.com.paxfacturacion.wwwCancv2\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\mx.com.paxfacturacion.wwwCanc\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\mx.com.paxfacturacion.www\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\mx.com.paxfacturacion.testCancelar\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\mx.com.paxfacturacion.testCancelar\wcfCancelaASMX.wsdl" />
+    <None Include="Web References\mx.com.paxfacturacion.testCanc\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\mx.com.paxfacturacion.testCanc\wcfCancelaASMX.wsdl" />
+    <None Include="Web References\mx.com.paxfacturacion.test\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\mx.com.paxfacturacion.test\wcfRecepcionASMX.wsdl" />
+    <None Include="Web References\mx.com.paxfacturacion.wwwCancv2\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\mx.com.paxfacturacion.wwwCancv2\wcfCancelaASMX.wsdl" />
+    <None Include="Web References\mx.com.paxfacturacion.wwwCanc\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\mx.com.paxfacturacion.wwwCanc\wcfCancelaasmx.wsdl" />
+    <None Include="Web References\mx.com.paxfacturacion.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\mx.com.paxfacturacion.www\wcfRecepcionasmx.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contabilidad.Negocios\Contabilidad.Negocios.vbproj">
+      <Project>{d8ce2e3d-cab0-40de-aaf3-c0f2343218bf}</Project>
+      <Name>Contabilidad.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{01976fd5-cf48-4406-8118-782f1fcaaf18}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturacion.Datos\Facturacion.Datos.vbproj">
+      <Project>{ab8351f9-7b9a-4271-bee5-683567f21740}</Project>
+      <Name>Facturacion.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Negocios\Framework.Negocios.vbproj">
+      <Project>{44693732-f211-43d1-b164-72e528e990dc}</Project>
+      <Name>Framework.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolServicios\ToolServicios.csproj">
+      <Project>{ef601e3f-e67f-46c0-ad83-1813e1f1fb76}</Project>
+      <Name>ToolServicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vbproj">
+      <Project>{400f3e25-60b7-4f1c-b8fc-c063d6c563ea}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://test.paxfacturacion.com.mx:453/webservices/wcfCancelaASMX.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mx.com.paxfacturacion.testCanc\</RelPath>
+      <UpdateFromURL>https://test.paxfacturacion.com.mx:453/webservices/wcfCancelaASMX.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Facturacion_Negocios_mx_com_paxfacturacion_testCanc_wcfCancelaASMX</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://test.paxfacturacion.com.mx:453/webservices/wcfRecepcionASMX.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mx.com.paxfacturacion.test\</RelPath>
+      <UpdateFromURL>https://test.paxfacturacion.com.mx:453/webservices/wcfRecepcionASMX.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Facturacion_Negocios_mx_com_paxfacturacion_test_wcfRecepcionASMX</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://test.paxfacturacion.com.mx:476/webservices/wcfCancelaASMX.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mx.com.paxfacturacion.testCancelar\</RelPath>
+      <UpdateFromURL>https://test.paxfacturacion.com.mx:476/webservices/wcfCancelaASMX.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Facturacion_Negocios_mx_com_paxfacturacion_testCancelar_wcfCancelaASMX</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.paxfacturacion.com.mx:453/webservices/wcfCancelaasmx.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mx.com.paxfacturacion.wwwCanc\</RelPath>
+      <UpdateFromURL>https://www.paxfacturacion.com.mx:453/webservices/wcfCancelaasmx.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Facturacion_Negocios_mx_com_paxfacturacion_wwwCanc_wcfCancelaASMX</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.paxfacturacion.com.mx:453/webservices/wcfRecepcionasmx.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mx.com.paxfacturacion.www\</RelPath>
+      <UpdateFromURL>https://www.paxfacturacion.com.mx:453/webservices/wcfRecepcionasmx.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Facturacion_Negocios_mx_com_paxfacturacion_www_wcfRecepcionASMX</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.paxfacturacion.com.mx:476/webservices/wcfCancelaASMX.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mx.com.paxfacturacion.wwwCancv2\</RelPath>
+      <UpdateFromURL>https://www.paxfacturacion.com.mx:476/webservices/wcfCancelaASMX.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Facturacion_Negocios_mx_com_paxfacturacion_wwwCancv21_wcfCancelaASMX</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\mx.com.paxfacturacion.test\wcfRecepcionASMX.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\mx.com.paxfacturacion.testCanc\wcfCancelaASMX.disco" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

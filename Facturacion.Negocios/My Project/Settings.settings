@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Facturacion_Negocios_mx_com_paxfacturacion_test_wcfRecepcionASMX" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://test.paxfacturacion.com.mx:453/webservices/wcfRecepcionASMX.asmx</Value>
+    </Setting>
+    <Setting Name="Facturacion_Negocios_mx_com_paxfacturacion_testCanc_wcfCancelaASMX" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://test.paxfacturacion.com.mx:453/webservices/wcfCancelaASMX.asmx</Value>
+    </Setting>
+    <Setting Name="Facturacion_Negocios_mx_com_paxfacturacion_www_wcfRecepcionASMX" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://www.paxfacturacion.com.mx:453/webservices/wcfRecepcionasmx.asmx</Value>
+    </Setting>
+    <Setting Name="Facturacion_Negocios_mx_com_paxfacturacion_wwwCanc_wcfCancelaASMX" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://www.paxfacturacion.com.mx:453/webservices/wcfCancelaasmx.asmx</Value>
+    </Setting>
+    <Setting Name="FacftpURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ftp://192.168.2.158</Value>
+    </Setting>
+    <Setting Name="FacftpUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ftpaccess</Value>
+    </Setting>
+    <Setting Name="FacftpPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Yuyin2017"</Value>
+    </Setting>
+    <Setting Name="ServidorRestPruebasPruebas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:7639/</Value>
+    </Setting>
+    <Setting Name="ServidorRest" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.2.158:8040/</Value>
+    </Setting>
+    <Setting Name="ServidorRestCorreo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.2.158:8040/</Value>
+    </Setting>
+    <Setting Name="Facturacion_Negocios_mx_com_paxfacturacion_wwwCancv21_wcfCancelaASMX" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://www.paxfacturacion.com.mx:476/webservices/wcfCancelaASMX.asmx</Value>
+    </Setting>
+    <Setting Name="Facturacion_Negocios_mx_com_paxfacturacion_testCancelar_wcfCancelaASMX" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://test.paxfacturacion.com.mx:476/webservices/wcfCancelaASMX.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

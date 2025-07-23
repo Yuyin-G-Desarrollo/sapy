@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="FacftpURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ftp://192.168.2.158</Value>
+    </Setting>
+    <Setting Name="FacftpUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ftpaccess</Value>
+    </Setting>
+    <Setting Name="FacftpPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Yuyin2017"</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

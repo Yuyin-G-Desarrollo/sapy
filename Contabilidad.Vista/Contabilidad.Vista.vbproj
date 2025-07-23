@@ -1,0 +1,1229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38222E94-0D9E-4500-B093-A8C10242C657}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Contabilidad.Vista</RootNamespace>
+    <AssemblyName>Contabilidad.Vista</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Contabilidad.Vista.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Contabilidad.Vista.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Drawing.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v24.2.Export, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v24.2.Core, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Documents.Excel.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Shared.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDock.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Stimulsoft.Base, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Controls, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos\CatalogosNomina\CatalogoDepartamentosForm.Designer.vb">
+      <DependentUpon>CatalogoDepartamentosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\CatalogoDepartamentosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\CatalogoSalariosMinimos_UmasForm.Designer.vb">
+      <DependentUpon>CatalogoSalariosMinimos_UmasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\CatalogoSalariosMinimos_UmasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\ComponentesSalariosMinimos_Umas\EditarSalariosMinimos_UmasForm.Designer.vb">
+      <DependentUpon>EditarSalariosMinimos_UmasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\ComponentesSalariosMinimos_Umas\EditarSalariosMinimos_UmasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\CatalogoPuestoFiscalForm.Designer.vb">
+      <DependentUpon>CatalogoPuestoFiscalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\CatalogoPuestoFiscalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\ComponentesDepartamentos\AltaDepartamentosForm.Designer.vb">
+      <DependentUpon>AltaDepartamentosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\ComponentesDepartamentos\AltaDepartamentosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\ComponentesPuestoFiscal\AltaPuestoFiscalForm.Designer.vb">
+      <DependentUpon>AltaPuestoFiscalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\ComponentesPuestoFiscal\AltaPuestoFiscalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\TabuladorSueldosForm.Designer.vb">
+      <DependentUpon>TabuladorSueldosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatalogosNomina\TabuladorSueldosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\ContadorTimbres\ContadorTimbres_Form.Designer.vb">
+      <DependentUpon>ContadorTimbres_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ContadorTimbres\ContadorTimbres_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CuentasContables\CuentasContpaqForm.Designer.vb">
+      <DependentUpon>CuentasContpaqForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CuentasContables\CuentasContpaqForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CuentasContables\RegistrodeCuentasForm.Designer.vb">
+      <DependentUpon>RegistrodeCuentasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CuentasContables\RegistrodeCuentasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes DiasNoLaborales\AltaDiasNoLaboralesForm.Designer.vb">
+      <DependentUpon>AltaDiasNoLaboralesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes DiasNoLaborales\AltaDiasNoLaboralesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes Vacaciones\AltaPeriodoVacacionesForm.Designer.vb">
+      <DependentUpon>AltaPeriodoVacacionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes Vacaciones\AltaPeriodoVacacionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes Vacaciones\EditarPeriodoVacacionesForm.Designer.vb">
+      <DependentUpon>EditarPeriodoVacacionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes Vacaciones\EditarPeriodoVacacionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes DiasNoLaborales\EditarDiasNoLaborablesForm.Designer.vb">
+      <DependentUpon>EditarDiasNoLaborablesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes DiasNoLaborales\EditarDiasNoLaborablesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes Vacaciones\FiltroPatronesForm.Designer.vb">
+      <DependentUpon>FiltroPatronesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\Componentes Vacaciones\FiltroPatronesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\ListaDiasNoLaborablesForm.Designer.vb">
+      <DependentUpon>ListaDiasNoLaborablesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\ListaDiasNoLaborablesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\CatalogoPeriodosDeVacacionesForm.Designer.vb">
+      <DependentUpon>CatalogoPeriodosDeVacacionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\DiasNoLaborables\CatalogoPeriodosDeVacacionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Patrones\AltaPatronesForm.Designer.vb">
+      <DependentUpon>AltaPatronesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Patrones\AltaPatronesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Patrones\ListaPatronesContForm.Designer.vb">
+      <DependentUpon>ListaPatronesContForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Patrones\ListaPatronesContForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Patrones\ListaPatronesRelacionNaveForm.Designer.vb">
+      <DependentUpon>ListaPatronesRelacionNaveForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Patrones\ListaPatronesRelacionNaveForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Patrones\RelacionNavePatronForm.Designer.vb">
+      <DependentUpon>RelacionNavePatronForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Patrones\RelacionNavePatronForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\TablasSubsidioEmpleo\AltaEdicion_TablasSPEForm.Designer.vb">
+      <DependentUpon>AltaEdicion_TablasSPEForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TablasSubsidioEmpleo\AltaEdicion_TablasSPEForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\TablasSubsidioEmpleo\CatalogoTablasSubsidioEmpleoForm.Designer.vb">
+      <DependentUpon>CatalogoTablasSubsidioEmpleoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TablasSubsidioEmpleo\CatalogoTablasSubsidioEmpleoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\TablasYTarifas\AltaEdicion_TablasTarifasForm.Designer.vb">
+      <DependentUpon>AltaEdicion_TablasTarifasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TablasYTarifas\AltaEdicion_TablasTarifasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\TablasYTarifas\CatalogoTablasTarifasForm.Designer.vb">
+      <DependentUpon>CatalogoTablasTarifasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TablasYTarifas\CatalogoTablasTarifasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AguinaldoVacaciones\CalculoAguinaldosFiscalesForm.Designer.vb">
+      <DependentUpon>CalculoAguinaldosFiscalesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AguinaldoVacaciones\CalculoAguinaldosFiscalesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AguinaldoVacaciones\FechaPagoForm.Designer.vb">
+      <DependentUpon>FechaPagoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AguinaldoVacaciones\FechaPagoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\AutorizacionAltaIMSSForm.Designer.vb">
+      <DependentUpon>AutorizacionAltaIMSSForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\AutorizacionAltaIMSSForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\CompletarAltaColaboradorIMSSForm.Designer.vb">
+      <DependentUpon>CompletarAltaColaboradorIMSSForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\CompletarAltaColaboradorIMSSForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\GeneracionAltasIMSSForm.Designer.vb">
+      <DependentUpon>GeneracionAltasIMSSForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\GeneracionAltasIMSSForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BajaCambioNave\BajaCambioNaveForm.Designer.vb">
+      <DependentUpon>BajaCambioNaveForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BajaCambioNave\BajaCambioNaveForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BajaCambioNave\BajaCambioPatronForm.Designer.vb">
+      <DependentUpon>BajaCambioPatronForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BajaCambioNave\BajaCambioPatronForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BajaCambioNave\CambioNaveColaboradorForm.Designer.vb">
+      <DependentUpon>CambioNaveColaboradorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BajaCambioNave\CambioNaveColaboradorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BajaCambioNave\CambioPatronColaboradorForm.Designer.vb">
+      <DependentUpon>CambioPatronColaboradorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BajaCambioNave\CambioPatronColaboradorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BitacoraMovimientos\BitacoraMovimientosForm.Designer.vb">
+      <DependentUpon>BitacoraMovimientosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BitacoraMovimientos\BitacoraMovimientosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\AltaComisionesMensualesForm.Designer.vb">
+      <DependentUpon>AltaComisionesMensualesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\AltaComisionesMensualesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\EditarSolicituModSalarioMixtoForm.Designer.vb">
+      <DependentUpon>EditarSolicituModSalarioMixtoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\EditarSolicituModSalarioMixtoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\ListaComisionesMensualesForm.Designer.vb">
+      <DependentUpon>ListaComisionesMensualesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\ListaComisionesMensualesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\ListaModificacionSalarioMixtoForm.Designer.vb">
+      <DependentUpon>ListaModificacionSalarioMixtoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\ListaModificacionSalarioMixtoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\ModSalarioMixtoPDFAcuseForm.Designer.vb">
+      <DependentUpon>ModSalarioMixtoPDFAcuseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Comisiones\ModSalarioMixtoPDFAcuseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\ControlAsistencia\ControlAsistenciaFiscalForm.Designer.vb">
+      <DependentUpon>ControlAsistenciaFiscalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\ControlAsistencia\ControlAsistenciaFiscalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\CorteNominaFiscal\ConsultaCorteNominaFiscal.Designer.vb">
+      <DependentUpon>ConsultaCorteNominaFiscal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\CorteNominaFiscal\ConsultaCorteNominaFiscal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\CorteNominaFiscal\DatosAjusteSPEMensualForm.Designer.vb">
+      <DependentUpon>DatosAjusteSPEMensualForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\CorteNominaFiscal\DatosAjusteSPEMensualForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\CorteNominaFiscal\ReporteAcumuladosNominaFiscalForm.Designer.vb">
+      <DependentUpon>ReporteAcumuladosNominaFiscalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\CorteNominaFiscal\ReporteAcumuladosNominaFiscalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Finiquito\CalculoFiniquitoForm.Designer.vb">
+      <DependentUpon>CalculoFiniquitoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Finiquito\CalculoFiniquitoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Finiquito\GenerarReporteFiniquitoForm.Designer.vb">
+      <DependentUpon>GenerarReporteFiniquitoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Finiquito\GenerarReporteFiniquitoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\GenerarPDFReciboNomina.vb" />
+    <Compile Include="Formas\NominaFiscal\Incapacidades\AltaIncapacidadesForm.Designer.vb">
+      <DependentUpon>AltaIncapacidadesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Incapacidades\AltaIncapacidadesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Incapacidades\EditarIncapacidadesForm.Designer.vb">
+      <DependentUpon>EditarIncapacidadesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Incapacidades\EditarIncapacidadesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Incapacidades\ListaIncapacidadesForm.Designer.vb">
+      <DependentUpon>ListaIncapacidadesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Incapacidades\ListaIncapacidadesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Incapacidades\ListaSolicitudesIncapacidadesForm.Designer.vb">
+      <DependentUpon>ListaSolicitudesIncapacidadesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Incapacidades\ListaSolicitudesIncapacidadesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\AltaMovCreditoInfonavitContForm.Designer.vb">
+      <DependentUpon>AltaMovCreditoInfonavitContForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\AltaMovCreditoInfonavitContForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CuentaBancaria\AltaCuenta_BancariaForm.Designer.vb">
+      <DependentUpon>AltaCuenta_BancariaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CuentaBancaria\AltaCuenta_BancariaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CuentasContables\AltaEditarCuentaContableForm.Designer.vb">
+      <DependentUpon>AltaEditarCuentaContableForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CuentasContables\AltaEditarCuentaContableForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CuentasContables\ListaCuentaContableForm.Designer.vb">
+      <DependentUpon>ListaCuentaContableForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CuentasContables\ListaCuentaContableForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CuentasGenerales\AltaCuentaGeneralForm.Designer.vb">
+      <DependentUpon>AltaCuentaGeneralForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CuentasGenerales\AltaCuentaGeneralForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CuentasGenerales\ListaCuentaGeneralForm.Designer.vb">
+      <DependentUpon>ListaCuentaGeneralForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CuentasGenerales\ListaCuentaGeneralForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\EmpresaSAY_SICY\AltaEdicion_Empresa_SayForm.Designer.vb">
+      <DependentUpon>AltaEdicion_Empresa_SayForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\EmpresaSAY_SICY\AltaEdicion_Empresa_SayForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\EmpresaSAY_SICY\RelacionarEmpresaSaySicyContpaqForm.Designer.vb">
+      <DependentUpon>RelacionarEmpresaSaySicyContpaqForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\EmpresaSAY_SICY\RelacionarEmpresaSaySicyContpaqForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\ListadoParametrosBusquedaForm.Designer.vb">
+      <DependentUpon>ListadoParametrosBusquedaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ListadoParametrosBusquedaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\PermisosUsuarioEmpresa\ListaPermisosUsuarioEmpresaForm.Designer.vb">
+      <DependentUpon>ListaPermisosUsuarioEmpresaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\PermisosUsuarioEmpresa\ListaPermisosUsuarioEmpresaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\PermisosUsuarioEmpresa\Vinculacion_UsuarioEmpresaForm.Designer.vb">
+      <DependentUpon>Vinculacion_UsuarioEmpresaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\PermisosUsuarioEmpresa\Vinculacion_UsuarioEmpresaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\TipoPoliza\AltaTipoPolizaForm.Designer.vb">
+      <DependentUpon>AltaTipoPolizaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TipoPoliza\AltaTipoPolizaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\TipoPoliza\EditarTipoPolizaForm.Designer.vb">
+      <DependentUpon>EditarTipoPolizaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TipoPoliza\EditarTipoPolizaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CuentaBancaria\Lista_Cuenta_BancariaForm.Designer.vb">
+      <DependentUpon>Lista_Cuenta_BancariaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CuentaBancaria\Lista_Cuenta_BancariaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\TipoPoliza\ListaTipoPolizaForm.Designer.vb">
+      <DependentUpon>ListaTipoPolizaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TipoPoliza\ListaTipoPolizaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\EmpresaSAY_SICY\Lista_EmpresaSAY_SICY_ContpaqForm.Designer.vb">
+      <DependentUpon>Lista_EmpresaSAY_SICY_ContpaqForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\EmpresaSAY_SICY\Lista_EmpresaSAY_SICY_ContpaqForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Formas\Comprobantes\comprobantesFiscalesForm.Designer.vb">
+      <DependentUpon>comprobantesFiscalesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Comprobantes\comprobantesFiscalesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Comprobantes\Filtro_ComprobantesFiscales_ClientesProveedores_ConGridForm.Designer.vb">
+      <DependentUpon>Filtro_ComprobantesFiscales_ClientesProveedores_ConGridForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Comprobantes\Filtro_ComprobantesFiscales_ClientesProveedores_ConGridForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Comprobantes\ReemplazarXMLDañadosForm.Designer.vb">
+      <DependentUpon>ReemplazarXMLDañadosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Comprobantes\ReemplazarXMLDañadosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Comprobantes\RelacionComprobantesFiscalesForm.Designer.vb">
+      <DependentUpon>RelacionComprobantesFiscalesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Comprobantes\RelacionComprobantesFiscalesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ContabilidadElectronica\ReportePolizasPeriodo.Designer.vb">
+      <DependentUpon>ReportePolizasPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ContabilidadElectronica\ReportePolizasPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\AltaColaboradorContabilidadForm.Designer.vb">
+      <DependentUpon>AltaColaboradorContabilidadForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\AltaColaboradorContabilidadForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\AltaColaboradoresIMSSForm.Designer.vb">
+      <DependentUpon>AltaColaboradoresIMSSForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\AltaColaboradoresIMSSForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\AltaMovCreditoInfonavitNaveForm.Designer.vb">
+      <DependentUpon>AltaMovCreditoInfonavitNaveForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\AltaMovCreditoInfonavitNaveForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\ModificacionSalario\AltasSolicitudModSalarioForm.Designer.vb">
+      <DependentUpon>AltasSolicitudModSalarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\ModificacionSalario\AltasSolicitudModSalarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BuscarColaboradorForm.Designer.vb">
+      <DependentUpon>BuscarColaboradorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\BuscarColaboradorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\ExpedienteColaboradorForm.Designer.vb">
+      <DependentUpon>ExpedienteColaboradorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\ExpedienteColaboradorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\ListaColaboradoresContabilidadForm.Designer.vb">
+      <DependentUpon>ListaColaboradoresContabilidadForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\ListaColaboradoresContabilidadForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\ModificacionSalario\ModSalarioPDFAcuseForm.Designer.vb">
+      <DependentUpon>ModSalarioPDFAcuseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\ModificacionSalario\ModSalarioPDFAcuseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\ConciliacionContraSUAForm.Designer.vb">
+      <DependentUpon>ConciliacionContraSUAForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\ConciliacionContraSUAForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\ConsultaMovtosInfonavitForm.Designer.vb">
+      <DependentUpon>ConsultaMovtosInfonavitForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\ConsultaMovtosInfonavitForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\MovtosCreditosInfonavitForm.Designer.vb">
+      <DependentUpon>MovtosCreditosInfonavitForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\MovtosCreditosInfonavitForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\ReporteMvoNoDescontadosForm.Designer.vb">
+      <DependentUpon>ReporteMvoNoDescontadosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\ReporteMvoNoDescontadosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\PeriodosNominaFiscal\AltasPeriodosNominaFiscal.Designer.vb">
+      <DependentUpon>AltasPeriodosNominaFiscal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\PeriodosNominaFiscal\AltasPeriodosNominaFiscal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\PeriodosNominaFiscal\EditarPeriodosNominaFiscal.Designer.vb">
+      <DependentUpon>EditarPeriodosNominaFiscal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\PeriodosNominaFiscal\EditarPeriodosNominaFiscal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\PeriodosNominaFiscal\PeriodosNominaFiscal.Designer.vb">
+      <DependentUpon>PeriodosNominaFiscal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\PeriodosNominaFiscal\PeriodosNominaFiscal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\RecalculoDescuentos\RecalculoDescuentosForm.Designer.vb">
+      <DependentUpon>RecalculoDescuentosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\RecalculoDescuentos\RecalculoDescuentosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\SolicitudBaja\PDFAcuseMovimientoBajaIDSEForm.Designer.vb">
+      <DependentUpon>PDFAcuseMovimientoBajaIDSEForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\SolicitudBaja\PDFAcuseMovimientoBajaIDSEForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\SolicitudBaja\SolicitudBajaColaboradorExternoForm.Designer.vb">
+      <DependentUpon>SolicitudBajaColaboradorExternoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\SolicitudBaja\SolicitudBajaColaboradorExternoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\SolicitudBaja\ConsultaSolicitudesBajaForm.Designer.vb">
+      <DependentUpon>ConsultaSolicitudesBajaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\SolicitudBaja\ConsultaSolicitudesBajaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Timbrado\AdministradorTimbresForm.Designer.vb">
+      <DependentUpon>AdministradorTimbresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\Timbrado\AdministradorTimbresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\SeleccionarColaboradoresForm.Designer.vb">
+      <DependentUpon>SeleccionarColaboradoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\SeleccionarColaboradoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\TarjetaAlmacen\ConfigPorcentajeCostoVentaForm.Designer.vb">
+      <DependentUpon>ConfigPorcentajeCostoVentaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\TarjetaAlmacen\ConfigPorcentajeCostoVentaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\TarjetaAlmacen\ListadoParametrosBusquedaTarjetaForm.Designer.vb">
+      <DependentUpon>ListadoParametrosBusquedaTarjetaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\TarjetaAlmacen\ListadoParametrosBusquedaTarjetaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\TarjetaAlmacen\TarjetaAlmacenForm.Designer.vb">
+      <DependentUpon>TarjetaAlmacenForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\TarjetaAlmacen\TarjetaAlmacenForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilerias\AlertaSolicitudesRechazadasForm.Designer.vb">
+      <DependentUpon>AlertaSolicitudesRechazadasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilerias\AlertaSolicitudesRechazadasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilerias\CalculoIMSS.vb" />
+    <Compile Include="Utilerias\CalculoISR.vb" />
+    <Compile Include="Utilerias\MotivoRechazoForm.Designer.vb">
+      <DependentUpon>MotivoRechazoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilerias\MotivoRechazoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\ModificacionSalario\ListaModificacionSalarioForm.Designer.vb">
+      <DependentUpon>ListaModificacionSalarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\ModificacionSalario\ListaModificacionSalarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Polizas\ListaPolizasGeneradasForm.Designer.vb">
+      <DependentUpon>ListaPolizasGeneradasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Polizas\ListaPolizasGeneradasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Polizas\MovimientosPolizaForm.Designer.vb">
+      <DependentUpon>MovimientosPolizaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Polizas\MovimientosPolizaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Polizas\RelacionCuentasContablesForm.Designer.vb">
+      <DependentUpon>RelacionCuentasContablesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Polizas\RelacionCuentasContablesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensajes\AltaCuentaContableForm.Designer.vb">
+      <DependentUpon>AltaCuentaContableForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes\AltaCuentaContableForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensajes\AltaCuentasContablesForm.Designer.vb">
+      <DependentUpon>AltaCuentasContablesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes\AltaCuentasContablesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensajes\ConfirmarForm.Designer.vb">
+      <DependentUpon>ConfirmarForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes\ConfirmarForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Formas\Polizas\AltaPolizaForm.Designer.vb">
+      <DependentUpon>AltaPolizaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Polizas\AltaPolizaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilerias\CalculoInfonavit.vb" />
+    <Compile Include="Utilerias\Globales.vb" />
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\PDFAcuseMovimientosIDSEForm.Designer.vb">
+      <DependentUpon>PDFAcuseMovimientosIDSEForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NominaFiscal\AltasIMSS\PDFAcuseMovimientosIDSEForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilerias\AlertaMovimientosPendientesForm.Designer.vb">
+      <DependentUpon>AlertaMovimientosPendientesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilerias\AlertaMovimientosPendientesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Catalogos\CatalogosNomina\CatalogoDepartamentosForm.resx">
+      <DependentUpon>CatalogoDepartamentosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatalogosNomina\CatalogoPuestoFiscalForm.resx">
+      <DependentUpon>CatalogoPuestoFiscalForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatalogosNomina\CatalogoSalariosMinimos_UmasForm.resx">
+      <DependentUpon>CatalogoSalariosMinimos_UmasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatalogosNomina\ComponentesSalariosMinimos_Umas\EditarSalariosMinimos_UmasForm.resx">
+      <DependentUpon>EditarSalariosMinimos_UmasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatalogosNomina\ComponentesDepartamentos\AltaDepartamentosForm.resx">
+      <DependentUpon>AltaDepartamentosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatalogosNomina\ComponentesPuestoFiscal\AltaPuestoFiscalForm.resx">
+      <DependentUpon>AltaPuestoFiscalForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatalogosNomina\TabuladorSueldosForm.resx">
+      <DependentUpon>TabuladorSueldosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\ContadorTimbres\ContadorTimbres_Form.resx">
+      <DependentUpon>ContadorTimbres_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CuentasContables\CuentasContpaqForm.resx">
+      <DependentUpon>CuentasContpaqForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CuentasContables\RegistrodeCuentasForm.resx">
+      <DependentUpon>RegistrodeCuentasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\DiasNoLaborables\Componentes DiasNoLaborales\AltaDiasNoLaboralesForm.resx">
+      <DependentUpon>AltaDiasNoLaboralesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\DiasNoLaborables\Componentes Vacaciones\AltaPeriodoVacacionesForm.resx">
+      <DependentUpon>AltaPeriodoVacacionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\DiasNoLaborables\Componentes Vacaciones\EditarPeriodoVacacionesForm.resx">
+      <DependentUpon>EditarPeriodoVacacionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\DiasNoLaborables\Componentes DiasNoLaborales\EditarDiasNoLaborablesForm.resx">
+      <DependentUpon>EditarDiasNoLaborablesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\DiasNoLaborables\Componentes Vacaciones\FiltroPatronesForm.resx">
+      <DependentUpon>FiltroPatronesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\DiasNoLaborables\ListaDiasNoLaborablesForm.resx">
+      <DependentUpon>ListaDiasNoLaborablesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\DiasNoLaborables\CatalogoPeriodosDeVacacionesForm.resx">
+      <DependentUpon>CatalogoPeriodosDeVacacionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Patrones\AltaPatronesForm.resx">
+      <DependentUpon>AltaPatronesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Patrones\ListaPatronesContForm.resx">
+      <DependentUpon>ListaPatronesContForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Patrones\ListaPatronesRelacionNaveForm.resx">
+      <DependentUpon>ListaPatronesRelacionNaveForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Patrones\RelacionNavePatronForm.resx">
+      <DependentUpon>RelacionNavePatronForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\TablasSubsidioEmpleo\AltaEdicion_TablasSPEForm.resx">
+      <DependentUpon>AltaEdicion_TablasSPEForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\TablasSubsidioEmpleo\CatalogoTablasSubsidioEmpleoForm.resx">
+      <DependentUpon>CatalogoTablasSubsidioEmpleoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\TablasYTarifas\AltaEdicion_TablasTarifasForm.resx">
+      <DependentUpon>AltaEdicion_TablasTarifasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\TablasYTarifas\CatalogoTablasTarifasForm.resx">
+      <DependentUpon>CatalogoTablasTarifasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AguinaldoVacaciones\CalculoAguinaldosFiscalesForm.resx">
+      <DependentUpon>CalculoAguinaldosFiscalesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AguinaldoVacaciones\FechaPagoForm.resx">
+      <DependentUpon>FechaPagoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AltasIMSS\AutorizacionAltaIMSSForm.resx">
+      <DependentUpon>AutorizacionAltaIMSSForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AltasIMSS\CompletarAltaColaboradorIMSSForm.resx">
+      <DependentUpon>CompletarAltaColaboradorIMSSForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AltasIMSS\GeneracionAltasIMSSForm.resx">
+      <DependentUpon>GeneracionAltasIMSSForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\BajaCambioNave\BajaCambioNaveForm.resx">
+      <DependentUpon>BajaCambioNaveForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\BajaCambioNave\BajaCambioPatronForm.resx">
+      <DependentUpon>BajaCambioPatronForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\BajaCambioNave\CambioNaveColaboradorForm.resx">
+      <DependentUpon>CambioNaveColaboradorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\BajaCambioNave\CambioPatronColaboradorForm.resx">
+      <DependentUpon>CambioPatronColaboradorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\BitacoraMovimientos\BitacoraMovimientosForm.resx">
+      <DependentUpon>BitacoraMovimientosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Comisiones\AltaComisionesMensualesForm.resx">
+      <DependentUpon>AltaComisionesMensualesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Comisiones\EditarSolicituModSalarioMixtoForm.resx">
+      <DependentUpon>EditarSolicituModSalarioMixtoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Comisiones\ListaComisionesMensualesForm.resx">
+      <DependentUpon>ListaComisionesMensualesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Comisiones\ListaModificacionSalarioMixtoForm.resx">
+      <DependentUpon>ListaModificacionSalarioMixtoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Comisiones\ModSalarioMixtoPDFAcuseForm.resx">
+      <DependentUpon>ModSalarioMixtoPDFAcuseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\ControlAsistencia\ControlAsistenciaFiscalForm.resx">
+      <DependentUpon>ControlAsistenciaFiscalForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\CorteNominaFiscal\ConsultaCorteNominaFiscal.resx">
+      <DependentUpon>ConsultaCorteNominaFiscal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\CorteNominaFiscal\DatosAjusteSPEMensualForm.resx">
+      <DependentUpon>DatosAjusteSPEMensualForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\CorteNominaFiscal\ReporteAcumuladosNominaFiscalForm.resx">
+      <DependentUpon>ReporteAcumuladosNominaFiscalForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Finiquito\CalculoFiniquitoForm.resx">
+      <DependentUpon>CalculoFiniquitoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Finiquito\GenerarReporteFiniquitoForm.resx">
+      <DependentUpon>GenerarReporteFiniquitoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Incapacidades\AltaIncapacidadesForm.resx">
+      <DependentUpon>AltaIncapacidadesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Incapacidades\EditarIncapacidadesForm.resx">
+      <DependentUpon>EditarIncapacidadesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Incapacidades\ListaIncapacidadesForm.resx">
+      <DependentUpon>ListaIncapacidadesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Incapacidades\ListaSolicitudesIncapacidadesForm.resx">
+      <DependentUpon>ListaSolicitudesIncapacidadesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\AltaMovCreditoInfonavitContForm.resx">
+      <DependentUpon>AltaMovCreditoInfonavitContForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CuentaBancaria\AltaCuenta_BancariaForm.resx">
+      <DependentUpon>AltaCuenta_BancariaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CuentasContables\AltaEditarCuentaContableForm.resx">
+      <DependentUpon>AltaEditarCuentaContableForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CuentasContables\ListaCuentaContableForm.resx">
+      <DependentUpon>ListaCuentaContableForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CuentasGenerales\AltaCuentaGeneralForm.resx">
+      <DependentUpon>AltaCuentaGeneralForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CuentasGenerales\ListaCuentaGeneralForm.resx">
+      <DependentUpon>ListaCuentaGeneralForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\EmpresaSAY_SICY\AltaEdicion_Empresa_SayForm.resx">
+      <DependentUpon>AltaEdicion_Empresa_SayForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\EmpresaSAY_SICY\RelacionarEmpresaSaySicyContpaqForm.resx">
+      <DependentUpon>RelacionarEmpresaSaySicyContpaqForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\ListadoParametrosBusquedaForm.resx">
+      <DependentUpon>ListadoParametrosBusquedaForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\PermisosUsuarioEmpresa\ListaPermisosUsuarioEmpresaForm.resx">
+      <DependentUpon>ListaPermisosUsuarioEmpresaForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\PermisosUsuarioEmpresa\Vinculacion_UsuarioEmpresaForm.resx">
+      <DependentUpon>Vinculacion_UsuarioEmpresaForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\TipoPoliza\AltaTipoPolizaForm.resx">
+      <DependentUpon>AltaTipoPolizaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\TipoPoliza\EditarTipoPolizaForm.resx">
+      <DependentUpon>EditarTipoPolizaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CuentaBancaria\Lista_Cuenta_BancariaForm.resx">
+      <DependentUpon>Lista_Cuenta_BancariaForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\TipoPoliza\ListaTipoPolizaForm.resx">
+      <DependentUpon>ListaTipoPolizaForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Comprobantes\comprobantesFiscalesForm.resx">
+      <DependentUpon>comprobantesFiscalesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Comprobantes\Filtro_ComprobantesFiscales_ClientesProveedores_ConGridForm.resx">
+      <DependentUpon>Filtro_ComprobantesFiscales_ClientesProveedores_ConGridForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Comprobantes\ReemplazarXMLDañadosForm.resx">
+      <DependentUpon>ReemplazarXMLDañadosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Comprobantes\RelacionComprobantesFiscalesForm.resx">
+      <DependentUpon>RelacionComprobantesFiscalesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\EmpresaSAY_SICY\Lista_EmpresaSAY_SICY_ContpaqForm.resx">
+      <DependentUpon>Lista_EmpresaSAY_SICY_ContpaqForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ContabilidadElectronica\ReportePolizasPeriodo.resx">
+      <DependentUpon>ReportePolizasPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AltasIMSS\AltaColaboradorContabilidadForm.resx">
+      <DependentUpon>AltaColaboradorContabilidadForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AltasIMSS\AltaColaboradoresIMSSForm.resx">
+      <DependentUpon>AltaColaboradoresIMSSForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\AltaMovCreditoInfonavitNaveForm.resx">
+      <DependentUpon>AltaMovCreditoInfonavitNaveForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\ModificacionSalario\AltasSolicitudModSalarioForm.resx">
+      <DependentUpon>AltasSolicitudModSalarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\BuscarColaboradorForm.resx">
+      <DependentUpon>BuscarColaboradorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AltasIMSS\ExpedienteColaboradorForm.resx">
+      <DependentUpon>ExpedienteColaboradorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AltasIMSS\ListaColaboradoresContabilidadForm.resx">
+      <DependentUpon>ListaColaboradoresContabilidadForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\ModificacionSalario\ModSalarioPDFAcuseForm.resx">
+      <DependentUpon>ModSalarioPDFAcuseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\ConciliacionContraSUAForm.resx">
+      <DependentUpon>ConciliacionContraSUAForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\ConsultaMovtosInfonavitForm.resx">
+      <DependentUpon>ConsultaMovtosInfonavitForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\MovtosCreditosInfonavitForm.resx">
+      <DependentUpon>MovtosCreditosInfonavitForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\MovtoCreditosinfoanvit\ReporteMvoNoDescontadosForm.resx">
+      <DependentUpon>ReporteMvoNoDescontadosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\PeriodosNominaFiscal\AltasPeriodosNominaFiscal.resx">
+      <DependentUpon>AltasPeriodosNominaFiscal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\PeriodosNominaFiscal\EditarPeriodosNominaFiscal.resx">
+      <DependentUpon>EditarPeriodosNominaFiscal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\PeriodosNominaFiscal\PeriodosNominaFiscal.resx">
+      <DependentUpon>PeriodosNominaFiscal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\RecalculoDescuentos\RecalculoDescuentosForm.resx">
+      <DependentUpon>RecalculoDescuentosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\SolicitudBaja\PDFAcuseMovimientoBajaIDSEForm.resx">
+      <DependentUpon>PDFAcuseMovimientoBajaIDSEForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\SolicitudBaja\SolicitudBajaColaboradorExternoForm.resx">
+      <DependentUpon>SolicitudBajaColaboradorExternoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\SolicitudBaja\ConsultaSolicitudesBajaForm.resx">
+      <DependentUpon>ConsultaSolicitudesBajaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\Timbrado\AdministradorTimbresForm.resx">
+      <DependentUpon>AdministradorTimbresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\SeleccionarColaboradoresForm.resx">
+      <DependentUpon>SeleccionarColaboradoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\TarjetaAlmacen\ConfigPorcentajeCostoVentaForm.resx">
+      <DependentUpon>ConfigPorcentajeCostoVentaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\TarjetaAlmacen\ListadoParametrosBusquedaTarjetaForm.resx">
+      <DependentUpon>ListadoParametrosBusquedaTarjetaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\TarjetaAlmacen\TarjetaAlmacenForm.resx">
+      <DependentUpon>TarjetaAlmacenForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilerias\AlertaSolicitudesRechazadasForm.resx">
+      <DependentUpon>AlertaSolicitudesRechazadasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilerias\MotivoRechazoForm.resx">
+      <DependentUpon>MotivoRechazoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\ModificacionSalario\ListaModificacionSalarioForm.resx">
+      <DependentUpon>ListaModificacionSalarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Polizas\ListaPolizasGeneradasForm.resx">
+      <DependentUpon>ListaPolizasGeneradasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Polizas\MovimientosPolizaForm.resx">
+      <DependentUpon>MovimientosPolizaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Polizas\RelacionCuentasContablesForm.resx">
+      <DependentUpon>RelacionCuentasContablesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes\AltaCuentaContableForm.resx">
+      <DependentUpon>AltaCuentaContableForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes\AltaCuentasContablesForm.resx">
+      <DependentUpon>AltaCuentasContablesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes\ConfirmarForm.resx">
+      <DependentUpon>ConfirmarForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Polizas\AltaPolizaForm.resx">
+      <DependentUpon>AltaPolizaForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NominaFiscal\AltasIMSS\PDFAcuseMovimientosIDSEForm.resx">
+      <DependentUpon>PDFAcuseMovimientosIDSEForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilerias\AlertaMovimientosPendientesForm.resx">
+      <DependentUpon>AlertaMovimientosPendientesForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contabilidad.Negocios\Contabilidad.Negocios.vbproj">
+      <Project>{d8ce2e3d-cab0-40de-aaf3-c0f2343218bf}</Project>
+      <Name>Contabilidad.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{01976fd5-cf48-4406-8118-782f1fcaaf18}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturacion.Negocios\Facturacion.Negocios.vbproj">
+      <Project>{00657bed-ae91-4283-ae0e-0b222e6bc45c}</Project>
+      <Name>Facturacion.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Negocios\Framework.Negocios.vbproj">
+      <Project>{44693732-f211-43d1-b164-72e528e990dc}</Project>
+      <Name>Framework.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nomina.Vista\Nomina.Vista.vbproj">
+      <Project>{d5be2bf7-8f79-46ed-b3d3-9e0da3fbb5b0}</Project>
+      <Name>Nomina.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolServicios\ToolServicios.csproj">
+      <Project>{ef601e3f-e67f-46c0-ad83-1813e1f1fb76}</Project>
+      <Name>ToolServicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vbproj">
+      <Project>{400f3e25-60b7-4f1c-b8fc-c063d6c563ea}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license.license" />
+    <None Include="Resources\logoyuyin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONTPAQ_i.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1373583708_10.png" />
+    <Content Include="Resources\_1373583708_10.bmp" />
+    <None Include="Resources\perfiles_32.png" />
+    <None Include="Resources\Retardo.png" />
+    <None Include="Resources\verRegistro.png" />
+    <None Include="Resources\reporteDeducciones-.png" />
+    <None Include="Resources\aceptar_32.png" />
+    <Content Include="CSD.txt" />
+    <None Include="Resources\Abrir24.png" />
+    <None Include="Resources\1373584033_navigate-up1.png" />
+    <None Include="Resources\1373584074_navigate-down.png" />
+    <Content Include="Resources\aceptar_321.png" />
+    <None Include="Resources\refresh_32.png" />
+    <None Include="Resources\advertencia.png" />
+    <Content Include="Resources\agregar_32.png" />
+    <None Include="Resources\agregar_xml_32.png" />
+    <None Include="Resources\agregar_pdf.png" />
+    <Content Include="Resources\agregar_simple.png" />
+    <Content Include="Resources\altas_32.png" />
+    <None Include="Resources\aviso.png" />
+    <Content Include="Resources\borrar_32.png" />
+    <Content Include="Resources\buscar_calcular.png" />
+    <None Include="Resources\calculo_32.png" />
+    <Content Include="Resources\cancelar_32.png" />
+    <None Include="Resources\seleccionar.png" />
+    <None Include="Resources\xml_32.png" />
+    <None Include="Resources\pdf_32.png" />
+    <None Include="Resources\copiar_32.png" />
+    <None Include="Resources\colaboradorexpediente_32.png" />
+    <Content Include="Resources\descargar16x16.png" />
+    <Content Include="Resources\descargarB.png" />
+    <Content Include="Resources\descargarBlanco.png" />
+    <None Include="Resources\descargar_inc.png" />
+    <Content Include="Resources\editar_32.png" />
+    <None Include="Resources\EnviarTimbrar.png" />
+    <None Include="Resources\Email.png" />
+    <Content Include="Resources\excel_32.png" />
+    <Content Include="Resources\exito.png" />
+    <None Include="Resources\fondo.png" />
+    <None Include="Resources\Falta.png" />
+    <Content Include="Resources\guardar2_32.png" />
+    <Content Include="Resources\guardar_32.png" />
+    <Content Include="Resources\imprimir_32.png" />
+    <None Include="Resources\mostrarMas.png" />
+    <Content Include="Resources\infonavit.png" />
+    <None Include="Resources\menubk.png" />
+    <Content Include="Resources\nomina_32.png" />
+    <Content Include="Resources\nuevo_32.png" />
+    <Content Include="Resources\nuevo_321.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

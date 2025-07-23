@@ -1,0 +1,2 @@
+﻿Public Class ProyeccionEntregas_Pedidos_PartidasForm
+End Class

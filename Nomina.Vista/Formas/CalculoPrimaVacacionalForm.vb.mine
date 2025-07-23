@@ -1,0 +1,769 @@
+﻿Imports CrystalDecisions.Shared
+Imports Stimulsoft.Report
+
+Public Class CalculoPrimaVacacionalForm
+
+    Dim SalariosNov(,) As Double
+    Dim limiteMatriz As Integer
+
+    Dim fecha1 As String
+    Dim fecha2 As String
+    Dim fecha3 As String
+    Dim fecha4 As String
+    ''Esta varaiable asigna el parametro al reporte
+    Dim Parametros As New ParameterFields()
+
+    ''Esta variable indica el nombre del parametro que se encuentra en el procedimiento almacenado
+
+    Dim anio As New ParameterField()
+    Dim ruta As New ParameterField()
+    Dim UserName As New ParameterField()
+    Dim NombreArchivo As New ParameterField()
+    Dim Nave As New ParameterField()
+    Dim TotalVacaciones As New ParameterField()
+
+
+
+    ''Esta variable toma el valor dle parametro
+
+    Dim myDiscreteValueanio As New ParameterDiscreteValue()
+    Dim myDiscreteValueRuta As New ParameterDiscreteValue()
+    Dim myDiscreteValueUserName As New ParameterDiscreteValue()
+    Dim myDiscreteValueNombreArchivo As New ParameterDiscreteValue()
+    Dim myDiscreteValueNave As New ParameterDiscreteValue()
+    Dim myDiscreteValueTotalVacaciones As New ParameterDiscreteValue()
+
+    Private Sub CalculoPrimaVacacionalForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'Tools.FormatoCtrls.formato(Me)
+        WindowState = FormWindowState.Maximized
+        grdCalculoPrimaVacacional.Columns(1).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(2).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(3).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(4).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(5).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(6).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(7).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(8).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(9).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(10).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        grdCalculoPrimaVacacional.Columns(11).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        Try
+            Tools.Controles.ComboNavesSegunUsuario(cmbNave, Entidades.SesionUsuario.UsuarioSesion.PUserUsuarioid)
+            If cmbNave.SelectedValue > 0 Then
+                cmbNaveDrop()
+            End If
+
+            btnGuardar.Enabled = False
+            lblAnioActual.Visible = False
+            lblRespaldoAnioActual.Visible = False
+
+            lblTotalVacaciones2.Visible = False
+            lblTotalVacaciones.Visible = False
+
+            lblcolaborador.Visible = False
+            txtColaborador.Visible = False
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub cmbNave_DropDownClosed(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbNave.DropDownClosed
+        cmbNaveDrop()
+    End Sub
+
+    Public Sub AgregarAnios(ByVal PrimaVacacional As List(Of Entidades.CalcularPrimaVacacional))
+
+        Dim anios As List(Of Integer) = PrimaVacacional.Select(Function(c) c.PPrimaVacacionalAnio).Distinct.ToList
+        Dim aniosTotales As Integer = anios.Count
+        Dim contadorAnioActual As Integer = 0
+
+        If aniosTotales = 0 Then
+            cmbAnio.Items.Add(DateTime.Now.Year)
+        Else
+            For Each dato As Integer In anios
+                If dato = DateTime.Now.Year Then
+                    lblRespaldoAnioActual.Text = "True"
+                    cmbAnio.Items.Add(dato)
+                    contadorAnioActual = 1
+                Else
+                    cmbAnio.Items.Add(dato)
+                End If
+            Next
+            If contadorAnioActual = 0 Then
+                cmbAnio.Items.Add(DateTime.Now.Year)
+            End If
+        End If
+    End Sub
+
+    Private Sub btnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscar.Click
+        Me.Cursor = Cursors.WaitCursor
+        grdCalculoPrimaVacacional.Rows.Clear()
+
+        Dim ObjBU As New Nomina.Negocios.CalcularPrimaVacacionalBU
+        Dim listaPrima As List(Of Entidades.CalcularPrimaVacacional)
+
+        If cmbAnio.SelectedItem < DateTime.Now.Year Or lblRespaldoAnioActual.Text = "True" Then
+
+            listaPrima = ObjBU.ListaPrimaGUARDADOS(cmbNave.SelectedValue, cmbAnio.SelectedItem, txtColaborador.Text)
+            AgregarFilaPrimaVacacionalGuardados(listaPrima)
+
+            lblcolaborador.Visible = True
+            txtColaborador.Visible = True
+
+            btnGuardar.Enabled = False
+        Else
+            btnGuardar.Enabled = True
+
+            listaPrima = ObjBU.ListaColaboradoresPrimaVacacional(cmbNave.SelectedValue)
+            AgregarFilaPRIMA(listaPrima)
+
+            lblcolaborador.Visible = False
+            txtColaborador.Visible = False
+
+        End If
+
+        Me.Cursor = Cursors.Default
+    End Sub
+
+    Public Sub AgregarFilaPrimaVacacionalGuardados(ByVal Prima As List(Of Entidades.CalcularPrimaVacacional))
+
+        For Each Dato As Entidades.CalcularPrimaVacacional In Prima
+            Dim ColaboradorNombre As String = Dato.PColaborador.PNombre.ToUpper + " " + Dato.PColaborador.PApaterno.ToUpper + " " + Dato.PColaborador.PAmaterno.ToUpper
+
+            Dim anios As Int32 = 0
+            Dim meses As Int32 = 0
+            Dim dias As Int32 = 0
+            Dim diasme As Int32 = 0
+            Dim DiasTrabajados As Integer
+
+            Dim anio_actual As Integer = Now.Year + 1
+            Dim fechaInicioAnio, fechaFinalAnio As Date
+
+            fechaInicioAnio = anio_actual.ToString + "-01-01"
+
+            fechaFinalAnio = DateAdd(DateInterval.Day, -1, fechaInicioAnio)
+
+            anios = 0
+            meses = 0
+            diasme = 0
+            Dim FechaIngreso As Date = Dato.PAntiguedad
+            DiasTrabajados = (fechaFinalAnio - FechaIngreso).TotalDays
+
+            anios = DiasTrabajados \ 365
+            meses = (DiasTrabajados Mod 365) \ 30.4
+            diasme = (DiasTrabajados Mod 365) Mod 30.4
+
+
+            Dim objAguiBU As New Negocios.CalcularAguinaldoBU
+            Dim listaSalarios As List(Of Entidades.CalcularAguinaldos)
+            listaSalarios = objAguiBU.ListacolaboradoresSalarios(Dato.PColaborador.PColaboradorid, CInt(cmbAnio.SelectedItem))
+            ReDim SalariosNov(6, 2)
+            limiteMatriz = 0
+            Dim salarioDiario2 As Double = 0
+            Dim diasDividir As Integer = 0
+            For Each salario As Entidades.CalcularAguinaldos In listaSalarios
+
+                SalariosNov(limiteMatriz, 1) = salario.PSalarioXmes
+                limiteMatriz += 1
+                salarioDiario2 += salario.PSalarioXmes
+                diasDividir += 7
+
+
+            Next
+
+            Dim Antiguedad As String = anios.ToString + " años " + meses.ToString + " meses " + diasme.ToString + " dias "
+            Dim mesesTotal As Double = Math.Round(meses + (diasme / 30.4), 2)
+            Dim fechaI As Date = Dato.PAntiguedad.ToShortDateString
+
+            grdCalculoPrimaVacacional.Rows.Add(Dato.PColaborador.PColaboradorid, grdCalculoPrimaVacacional.Rows.Count + 1, ColaboradorNombre, FechaIngreso.ToShortDateString, anios, mesesTotal, Dato.PDiasxPagar, SalariosNov(3, 1).ToString("N0"), SalariosNov(2, 1).ToString("N0"), SalariosNov(1, 1).ToString("N0"), SalariosNov(0, 1).ToString("N0"), Dato.PSueldoDiario.ToString("N0"), Dato.PPrimaSubtotal.ToString("N0"), Dato.PPrimaPrimaVacacional.ToString("N0"), Dato.PPrimaTotalEntregar.ToString("N0"), Dato.PPrimaVacacionalMeses)
+        Next
+
+        Dim totalVacaciones As Double = 0
+        Dim contadorFilas As Integer = 0
+        For Each row As DataGridViewRow In grdCalculoPrimaVacacional.Rows
+            totalVacaciones += row.Cells("clmTotalEntregar").Value
+            contadorFilas += 1
+        Next
+        grdCalculoPrimaVacacional.Rows.Add("", "", "", "", "", "", "", "", "", "", "", "", "", "", totalVacaciones)
+        grdCalculoPrimaVacacional.Rows(contadorFilas).DefaultCellStyle.BackColor = Color.GreenYellow
+        lblTotalVacaciones2.Text = totalVacaciones.ToString("N0")
+
+    End Sub
+
+    Public Sub AgregarFilaPRIMA(ByVal Prima As List(Of Entidades.CalcularPrimaVacacional))
+
+        For Each Dato As Entidades.CalcularPrimaVacacional In Prima
+            Dim ColaboradorNombre As String = Dato.PColaborador.PNombre.ToUpper + " " + Dato.PColaborador.PApaterno.ToUpper + " " + Dato.PColaborador.PAmaterno.ToUpper
+            Dim salarioDiario As Double = Dato.PColaboradorReal.PCantidad / 7
+
+            Dim totalDias As Double = 0
+            Dim anios As Int32 = 0
+            Dim meses As Int32 = 0
+            Dim dias As Int32 = 0
+            Dim diasme As Int32 = 0
+            Dim DiasTrabajados As Integer
+
+            Dim anio_actual As Integer = Now.Year + 1
+            Dim fechaInicioAnio, fechaFinalAnio As Date
+
+            fechaInicioAnio = anio_actual.ToString + "-01-01"
+
+            fechaFinalAnio = DateAdd(DateInterval.Day, -1, fechaInicioAnio)
+
+            anios = 0
+            meses = 0
+            diasme = 0
+            Dim FechaIngreso As Date = Dato.PColaboradorReal.PFecha
+            DiasTrabajados = (fechaFinalAnio - FechaIngreso).TotalDays
+
+            anios = DiasTrabajados \ 365
+            meses = (DiasTrabajados - (365 * Fix(DiasTrabajados / 365)))
+            meses = Fix(meses / 30.4)
+            diasme = (DiasTrabajados Mod 365) Mod 30.4
+
+            Dim diasVacaciones As Double = 0
+            Dim listaDiasVacaciones As List(Of Entidades.CalcularPrimaVacacional)
+            Dim objPrimaBU As New Negocios.CalcularPrimaVacacionalBU
+
+            ''OBTENER LOS DIAS DE VACACIONES POR AÑOS
+            Dim mesesTotal As Double = Math.Round(meses + (diasme / 30.4), 2)
+            listaDiasVacaciones = objPrimaBU.ListaDiasvacacionesAniosMeses(anios, Math.Floor(mesesTotal))
+            Dim ObjDias As List(Of Double) = listaDiasVacaciones.Select(Function(c) c.PPrimaVacacionalDiasXAños).Distinct.ToList
+            For Each diasVac As Double In ObjDias
+                diasVacaciones = diasVac
+            Next
+            ''OBTENER LOS DIAS DE VACACIONES POR AÑOS TERMINA
+
+            Dim subtotal As Double = 0
+            Dim PrimaVacacional As Double = 0
+            Dim totalPagar As Double = 0
+            Dim diasPorMes As Double = 0
+            Dim Antiguedad As String = anios.ToString + " años " + meses.ToString + " meses " + diasme.ToString + " dias "
+
+
+            Dim objAguiBU As New Negocios.CalcularAguinaldoBU
+            Dim listaSalarios As List(Of Entidades.CalcularAguinaldos)
+            listaSalarios = objAguiBU.ListacolaboradoresSalarios(Dato.PColaborador.PColaboradorid, CInt(cmbAnio.SelectedItem))
+
+
+            ReDim SalariosNov(6, 2)
+            limiteMatriz = 0
+            Dim salarioDiario2 As Double = 0
+            Dim diasDividir As Integer = 0
+            For Each salario As Entidades.CalcularAguinaldos In listaSalarios
+
+                SalariosNov(limiteMatriz, 1) = salario.PSalarioXmes
+                limiteMatriz += 1
+                salarioDiario2 += salario.PSalarioXmes
+                diasDividir += 7
+
+
+            Next
+
+            If diasDividir = 0 Then
+                diasDividir = 1
+            End If
+
+            salarioDiario2 = salarioDiario2 / diasDividir
+
+
+            If anios >= 1 Then
+
+                subtotal = diasVacaciones * salarioDiario2
+                PrimaVacacional = subtotal * 0.25
+                totalPagar = subtotal + PrimaVacacional
+                mesesTotal = Math.Round(meses + (diasme / 30.4), 2)
+                Dim fechaI As Date = Dato.PColaboradorReal.PFecha.ToShortDateString
+                If anios >= 14 Then
+                    grdCalculoPrimaVacacional.Rows.Add(Dato.PColaborador.PColaboradorid, grdCalculoPrimaVacacional.Rows.Count + 1, ColaboradorNombre, Dato.PColaboradorReal.PFecha.ToShortDateString,
+                                                       anios, Math.Round(mesesTotal, 1), diasVacaciones, SalariosNov(0, 1).ToString("N0"), SalariosNov(1, 1).ToString("N0"),
+                                                       SalariosNov(2, 1).ToString("N0"), SalariosNov(3, 1).ToString("N0"), salarioDiario2.ToString("N0"), subtotal.ToString("N0"),
+                                                       PrimaVacacional.ToString("N0"), totalPagar.ToString("N0"), mesesTotal)
+                Else
+                    grdCalculoPrimaVacacional.Rows.Add(Dato.PColaborador.PColaboradorid, grdCalculoPrimaVacacional.Rows.Count + 1, ColaboradorNombre, Dato.PColaboradorReal.PFecha.ToShortDateString,
+                                                       anios, Math.Round(mesesTotal, 1), diasVacaciones, SalariosNov(0, 1).ToString("N0"), SalariosNov(1, 1).ToString("N0"),
+                                                       SalariosNov(2, 1).ToString("N0"), SalariosNov(3, 1).ToString("N0"), salarioDiario2.ToString("N0"), subtotal.ToString("N0"),
+                                                       PrimaVacacional.ToString("N0"), totalPagar.ToString("N0"), mesesTotal)
+                End If
+
+            Else
+                If anios < 1 Then
+                    'mesesTotal = Math.Round(meses + (diasme / 30.4), 2)
+                    Dim totalDiasVac As Double = 0
+                    diasPorMes = 6 / 12
+                    'totalDiasVac = diasPorMes * Math.Floor(mesesTotal)
+                    'diasVacaciones += totalDiasVac
+                    subtotal = diasVacaciones * salarioDiario2
+                    PrimaVacacional = subtotal * 0.25
+                    totalPagar = subtotal + PrimaVacacional
+                    Dim fechaI As Date = Dato.PColaboradorReal.PFecha.ToShortDateString
+
+                    grdCalculoPrimaVacacional.Rows.Add(Dato.PColaborador.PColaboradorid, grdCalculoPrimaVacacional.Rows.Count + 1, ColaboradorNombre, Dato.PColaboradorReal.PFecha.ToShortDateString, anios, mesesTotal, diasVacaciones, SalariosNov(3, 1).ToString("N0"), SalariosNov(2, 1).ToString("N0"), SalariosNov(1, 1).ToString("N0"), SalariosNov(0, 1).ToString("N0"), salarioDiario2.ToString("N0"), subtotal.ToString("N0"), PrimaVacacional.ToString("N0"), totalPagar.ToString("N0"), mesesTotal)
+                End If
+            End If
+
+        Next
+        Dim totalVacaciones As Double = 0
+        Dim contadorFilas As Integer = 0
+        For Each row As DataGridViewRow In grdCalculoPrimaVacacional.Rows
+            totalVacaciones += row.Cells("clmTotalEntregar").Value
+            contadorFilas += 1
+        Next
+        grdCalculoPrimaVacacional.Rows.Add("", "", "", "", "", "", "", "", "", "", "", "", "", "", totalVacaciones)
+        grdCalculoPrimaVacacional.Rows(contadorFilas).DefaultCellStyle.BackColor = Color.GreenYellow
+        lblTotalVacaciones2.Text = totalVacaciones.ToString("N0")
+
+
+    End Sub
+
+    Private Sub btnArriba_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnArriba.Click
+        grbParametros.Height = 45
+    End Sub
+
+    Private Sub btnAbajo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAbajo.Click
+        grbParametros.Height = 122
+
+    End Sub
+
+    Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
+        Dim contadorFilas As Integer = 0
+        For Each row As DataGridViewRow In grdCalculoPrimaVacacional.Rows
+            contadorFilas += 1
+        Next
+
+        If contadorFilas > 0 Then
+            ''Estas seguro??
+            Dim mensajeExito As New ConfirmarForm
+            mensajeExito.mensaje = "¿Estas seguro de querer guardar las vacaciones? "
+
+            If mensajeExito.ShowDialog = DialogResult.OK Then
+                guardar()
+            End If
+
+        End If
+
+    End Sub
+
+    Public Sub guardar()
+
+
+        Dim objPrimaVacacional As New Entidades.CalcularPrimaVacacional
+        Dim objColaborador As New Entidades.Colaborador
+        Dim objBU As New Negocios.CalcularPrimaVacacionalBU
+        Dim contadorTrue As Integer = 0
+
+        For Each row As DataGridViewRow In grdCalculoPrimaVacacional.Rows
+            If row.Cells("clmColaboradorID").Value.ToString <> "" Then
+                objColaborador.PColaboradorid = row.Cells("clmColaboradorID").Value
+
+                objPrimaVacacional.PPrimaVacacionalAnio = cmbAnio.SelectedItem
+                objPrimaVacacional.PPrimaVacacionalMeses = row.Cells("clmMesesTotal").Value
+                objPrimaVacacional.PSueldoDiario = row.Cells("clmSueldoDiario").Value
+                objPrimaVacacional.PDiasxPagar = row.Cells("clmDiasAPagar").Value
+                objPrimaVacacional.PPrimaSubtotal = row.Cells("clmSubTotal").Value
+                objPrimaVacacional.PPrimaPrimaVacacional = row.Cells("clmPrimaVacacional").Value
+                objPrimaVacacional.PPrimaTotalEntregar = row.Cells("clmTotalEntregar").Value
+                objPrimaVacacional.PPrimaUsuarioCreo = Entidades.SesionUsuario.UsuarioSesion.PUserUsuarioid
+
+                objPrimaVacacional.PColaborador = objColaborador
+
+                objBU.guardarPrimaVacacional(objPrimaVacacional)
+                contadorTrue += 1
+            End If
+        Next
+        If contadorTrue >= 0 Then
+            Dim mensajeExito2 As New ExitoForm
+            mensajeExito2.MdiParent = Me.MdiParent
+            mensajeExito2.mensaje = "Aguinaldos guardados"
+            mensajeExito2.Show()
+            grdCalculoPrimaVacacional.Rows.Clear()
+            txtColaborador.Text = ""
+            cmbNave.SelectedIndex = 0
+            cmbAnio.SelectedIndex = 0
+        Else
+
+        End If
+    End Sub
+
+    Private Sub btnReporte_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReporte.Click
+        Try
+
+            If grdCalculoPrimaVacacional.Rows.Count > 0 Then
+
+
+                Dim Colaborador = New DataTable("Colaboradores")
+
+                'Dim Efectivo = New DataTable("Efectivo")
+                Dim PagoBruto As Double = 0
+                Dim Extras As Double = 0
+                Dim Otros As Double = 0
+                Dim Ausentismos As Double = 0
+                Dim Seguro As Double = 0
+                Dim Prestamos As Double = 0
+                Dim CajaAhorro As Double = 0
+                Dim PagoNeto As Double = 0
+                Dim TotalDeducciones As Double = 0
+                Dim TotalPercepciones As Double = 0
+
+                With Colaborador
+                    .Columns.Add("clmColaborador")
+                    .Columns.Add("clmFechaIngreso")
+                    .Columns.Add("clmAnios")
+                    .Columns.Add("clmMeses")
+                    .Columns.Add("clmDiasAPagar")
+                    .Columns.Add("clmSemana1")
+                    .Columns.Add("clmSemana2")
+                    .Columns.Add("clmSemana3")
+                    .Columns.Add("clmSemana4")
+                    .Columns.Add("clmSueldoDiario")
+                    .Columns.Add("clmVacaciones")
+                    .Columns.Add("clmPrimaVacacional")
+                    .Columns.Add("clmTotalEntregar")
+
+
+                End With
+
+
+
+                For Each fila As DataGridViewRow In grdCalculoPrimaVacacional.Rows
+
+                    If fila.Cells("clmColaborador").Value <> "" Then
+                        Colaborador.Rows.Add( _
+                            fila.Cells("clmColaborador").Value, _
+                            fila.Cells("clmIngreso").Value.ToString.Replace(",", ""), _
+                            fila.Cells("clmAnios").Value, _
+                            Math.Round(fila.Cells("clmMeses").Value, 1), _
+                            fila.Cells("clmDiasAPagar").Value.ToString, _
+                            fila.Cells("clmSemana1").Value.ToString.Replace(",", ""), _
+                            fila.Cells("clmSemana2").Value.ToString.Replace(",", ""), _
+                            fila.Cells("clmSemana3").Value.ToString.Replace(",", ""), _
+                            fila.Cells("clmSemana4").Value.ToString.Replace(",", ""), _
+                            fila.Cells("clmSueldoDiario").Value.ToString.Replace(",", ""), _
+                            fila.Cells("clmSubTotal").Value.ToString.Replace(",", ""), _
+                            fila.Cells("clmPrimaVacacional").Value.ToString.Replace(",", ""), _
+                            fila.Cells("clmTotalEntregar").Value.ToString.Replace(",", "") _
+                            )
+                    End If
+                Next
+
+
+
+                Dim OBJBU As New Framework.Negocios.ReportesBU
+                Dim EntidadReporte As Entidades.Reportes
+                EntidadReporte = OBJBU.LeerReporteporClave("NOM_RPT_VAC")
+                Dim archivo As String = My.Computer.FileSystem.SpecialDirectories.MyDocuments + "\" +
+                    EntidadReporte.Pnombre + ".mrt"
+                My.Computer.FileSystem.WriteAllText(archivo, EntidadReporte.Pxml, False)
+
+                Dim reporte As New StiReport
+                Dim rutaLogo As String = ""
+
+                Dim objNave As New Negocios.CalcularPrimaVacacionalBU
+                Dim tablaLogo As New DataTable
+                tablaLogo = objNave.logoNave(cmbNave.SelectedValue)
+                If tablaLogo.Rows.Count > 0 Then
+                    rutaLogo = tablaLogo.Rows(0).Item("RUTA")
+                End If
+
+
+                ''Se indica el valor que va a tomar el parametro   
+                'If cmbNave.SelectedValue = 2 Then
+                '    rutaLogo = "http://192.168.7.16/yuyinerpftp/LOGOTIPOS/YUYIN.JPG"
+
+                'ElseIf cmbNave.SelectedValue = 3 Then
+                '    rutaLogo = "http://192.168.7.16/yuyinerpftp/LOGOTIPOS/JEANS.JPG"
+
+                'ElseIf cmbNave.SelectedValue = 4 Then
+                '    rutaLogo = "http://192.168.7.16/yuyinerpftp/LOGOTIPOS/MERANO.JPG"
+
+                'ElseIf cmbNave.SelectedValue = 5 Then
+                '    rutaLogo = "http://192.168.7.16/yuyinerpftp/LOGOTIPOS/JEANS2.JPG"
+
+                'ElseIf cmbNave.SelectedValue = 43 Then
+                'rutaLogo = "http://192.168.7.16/yuyinerpftp/LOGOTIPOS/GRUPOYUYIN.JPG"
+
+                'End If
+
+
+                reporte.Load(archivo)
+                reporte.Compile()
+                reporte("rutaImagen") = rutaLogo
+                reporte("UserName") = Entidades.SesionUsuario.UsuarioSesion.PUserUsername.ToString
+                reporte("NombreUsuario") = Entidades.SesionUsuario.UsuarioSesion.PUserNombreReal.ToString.ToUpper
+                reporte("titulo") = "REPORTE DE VACACIONES " + cmbAnio.Text.ToString + "."
+                reporte("tituloDias") = "DIAS VAC."
+                reporte("NombreArchivo") = "ReporteListaVacaciones.mrt"
+                reporte("NaveNombre") = cmbNave.Text
+                reporte("semana1") = fecha1
+                reporte("semana2") = fecha2
+                reporte("semana3") = fecha3
+                reporte("semana4") = fecha4
+                reporte.RegData(Colaborador)
+                reporte.Show()
+                Me.Cursor = Cursors.Default
+            End If
+        Catch ex As Exception
+
+        End Try
+
+
+        ' ''que el grid tenga algo
+        'Dim contadorFilas As Integer = 0
+        'For Each dato As DataGridViewRow In grdCalculoPrimaVacacional.Rows
+        '    contadorFilas += 1
+        '    Exit For
+        'Next
+
+        'If contadorFilas > 0 Then
+        '    Try
+        '        If cmbNave.SelectedIndex > 0 Then
+
+        '            Dim ds As New CalculoAguinaldosDS
+        '            Dim ObjDS As New CalculoAguinaldosDS
+        '            ds.Tables.Add("grdCalculoPrimaVacacional")
+        '            ''Se agregan las columnas
+        '            Dim col As System.Data.DataColumn
+        '            For Each dgvCol As DataGridViewColumn In Me.grdCalculoPrimaVacacional.Columns
+        '                col = New System.Data.DataColumn(dgvCol.Name)
+        '                ds.Tables("grdCalculoPrimaVacacional").Columns.Add(col)
+        '            Next
+
+        '            ''SE agregan las filas
+        '            Dim row As System.Data.DataRow
+        '            Dim colcount As Integer = Me.grdCalculoPrimaVacacional.Columns.Count - 1
+
+        '            For i As Integer = 0 To Me.grdCalculoPrimaVacacional.Rows.Count - 1
+        '                row = ds.Tables("grdCalculoPrimaVacacional").Rows.Add
+        '                For Each column As DataGridViewColumn In Me.grdCalculoPrimaVacacional.Columns
+        '                    row.Item(column.Index) = Me.grdCalculoPrimaVacacional.Rows.Item(i).Cells(column.Index).Value
+        '                Next
+        '            Next
+
+        '            ''Se indica el tipo de parametro
+        '            ''En este caso de tipo numerico
+        '            anio.ParameterValueType = ParameterValueKind.StringParameter
+        '            ruta.ParameterValueType = ParameterValueKind.StringParameter
+        '            UserName.ParameterValueType = ParameterValueKind.StringParameter
+        '            NombreArchivo.ParameterValueType = ParameterValueKind.StringParameter
+        '            Nave.ParameterValueType = ParameterValueKind.StringParameter
+        '            TotalVacaciones.ParameterValueType = ParameterValueKind.StringParameter
+
+        '            ''Se indica el nombre del parametro
+        '            anio.ParameterFieldName = "anio"
+        '            ruta.ParameterFieldName = "ruta"
+        '            UserName.ParameterFieldName = "UserName"
+        '            NombreArchivo.ParameterFieldName = "NombreArchivo"
+        '            Nave.ParameterFieldName = "Nave"
+        '            TotalVacaciones.ParameterFieldName = "TotalAguinaldos"
+
+        '            ''Se indica el valor que va a tomar el parametro   
+        '            myDiscreteValueanio.Value = cmbAnio.SelectedItem.ToString
+        '            myDiscreteValueUserName.Value = Convert.ToString(Entidades.SesionUsuario.UsuarioSesion.PUserUsername)
+        '            myDiscreteValueNombreArchivo.Value = Convert.ToString("ReporteAguinaldos.rpt")
+        '            myDiscreteValueTotalVacaciones.Value = Convert.ToString(lblTotalVacaciones2.Text)
+
+        '            ''Se indica el valor que va a tomar el parametro   
+        '            If cmbNave.SelectedValue = 2 Then
+        '                myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/YUYIN.JPG")
+        '                myDiscreteValueNave.Value = Convert.ToString("YUYIN")
+
+        '            ElseIf cmbNave.SelectedValue = 3 Then
+        '                myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/JEANS.JPG")
+        '                myDiscreteValueNave.Value = Convert.ToString("JEANS")
+
+        '            ElseIf cmbNave.SelectedValue = 4 Then
+        '                myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/MERANO.JPG")
+        '                myDiscreteValueNave.Value = Convert.ToString("MERANO")
+
+        '            ElseIf cmbNave.SelectedValue = 5 Then
+        '                myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/JEANS2.JPG")
+        '                myDiscreteValueNave.Value = Convert.ToString("JEANS2")
+
+        '            ElseIf cmbNave.SelectedValue = 43 Then
+        '                myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/GRUPOYUYIN.JPG")
+        '                myDiscreteValueNave.Value = Convert.ToString("COMERCIALIZADORA")
+        '            End If
+
+        '            ''Se asigna el valor del parametro '@Colaborador  '@NaveID   '@PeriodoNominaID 
+
+        '            anio.CurrentValues.Add(myDiscreteValueanio)
+        '            UserName.CurrentValues.Add(myDiscreteValueUserName)
+        '            NombreArchivo.CurrentValues.Add(myDiscreteValueNombreArchivo)
+        '            Nave.CurrentValues.Add(myDiscreteValueNave)
+        '            ruta.CurrentValues.Add(myDiscreteValueRuta)
+        '            TotalVacaciones.CurrentValues.Add(myDiscreteValueTotalVacaciones)
+
+        '            ''Se asigna el valor a la variable que se enlazsa al reporte
+
+        '            Parametros.Add(anio)
+        '            Parametros.Add(ruta)
+        '            Parametros.Add(UserName)
+        '            Parametros.Add(NombreArchivo)
+        '            Parametros.Add(Nave)
+        '            Parametros.Add(TotalVacaciones)
+
+        '            Dim Report As New ReporteListaPrimaVacacional
+        '            Dim VisorReporte As New VisorReportesEnTablas
+
+        '            Report.SetDataSource(ds.Tables("grdCalculoPrimaVacacional"))
+        '            VisorReporte.ReporteViewer.ReportSource = Report
+        '            VisorReporte.ReporteViewer.ParameterFieldInfo = Parametros
+        '            VisorReporte.Show()
+
+        '        End If
+        '    Catch ex As Exception
+        '    End Try
+        'End If
+        '' ''Se indica el tipo de parametro
+        '' ''En este caso de tipo numerico
+        ''IdNave.ParameterValueType = ParameterValueKind.NumberParameter
+        ''Anio.ParameterValueType = ParameterValueKind.NumberParameter
+        ''Colaborador.ParameterValueType = ParameterValueKind.StringParameter
+        ''ruta.ParameterValueType = ParameterValueKind.StringParameter
+
+        ''UserName.ParameterValueType = ParameterValueKind.StringParameter
+        ''NombreArchivo.ParameterValueType = ParameterValueKind.StringParameter
+        ''Nave.ParameterValueType = ParameterValueKind.StringParameter
+
+        '' ''Se indica el nombre del parametro
+        '' ''del procedimiento almacenado
+        ''IdNave.ParameterFieldName = "@NaveID"
+        ''Anio.ParameterFieldName = "@Anio"
+        ''Colaborador.ParameterFieldName = "@Colaborador"
+        ''ruta.ParameterFieldName = "@ruta"
+
+        ''UserName.ParameterFieldName = "@UserName"
+        ''NombreArchivo.ParameterFieldName = "@NombreArchivo"
+        ''Nave.ParameterFieldName = "@Nave"
+
+        '' ''Se indica el valor que va a tomar el parametro   
+        ''myDiscreteValueIdNave.Value = Convert.ToInt32(cmbNave.SelectedValue)
+        ''myDiscreteValueAnio.Value = Convert.ToInt32(cmbAnio.SelectedItem)
+        ''myDiscreteValueColaborador.Value = Convert.ToString(txtColaborador.Text)
+
+
+        ''myDiscreteValueUserName.Value = Convert.ToString(Entidades.SesionUsuario.UsuarioSesion.PUserUsername)
+        ''myDiscreteValueNombreArchivo.Value = Convert.ToString("ReportePrimaVacacional.rpt")
+
+
+        ''If cmbNave.SelectedValue = 2 Then
+        ''    myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/YUYIN.JPG")
+        ''    myDiscreteValueNave.Value = Convert.ToString("YUYIN")
+
+        ''ElseIf cmbNave.SelectedValue = 3 Then
+        ''    myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/JEANS.JPG")
+        ''    myDiscreteValueNave.Value = Convert.ToString("JEANS")
+
+        ''ElseIf cmbNave.SelectedValue = 4 Then
+        ''    myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/MERANO.JPG")
+        ''    myDiscreteValueNave.Value = Convert.ToString("MERANO")
+
+        ''ElseIf cmbNave.SelectedValue = 5 Then
+        ''    myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/JEANS2.JPG")
+        ''    myDiscreteValueNave.Value = Convert.ToString("JEANS2")
+
+        ''ElseIf cmbNave.SelectedValue = 43 Then
+        ''    myDiscreteValueRuta.Value = ("http://192.168.7.16/yuyinerpftp/LOGOTIPOS/GRUPOYUYIN.JPG")
+        ''    myDiscreteValueNave.Value = Convert.ToString("Comercializadora")
+
+        ''End If
+
+        '' ''Se asigna el valor del parametro '@Colaborador  '@NaveID   '@PeriodoNominaID 
+        ''IdNave.CurrentValues.Add(myDiscreteValueIdNave)
+        ''Anio.CurrentValues.Add(myDiscreteValueAnio)
+        ''Colaborador.CurrentValues.Add(myDiscreteValueColaborador)
+        ''ruta.CurrentValues.Add(myDiscreteValueRuta)
+
+        ''UserName.CurrentValues.Add(myDiscreteValueUserName)
+        ''NombreArchivo.CurrentValues.Add(myDiscreteValueNombreArchivo)
+        ''Nave.CurrentValues.Add(myDiscreteValueNave)
+
+        '' ''Se asigna el valor a la variable que se enlazsa al reporte
+        ''Parametros.Add(IdNave)
+        ''Parametros.Add(Anio)
+        ''Parametros.Add(Colaborador)
+        ''Parametros.Add(ruta)
+
+        ''Parametros.Add(UserName)
+        ''Parametros.Add(NombreArchivo)
+        ''Parametros.Add(Nave)
+
+        '' ''Se llama al reportView y se indica el valor del parametro
+        ''Dim CrystalVisor As New VisorReportesEnTablas
+        ''CrystalVisor.ReporteViewer.ParameterFieldInfo = Parametros
+
+        '' ''Se declara un objeto de tipo rpt
+        ''Dim reporte As New ReportePrimaVacacional
+        ''reporte.SetDatabaseLogon("sa", "poder335")
+
+        '' ''Se asigna el reporte al crystal report viewer
+        ''CrystalVisor.ReporteViewer.ReportSource = reporte
+        ''CrystalVisor.ShowDialog()
+    End Sub
+
+    Private Sub txtColaborador_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtColaborador.KeyPress
+        ''SOLO LETRAS
+        Dim caracter As Char = e.KeyChar
+        If (Char.IsLetter(caracter)) Or (caracter = ChrW(Keys.Back)) Or (Char.IsSeparator(caracter)) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub btnLimpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLimpiar.Click
+        grdCalculoPrimaVacacional.Rows.Clear()
+        txtColaborador.Text = ""
+        cmbNave.SelectedIndex = 0
+
+    End Sub
+
+
+    Private Sub btnCncelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCncelar.Click
+        Me.Close()
+    End Sub
+
+    Public Sub cmbNaveDrop()
+        Dim ObjBU As New Nomina.Negocios.CalcularPrimaVacacionalBU
+        Dim listaPrimaVacacional As List(Of Entidades.CalcularPrimaVacacional)
+        grdCalculoPrimaVacacional.Rows.Clear()
+        lblAnioActual.Text = "False"
+        lblRespaldoAnioActual.Text = "False"
+        btnGuardar.Enabled = False
+        cmbAnio.Items.Clear()
+
+        listaPrimaVacacional = ObjBU.ListaPrimaVacacional(cmbNave.SelectedValue)
+        AgregarAnios(listaPrimaVacacional)
+    End Sub
+
+
+
+    Private Sub cmbAnio_DropDownClosed(sender As Object, e As EventArgs) Handles cmbAnio.DropDownClosed
+        Try
+
+            Dim objBu As New Negocios.CalcularPrimaVacacionalBU
+            Dim tabla As New DataTable
+            tabla = objBu.fechasSueldos(cmbNave.SelectedValue, cmbAnio.Text)
+
+            If tabla.Rows.Count = 4 Then
+                fecha4 = " Del:" + CDate(tabla.Rows(0).Item("FechaInicial")).ToShortDateString + " Al:" + CDate(tabla.Rows(0).Item("FechaFinal")).ToShortDateString
+                fecha3 = " Del:" + CDate(tabla.Rows(1).Item("FechaInicial")).ToShortDateString + " Al:" + CDate(tabla.Rows(1).Item("FechaFinal").ToString).ToShortDateString
+                fecha2 = " Del:" + CDate(tabla.Rows(2).Item("FechaInicial")).ToShortDateString + " Al:" + CDate(tabla.Rows(2).Item("FechaFinal").ToString).ToShortDateString
+                fecha1 = " Del:" + CDate(tabla.Rows(3).Item("FechaInicial")).ToShortDateString + " Al:" + CDate(tabla.Rows(3).Item("FechaFinal").ToString).ToShortDateString
+
+                clmSemana1.HeaderText = fecha1.ToString
+                clmSemana2.HeaderText = fecha2.ToString
+                clmSemana3.HeaderText = fecha3.ToString
+                clmSemana4.HeaderText = fecha4.ToString
+
+
+            End If
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+   
+
+End Class

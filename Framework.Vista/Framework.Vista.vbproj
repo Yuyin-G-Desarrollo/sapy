@@ -1,0 +1,2274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FA41D7F-52F8-496E-B140-2908B5B9656B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Framework.Vista.SAPY.My.MyApplication</StartupObject>
+    <RootNamespace>Framework.Vista.SAPY</RootNamespace>
+    <AssemblyName>Framework.Vista.SAPY</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\inetpub\wwwroot\SAPY_2024\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.2.170/sapy_2024/</InstallUrl>
+    <SupportUrl>http://www.grupoyuyin.com.mx</SupportUrl>
+    <ErrorReportUrl>http://www.grupoyuyin.com.mx</ErrorReportUrl>
+    <ProductName>SAPY</ProductName>
+    <PublisherName>Sistemas Grupo Yuyin</PublisherName>
+    <SuiteName>SAPY</SuiteName>
+    <MinimumRequiredVersion>2.1.0.10</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.html</WebPage>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Framework.Vista.SAPY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Framework.Vista.SAPY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8B48604867B63B2C5A7D1A5BFA52F9BCBA38E8BE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Framework.Vista_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\SAPY.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Documents.Excel.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v12.2.FormulaBuilder, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCalcManager.v12.2.FormulaBuilder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.DocumentExport.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListView.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTree.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2012.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v12.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenPop, Version=2.0.5.0, Culture=neutral, PublicKeyToken=bebb5741791313cd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report.Win, Version=2014.1.1900.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationTypes">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CFDI\ActualizaProveedorCFDIForm.Designer.vb">
+      <DependentUpon>ActualizaProveedorCFDIForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CFDI\ActualizaProveedorCFDIForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFDI\EditarfacturaProveedorForm.Designer.vb">
+      <DependentUpon>EditarfacturaProveedorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CFDI\EditarfacturaProveedorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFDI\ErroresCFDIForm.Designer.vb">
+      <DependentUpon>ErroresCFDIForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CFDI\ErroresCFDIForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFDI\ValidadorCFDIForm.Designer.vb">
+      <DependentUpon>ValidadorCFDIForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CFDI\ValidadorCFDIForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AlertaDiasMigracionInfraestructuraForm.Designer.vb">
+      <DependentUpon>AlertaDiasMigracionInfraestructuraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AlertaDiasMigracionInfraestructuraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AlertaFechaMigracionInfraestructuraForm.Designer.vb">
+      <DependentUpon>AlertaFechaMigracionInfraestructuraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AlertaFechaMigracionInfraestructuraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AlertaMigracionInfraestructuraForm.Designer.vb">
+      <DependentUpon>AlertaMigracionInfraestructuraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AlertaMigracionInfraestructuraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltaEstadosForm.Designer.vb">
+      <DependentUpon>AltaEstadosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltaEstadosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ALtaModuloArbolForm.Designer.vb">
+      <DependentUpon>ALtaModuloArbolForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ALtaModuloArbolForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltaPermisoEspecialForm.Designer.vb">
+      <DependentUpon>AltaPermisoEspecialForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltaPermisoEspecialForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltaPersona.Designer.vb">
+      <DependentUpon>AltaPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltaPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltaPoblacion.Designer.vb">
+      <DependentUpon>AltaPoblacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltaPoblacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltaReportesForm.Designer.vb">
+      <DependentUpon>AltaReportesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltaReportesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasAccionesForm.Designer.vb">
+      <DependentUpon>AltasAccionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasAccionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasBancosForm.Designer.vb">
+      <DependentUpon>AltasBancosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasBancosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasCiudadesForm.Designer.vb">
+      <DependentUpon>AltasCiudadesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasCiudadesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasDepartamentosForm.Designer.vb">
+      <DependentUpon>AltasDepartamentosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasDepartamentosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasExcepcionesForm.Designer.vb">
+      <DependentUpon>AltasExcepcionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasExcepcionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasNavesForm.Designer.vb">
+      <DependentUpon>AltasNavesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasNavesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasNavesUsuarioForm.Designer.vb">
+      <DependentUpon>AltasNavesUsuarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasNavesUsuarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasPaisesForm.Designer.vb">
+      <DependentUpon>AltasPaisesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasPaisesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasPatronesForm.Designer.vb">
+      <DependentUpon>AltasPatronesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasPatronesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasPerfilesForm.Designer.vb">
+      <DependentUpon>AltasPerfilesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasPerfilesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasPerfilesUsuarioForm.Designer.vb">
+      <DependentUpon>AltasPerfilesUsuarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasPerfilesUsuarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasPermisosForm.Designer.vb">
+      <DependentUpon>AltasPermisosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasPermisosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasPuestosForm.Designer.vb">
+      <DependentUpon>AltasPuestosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasPuestosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasSucursalesForm.Designer.vb">
+      <DependentUpon>AltasSucursalesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasSucursalesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltasUsuariosForm.Designer.vb">
+      <DependentUpon>AltasUsuariosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltasUsuariosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\AltaUsuarioForm.Designer.vb">
+      <DependentUpon>AltaUsuarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AltaUsuarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Catalogos\AgregarEditarCondicionesForm.Designer.vb">
+      <DependentUpon>AgregarEditarCondicionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Catalogos\AgregarEditarCondicionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Catalogos\CatalogoCondicionesForm.Designer.vb">
+      <DependentUpon>CatalogoCondicionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Catalogos\CatalogoCondicionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Catalogos\CatalogoDiasForm.Designer.vb">
+      <DependentUpon>CatalogoDiasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Catalogos\CatalogoDiasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Catalogos\ConfiguracionDeValidacionesForm.Designer.vb">
+      <DependentUpon>ConfiguracionDeValidacionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Catalogos\ConfiguracionDeValidacionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Catalogos\EditarAgregarDiaForm.Designer.vb">
+      <DependentUpon>EditarAgregarDiaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Catalogos\EditarAgregarDiaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Catalogos\UsuarioCambioContraseñaForm.Designer.vb">
+      <DependentUpon>UsuarioCambioContraseñaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Catalogos\UsuarioCambioContraseñaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ConfiguracionColores.Designer.vb">
+      <DependentUpon>ConfiguracionColores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ConfiguracionColores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ConfiguracionColoresForm.Designer.vb">
+      <DependentUpon>ConfiguracionColoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ConfiguracionColoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarAccionesForm.Designer.vb">
+      <DependentUpon>EditarAccionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarAccionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarBancosForm.Designer.vb">
+      <DependentUpon>EditarBancosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarBancosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarCiudadesForm.Designer.vb">
+      <DependentUpon>EditarCiudadesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarCiudadesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarDepartamentosForm.Designer.vb">
+      <DependentUpon>EditarDepartamentosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarDepartamentosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarEstadoForm.Designer.vb">
+      <DependentUpon>EditarEstadoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarEstadoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarModuloArbolForm.Designer.vb">
+      <DependentUpon>EditarModuloArbolForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarModuloArbolForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarModulosForm.Designer.vb">
+      <DependentUpon>EditarModulosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarModulosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarNavesForm.Designer.vb">
+      <DependentUpon>EditarNavesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarNavesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarPaisesForm.Designer.vb">
+      <DependentUpon>EditarPaisesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarPaisesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarPatronesForm.Designer.vb">
+      <DependentUpon>EditarPatronesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarPatronesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarPerfilesForm.Designer.vb">
+      <DependentUpon>EditarPerfilesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarPerfilesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarPuestosForm.Designer.vb">
+      <DependentUpon>EditarPuestosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarPuestosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarSucursalesform.Designer.vb">
+      <DependentUpon>EditarSucursalesform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarSucursalesform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarUsuarioArbolForm.Designer.vb">
+      <DependentUpon>EditarUsuarioArbolForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarUsuarioArbolForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\EditarUsuariosForm.Designer.vb">
+      <DependentUpon>EditarUsuariosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\EditarUsuariosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaAccionesForm.Designer.vb">
+      <DependentUpon>ListaAccionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaAccionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaBancosForm.Designer.vb">
+      <DependentUpon>ListaBancosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaBancosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaCadenaConexionForm.Designer.vb">
+      <DependentUpon>ListaCadenaConexionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaCadenaConexionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaCiudadesForm.Designer.vb">
+      <DependentUpon>ListaCiudadesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaCiudadesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaDepartamentosForm.Designer.vb">
+      <DependentUpon>ListaDepartamentosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaDepartamentosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaEstadosForm.Designer.vb">
+      <DependentUpon>ListaEstadosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaEstadosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaExcepcionesForm.Designer.vb">
+      <DependentUpon>ListaExcepcionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaExcepcionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaModulosAltas.Designer.vb">
+      <DependentUpon>ListaModulosAltas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaModulosAltas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaModulosForm.Designer.vb">
+      <DependentUpon>ListaModulosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaModulosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaNavesForm.Designer.vb">
+      <DependentUpon>ListaNavesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaNavesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaNavesUsuarioForm.Designer.vb">
+      <DependentUpon>ListaNavesUsuarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaNavesUsuarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaPaisesForm.Designer.vb">
+      <DependentUpon>ListaPaisesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaPaisesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaPatronesForm.Designer.vb">
+      <DependentUpon>ListaPatronesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaPatronesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaPerfilesForm.Designer.vb">
+      <DependentUpon>ListaPerfilesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaPerfilesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaPerfilesUsuarioForm.Designer.vb">
+      <DependentUpon>ListaPerfilesUsuarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaPerfilesUsuarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaPermisoForm.Designer.vb">
+      <DependentUpon>ListaPermisoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaPermisoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaPoblacionesForm.Designer.vb">
+      <DependentUpon>ListaPoblacionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaPoblacionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaProveedoresForm.Designer.vb">
+      <DependentUpon>ListaProveedoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaProveedoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaPuestosForm.Designer.vb">
+      <DependentUpon>ListaPuestosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaPuestosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ListaSucursalesForm.Designer.vb">
+      <DependentUpon>ListaSucursalesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ListaSucursalesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\MDIMain.Designer.vb">
+      <DependentUpon>MDIMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\MDIMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\MDIParent.Designer.vb">
+      <DependentUpon>MDIParent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\MDIParent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\PermisosFrameWorkForm.Designer.vb">
+      <DependentUpon>PermisosFrameWorkForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\PermisosFrameWorkForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Persona\AltaEdicionPersona.Designer.vb">
+      <DependentUpon>AltaEdicionPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Persona\AltaEdicionPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Persona\ListaPersonasForm.Designer.vb">
+      <DependentUpon>ListaPersonasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Persona\ListaPersonasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ReplicaPermisosForm.Designer.vb">
+      <DependentUpon>ReplicaPermisosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ReplicaPermisosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\ReportesForm.Designer.vb">
+      <DependentUpon>ReportesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\ReportesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\seleccionColaboradoForm.Designer.vb">
+      <DependentUpon>seleccionColaboradoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\seleccionColaboradoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\SesionUsuarios.Designer.vb">
+      <DependentUpon>SesionUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\SesionUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\UsuariosForm.Designer.vb">
+      <DependentUpon>UsuariosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\UsuariosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensajes\AdvertenciaForm.Designer.vb">
+      <DependentUpon>AdvertenciaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes\AdvertenciaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensajes\AvisoForm.Designer.vb">
+      <DependentUpon>AvisoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes\AvisoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensajes\ErroresForm.Designer.vb">
+      <DependentUpon>ErroresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes\ErroresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensajes\ExitoForm.Designer.vb">
+      <DependentUpon>ExitoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes\ExitoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Paridad\configuracionValorMoneda.Designer.vb">
+      <DependentUpon>configuracionValorMoneda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paridad\configuracionValorMoneda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paridad\frmCatalogoMoneda.Designer.vb">
+      <DependentUpon>frmCatalogoMoneda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paridad\frmCatalogoMoneda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilerias\ConfigColores.vb" />
+    <Compile Include="Utilerias\Controles.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CFDI\ActualizaProveedorCFDIForm.resx">
+      <DependentUpon>ActualizaProveedorCFDIForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFDI\EditarfacturaProveedorForm.resx">
+      <DependentUpon>EditarfacturaProveedorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFDI\ErroresCFDIForm.resx">
+      <DependentUpon>ErroresCFDIForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFDI\ValidadorCFDIForm.resx">
+      <DependentUpon>ValidadorCFDIForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AlertaDiasMigracionInfraestructuraForm.resx">
+      <DependentUpon>AlertaDiasMigracionInfraestructuraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AlertaFechaMigracionInfraestructuraForm.resx">
+      <DependentUpon>AlertaFechaMigracionInfraestructuraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AlertaMigracionInfraestructuraForm.resx">
+      <DependentUpon>AlertaMigracionInfraestructuraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltaEstadosForm.resx">
+      <DependentUpon>AltaEstadosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ALtaModuloArbolForm.resx">
+      <DependentUpon>ALtaModuloArbolForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltaPermisoEspecialForm.resx">
+      <DependentUpon>AltaPermisoEspecialForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltaPersona.resx">
+      <DependentUpon>AltaPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltaPoblacion.resx">
+      <DependentUpon>AltaPoblacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltaReportesForm.resx">
+      <DependentUpon>AltaReportesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasAccionesForm.resx">
+      <DependentUpon>AltasAccionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasBancosForm.resx">
+      <DependentUpon>AltasBancosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasCiudadesForm.resx">
+      <DependentUpon>AltasCiudadesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasDepartamentosForm.resx">
+      <DependentUpon>AltasDepartamentosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasExcepcionesForm.resx">
+      <DependentUpon>AltasExcepcionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasNavesForm.resx">
+      <DependentUpon>AltasNavesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasNavesUsuarioForm.resx">
+      <DependentUpon>AltasNavesUsuarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasPaisesForm.resx">
+      <DependentUpon>AltasPaisesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasPatronesForm.resx">
+      <DependentUpon>AltasPatronesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasPerfilesForm.resx">
+      <DependentUpon>AltasPerfilesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasPerfilesUsuarioForm.resx">
+      <DependentUpon>AltasPerfilesUsuarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasPermisosForm.resx">
+      <DependentUpon>AltasPermisosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasPuestosForm.resx">
+      <DependentUpon>AltasPuestosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasSucursalesForm.resx">
+      <DependentUpon>AltasSucursalesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltasUsuariosForm.resx">
+      <DependentUpon>AltasUsuariosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\AltaUsuarioForm.resx">
+      <DependentUpon>AltaUsuarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Catalogos\AgregarEditarCondicionesForm.resx">
+      <DependentUpon>AgregarEditarCondicionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Catalogos\CatalogoCondicionesForm.resx">
+      <DependentUpon>CatalogoCondicionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Catalogos\CatalogoDiasForm.resx">
+      <DependentUpon>CatalogoDiasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Catalogos\ConfiguracionDeValidacionesForm.resx">
+      <DependentUpon>ConfiguracionDeValidacionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Catalogos\EditarAgregarDiaForm.resx">
+      <DependentUpon>EditarAgregarDiaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Catalogos\UsuarioCambioContraseñaForm.resx">
+      <DependentUpon>UsuarioCambioContraseñaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ConfiguracionColores.resx">
+      <DependentUpon>ConfiguracionColores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ConfiguracionColoresForm.resx">
+      <DependentUpon>ConfiguracionColoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarAccionesForm.resx">
+      <DependentUpon>EditarAccionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarBancosForm.resx">
+      <DependentUpon>EditarBancosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarCiudadesForm.resx">
+      <DependentUpon>EditarCiudadesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarDepartamentosForm.resx">
+      <DependentUpon>EditarDepartamentosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarEstadoForm.resx">
+      <DependentUpon>EditarEstadoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarModuloArbolForm.resx">
+      <DependentUpon>EditarModuloArbolForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarModulosForm.resx">
+      <DependentUpon>EditarModulosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarNavesForm.resx">
+      <DependentUpon>EditarNavesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarPaisesForm.resx">
+      <DependentUpon>EditarPaisesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarPatronesForm.resx">
+      <DependentUpon>EditarPatronesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarPerfilesForm.resx">
+      <DependentUpon>EditarPerfilesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarPuestosForm.resx">
+      <DependentUpon>EditarPuestosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarSucursalesform.resx">
+      <DependentUpon>EditarSucursalesform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarUsuarioArbolForm.resx">
+      <DependentUpon>EditarUsuarioArbolForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\EditarUsuariosForm.resx">
+      <DependentUpon>EditarUsuariosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaAccionesForm.resx">
+      <DependentUpon>ListaAccionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaBancosForm.resx">
+      <DependentUpon>ListaBancosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaCadenaConexionForm.resx">
+      <DependentUpon>ListaCadenaConexionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaCiudadesForm.resx">
+      <DependentUpon>ListaCiudadesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaDepartamentosForm.resx">
+      <DependentUpon>ListaDepartamentosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaEstadosForm.resx">
+      <DependentUpon>ListaEstadosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaExcepcionesForm.resx">
+      <DependentUpon>ListaExcepcionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaModulosAltas.resx">
+      <DependentUpon>ListaModulosAltas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaModulosForm.resx">
+      <DependentUpon>ListaModulosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaNavesForm.resx">
+      <DependentUpon>ListaNavesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaNavesUsuarioForm.resx">
+      <DependentUpon>ListaNavesUsuarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaPaisesForm.resx">
+      <DependentUpon>ListaPaisesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaPatronesForm.resx">
+      <DependentUpon>ListaPatronesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaPerfilesForm.resx">
+      <DependentUpon>ListaPerfilesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaPerfilesUsuarioForm.resx">
+      <DependentUpon>ListaPerfilesUsuarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaPermisoForm.resx">
+      <DependentUpon>ListaPermisoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaPoblacionesForm.resx">
+      <DependentUpon>ListaPoblacionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaProveedoresForm.resx">
+      <DependentUpon>ListaProveedoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaPuestosForm.resx">
+      <DependentUpon>ListaPuestosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ListaSucursalesForm.resx">
+      <DependentUpon>ListaSucursalesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\MDIMain.resx">
+      <DependentUpon>MDIMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\MDIParent.resx">
+      <DependentUpon>MDIParent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\PermisosFrameWorkForm.resx">
+      <DependentUpon>PermisosFrameWorkForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Persona\AltaEdicionPersona.resx">
+      <DependentUpon>AltaEdicionPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Persona\ListaPersonasForm.resx">
+      <DependentUpon>ListaPersonasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ReplicaPermisosForm.resx">
+      <DependentUpon>ReplicaPermisosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\ReportesForm.resx">
+      <DependentUpon>ReportesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\seleccionColaboradoForm.resx">
+      <DependentUpon>seleccionColaboradoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\SesionUsuarios.resx">
+      <DependentUpon>SesionUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\UsuariosForm.resx">
+      <DependentUpon>UsuariosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes\AdvertenciaForm.resx">
+      <DependentUpon>AdvertenciaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes\AvisoForm.resx">
+      <DependentUpon>AvisoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes\ErroresForm.resx">
+      <DependentUpon>ErroresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes\ExitoForm.resx">
+      <DependentUpon>ExitoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paridad\configuracionValorMoneda.resx">
+      <DependentUpon>configuracionValorMoneda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paridad\frmCatalogoMoneda.resx">
+      <DependentUpon>frmCatalogoMoneda.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\desbloquear24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Almacen.Vista\Almacen.Vista.vbproj">
+      <Project>{6f4f1fde-382b-44af-b76f-0c3146a49a24}</Project>
+      <Name>Almacen.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contabilidad.Vista\Contabilidad.Vista.vbproj">
+      <Project>{38222e94-0d9e-4500-b093-a8c10242c657}</Project>
+      <Name>Contabilidad.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{01976FD5-CF48-4406-8118-782F1FCAAF18}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturacion.Vista\Facturacion.Vista.vbproj">
+      <Project>{de61386e-2ef3-4944-8038-473a1d0ed856}</Project>
+      <Name>Facturacion.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Negocios\Framework.Negocios.vbproj">
+      <Project>{44693732-F211-43D1-B164-72E528E990DC}</Project>
+      <Name>Framework.Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.WebServices\Framework.WebServices.vbproj">
+      <Project>{bbfe5332-4abc-4bcb-bee4-5f477ca78afa}</Project>
+      <Name>Framework.WebServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nomina.Vista\Nomina.Vista.vbproj">
+      <Project>{d5be2bf7-8f79-46ed-b3d3-9e0da3fbb5b0}</Project>
+      <Name>Nomina.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistencia\Persistencia.vbproj">
+      <Project>{DF0490B2-277F-4DE2-933E-110071D3A630}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Produccion.Vista\Produccion.Vista.vbproj">
+      <Project>{92cc895a-f0c8-452c-a85f-7826b7e4e7bb}</Project>
+      <Name>Produccion.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Programacion.Vista\Programacion.Vista.vbproj">
+      <Project>{7086837e-4655-4baa-ad6b-8fddca92d739}</Project>
+      <Name>Programacion.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proveedor.Vista\Proveedor.Vista.vbproj">
+      <Project>{77cafff7-d8f3-4517-89ca-c2c0ff001d30}</Project>
+      <Name>Proveedor.Vista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vbproj">
+      <Project>{400F3E25-60B7-4F1C-B8FC-C063D6C563EA}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ventas.Vista\Ventas.Vista.vbproj">
+      <Project>{cb45cbda-34c8-4a2a-b742-77d0adc84e77}</Project>
+      <Name>Ventas.Vista</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conf_32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubk7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1373583751_arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1373583708_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1373584033_navigate-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1373584074_navigate-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YUconGRUPO.png" />
+    <None Include="Resources\1377717088_Colors.png" />
+    <None Include="Resources\1377717093_256_colors.png" />
+    <None Include="Resources\1377717134_paint.png" />
+    <None Include="Resources\1377717096_color2_16x16.gif" />
+    <None Include="Resources\calculo_32.png" />
+    <None Include="Resources\prestamos-32.png" />
+    <None Include="Resources\autorizar_32.png" />
+    <None Include="Resources\enviarcalculo_32.png" />
+    <None Include="Resources\refresh_32.png" />
+    <None Include="Resources\navesusuario_32.png" />
+    <None Include="Resources\adminavances_32.png" />
+    <None Include="Resources\colaboradorlaboral_32.png" />
+    <None Include="Resources\colaboradoracademica_32.png" />
+    <None Include="Resources\colaboradorfamilia_32.png" />
+    <None Include="Resources\colaboradormedica_32.png" />
+    <None Include="Resources\colaboradornomina_32.png" />
+    <None Include="Resources\colaboradorexpediente_32.png" />
+    <None Include="Resources\finiquito_32.png" />
+    <None Include="Resources\calculofiniquito_32.png" />
+    <None Include="Resources\excel_32.png" />
+    <None Include="Resources\pdf_32.png" />
+    <None Include="Resources\imprimir_32.png" />
+    <None Include="Resources\incentivos_32.png" />
+    <None Include="Resources\celulas_32.png" />
+    <None Include="Resources\patrones_32.png" />
+    <None Include="Resources\naves_32.png" />
+    <None Include="Resources\horarios_32.png" />
+    <None Include="Resources\deptops_32.png" />
+    <None Include="Resources\finanzas_32.png" />
+    <None Include="Resources\puesto_32.png" />
+    <None Include="Resources\sucursales_32.png" />
+    <None Include="Resources\colaboradores_32.png" />
+    <None Include="Resources\fichaColaborador_32.png" />
+    <None Include="Resources\agregar_32.png" />
+    <None Include="Resources\quitar_32.png" />
+    <None Include="Resources\guardar2_32.png" />
+    <None Include="Resources\altas_32.png" />
+    <None Include="Resources\buscar_32.png" />
+    <None Include="Resources\limpiar_32.png" />
+    <None Include="Resources\cancelar_32.png" />
+    <None Include="Resources\guardar_32.png" />
+    <None Include="Resources\excepiones_32.png" />
+    <None Include="Resources\borrar_32.png" />
+    <None Include="Resources\nuevo_32.png" />
+    <None Include="Resources\editar_32.png" />
+    <None Include="Resources\24x24px-%282%29.png" />
+    <None Include="Resources\24x24px.png" />
+    <None Include="Resources\32x32px-%282%29.png" />
+    <None Include="Resources\32x32px.png" />
+    <None Include="Resources\48x48px-%282%29.png" />
+    <None Include="Resources\48x48px.png" />
+    <None Include="Resources\conf_32.png" />
+    <None Include="Resources\menubk.png" />
+    <None Include="Resources\fondo.png" />
+    <None Include="Resources\ICONO-1.png" />
+    <None Include="Resources\ICONO-2.png" />
+    <None Include="Resources\ICONO-3.png" />
+    <None Include="Resources\ICONO-4.png" />
+    <None Include="Resources\new2.png" />
+    <None Include="Resources\new3.png" />
+    <None Include="Resources\new4.png" />
+    <None Include="Resources\new5.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\regresar.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\yuyin.png" />
+    <None Include="Resources\mime_txt.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\borrar.png" />
+    <None Include="Resources\guardar.png" />
+    <None Include="Resources\Captura.PNG" />
+    <None Include="Resources\GUARDAR1.png" />
+    <None Include="Resources\GUARDAR2.png" />
+    <None Include="Resources\guardar3.png" />
+    <None Include="Resources\guardar4.png" />
+    <None Include="Resources\SAY LOGIN.jpg" />
+    <None Include="Resources\SAY_LOGIN.jpg" />
+    <None Include="Resources\candado.png" />
+    <None Include="Resources\menu_colaboradores.png" />
+    <None Include="Resources\menu_ficha.png" />
+    <None Include="Resources\menu_nomina.png" />
+    <None Include="Resources\ACCIONES_32.png" />
+    <None Include="Resources\AGREGAR-REPORTE_32.png" />
+    <None Include="Resources\agregarreporte_32.png" />
+    <None Include="Resources\abonosprestamos_32.png" />
+    <Content Include="Resources\AguinaldoM_32.png" />
+    <Content Include="Resources\Aguinaldo_32.png" />
+    <None Include="Resources\Almacen.png" />
+    <None Include="Resources\ALMACEN_32.png" />
+    <None Include="Resources\altasincapacidades_32.png" />
+    <None Include="Resources\aplicaciones_32.png" />
+    <Content Include="Resources\AreasM_32.png" />
+    <Content Include="Resources\Areas_32.png" />
+    <Content Include="Resources\AutorizacionDeHorasExtrasM_32.png" />
+    <Content Include="Resources\AutorizacionDeHorasExtras_32.png" />
+    <Content Include="Resources\AutorizacionDePrestamosM_32.png" />
+    <Content Include="Resources\AutorizacionDePrestamos_32.png" />
+    <Content Include="Resources\AutorizacionDirectorM_32.png" />
+    <Content Include="Resources\AutorizacionDirector_32.png" />
+    <Content Include="Resources\AutorizacionGerenteM_32.png" />
+    <Content Include="Resources\AutorizacionGerente_32.png" />
+    <None Include="Resources\BANCOS.png" />
+    <None Include="Resources\AVANCES_32.png" />
+    <None Include="Resources\BANCOS_32.png" />
+    <None Include="Resources\cajachica_32.png" />
+    <Content Include="Resources\Aviso-Dias-Restantes-Yuyin-Otros.png" />
+    <Content Include="Resources\Aviso-Dias-Restantes-Yuyin.png" />
+    <Content Include="Resources\Aviso-Importante-Yuyin.png" />
+    <Content Include="Resources\CajaDeAhorroM_32.png" />
+    <Content Include="Resources\CajaDeAhorro_32.png" />
+    <None Include="Resources\CalculoDeNomina.png" />
+    <None Include="Resources\CALCULO-DE-NOMINA_32.png" />
+    <Content Include="Resources\CalculoDeNominaM_32.png" />
+    <Content Include="Resources\CalculoDeNomina_32.png" />
+    <Content Include="Resources\CalculoFiniquitoM_32.png" />
+    <Content Include="Resources\calidad.png" />
+    <Content Include="Resources\CancelarPrestamoM_32.png" />
+    <Content Include="Resources\CancelarPrestamo_32.png" />
+    <None Include="Resources\Catalogos.png" />
+    <None Include="Resources\CatalogosVentas_32.png" />
+    <None Include="Resources\CATALOGOS_32.png" />
+    <None Include="Resources\CATALOGOS-DE-PROGRAMACION_32.png" />
+    <None Include="Resources\CATALOGOS_2_32.png" />
+    <None Include="Resources\catalogosprogramacion_32.png" />
+    <Content Include="Resources\CelulasM_32.png" />
+    <None Include="Resources\cierrededucciones_32.png" />
+    <Content Include="Resources\CierreDeNominaM_32.png" />
+    <Content Include="Resources\CierreDeNomina_32.png" />
+    <None Include="Resources\cierredestajos_32.png" />
+    <Content Include="Resources\CierreSemanlDePrestamosM_32.png" />
+    <Content Include="Resources\CierreSemanlDePrestamos_32.png" />
+    <None Include="Resources\CIUDADES_32.png" />
+    <None Include="Resources\CLIENTES_32.png" />
+    <Content Include="Resources\cobranza.png" />
+    <Content Include="Resources\ColaboradoresM_32.png" />
+    <None Include="Resources\CONFIGURACION-DE-BAHIAS_32.png" />
+    <None Include="Resources\colecciones_32.png" />
+    <None Include="Resources\colores_32.png" />
+    <Content Include="Resources\compras.png" />
+    <Content Include="Resources\ConfiguracionDeAsistenciaM_32.png" />
+    <Content Include="Resources\ConfiguracionDeAsistencia_32.png" />
+    <None Include="Resources\ConfiguracionDeBahias.png" />
+    <None Include="Resources\ConfiguracionDeBahias_32.png" />
+    <Content Include="Resources\ConfiguracionDeFiniquitoM_32.png" />
+    <Content Include="Resources\ConfiguracionDeFiniquito_32.png" />
+    <Content Include="Resources\ConfiguracionDeGratificacionesM_32.png" />
+    <Content Include="Resources\ConfiguracionDeGratificaciones_32.png" />
+    <Content Include="Resources\ConfiguracionDeNominaM_32.png" />
+    <Content Include="Resources\ConfiguracionDeNomina_32.png" />
+    <Content Include="Resources\ConfiguracionDePermisosM_32.png" />
+    <Content Include="Resources\ConfiguracionDePermisos_32.png" />
+    <Content Include="Resources\ConfiguracionDePrestamosM_32.png" />
+    <Content Include="Resources\ConfiguracionDePrestamos_32.png" />
+    <None Include="Resources\CONFIGURACIONFINANCIERA_32.png" />
+    <None Include="Resources\CONSULTA-DE-DISPONIBILIDAD-DE-ALMACEN_32.png" />
+    <None Include="Resources\CONSULTA-POR-FECHA-DE-AVANCE_32.png" />
+    <None Include="Resources\CONSULTA-POR-PROGRAMA_32.png" />
+    <Content Include="Resources\ConsultaCierreDeNominaM_32.png" />
+    <Content Include="Resources\ConsultaCierreDeNomina_32.png" />
+    <None Include="Resources\CONTROL-DE-ASISTENCIA_32.png" />
+    <None Include="Resources\consultatickets_32.png" />
+    <None Include="Resources\consutadeducciones_32.png" />
+    <Content Include="Resources\contabilidad.png" />
+    <Content Include="Resources\ControlAsistenciaM_32.png" />
+    <Content Include="Resources\ControlAsistencia_32.png" />
+    <None Include="Resources\ControlDeAsistencia.png" />
+    <Content Include="Resources\ControlDeAsistencia1dM_32.png" />
+    <Content Include="Resources\ControlDeAsistencia1d_32.png" />
+    <None Include="Resources\ControlDeAsistencia_32.png" />
+    <None Include="Resources\corridas_32.png" />
+    <None Include="Resources\cortes_32.png" />
+    <None Include="Resources\correcta.png" />
+    <Content Include="Resources\DeduccionesExtraordinariaM_32.png" />
+    <Content Include="Resources\DeduccionesExtraordinaria_32.png" />
+    <Content Include="Resources\DepartamentosM_32.png" />
+    <Content Include="Resources\Departamentos_32.png" />
+    <None Include="Resources\Embarques.png" />
+    <None Include="Resources\DisponibilidadAlmacen.png" />
+    <None Include="Resources\DisponibilidadAlmacen_32.png" />
+    <None Include="Resources\EMBARQUES_32.png" />
+    <None Include="Resources\destajos_32.png" />
+    <None Include="Resources\eliminardeducciones_32.png" />
+    <None Include="Resources\email1.png" />
+    <Content Include="Resources\EntregaDeFiniquitosM_32.png" />
+    <Content Include="Resources\EntregaDeFiniquitos_32.png" />
+    <None Include="Resources\ESTADOS_32.png" />
+    <None Include="Resources\EXCEPCIONES_32.png" />
+    <None Include="Resources\familias_32.png" />
+    <Content Include="Resources\facturas.png" />
+    <Content Include="Resources\FichaColaboradorM_32.png" />
+    <None Include="Resources\Finiquitos.png" />
+    <Content Include="Resources\FiniquitosM_32.png" />
+    <None Include="Resources\Gratificaciones.png" />
+    <None Include="Resources\FINIQUITOS_32.png" />
+    <None Include="Resources\framework_32.png" />
+    <None Include="Resources\forros_32.png" />
+    <Content Include="Resources\framework.png" />
+    <Content Include="Resources\GratificacionesM_32.png" />
+    <Content Include="Resources\GratificacionesPorAutoroizarM_32.png" />
+    <Content Include="Resources\GratificacionesPorAutoroizar_32.png" />
+    <None Include="Resources\GRATIFICACIONES_32.png" />
+    <None Include="Resources\grupos_32.png" />
+    <Content Include="Resources\HorariosM_32.png" />
+    <None Include="Resources\ListaDeFiniquitos.png" />
+    <None Include="Resources\ListaDeFiniquitos_32.png" />
+    <None Include="Resources\INVENTARIO_32.png" />
+    <None Include="Resources\LISTA-DE-FINIQUITOS_32.png" />
+    <None Include="Resources\LISTA-DE-PRECIOS_32.png" />
+    <None Include="Resources\incapacidades_32.png" />
+    <None Include="Resources\hormas_32.png" />
+    <None Include="Resources\lineas_32.png" />
+    <None Include="Resources\incorrecta.jpg" />
+    <None Include="Resources\incorrecta.png" />
+    <Content Include="Resources\ListaDePrestamosM_32.png" />
+    <Content Include="Resources\ListaDePrestamos_32.png" />
+    <None Include="Resources\logoYuyin1.jpg" />
+    <None Include="Resources\logoYuyin2.jpg" />
+    <None Include="Resources\logoYuyin3.jpg" />
+    <None Include="Resources\LocalizacionProducto.png" />
+    <None Include="Resources\Logistica.png" />
+    <None Include="Resources\Mensajeria.png" />
+    <None Include="Resources\LocalizacionProducto_32.png" />
+    <None Include="Resources\ListaPrecios_32.png" />
+    <None Include="Resources\LOCALIZACION-DE-PRODUCTO-EN-ALMACEN_32.png" />
+    <None Include="Resources\LOGISTICA_32.png" />
+    <None Include="Resources\MENSAJERIA_32.png" />
+    <None Include="Resources\MODULOS_32.png" />
+    <None Include="Resources\marcas_32.png" />
+    <Content Include="Resources\materiales.png" />
+    <Content Include="Resources\mercadotecnia.png" />
+    <Content Include="Resources\MotivosDeFiniquitoM_32.png" />
+    <Content Include="Resources\MotivosDeFiniquito_32.png" />
+    <Content Include="Resources\MotivosDeGratificacionesM_32.png" />
+    <Content Include="Resources\MotivosDeGratificaciones_32.png" />
+    <Content Include="Resources\MotivosDePrestamosM_32.png" />
+    <Content Include="Resources\MotivosDePrestamos_32.png" />
+    <Content Include="Resources\NavesM_32.png" />
+    <None Include="Resources\Nomina.png" />
+    <Content Include="Resources\nomina-fiscal.png" />
+    <Content Include="Resources\NominaM_32.png" />
+    <None Include="Resources\NOMINA_32.png" />
+    <None Include="Resources\nomipay.png" />
+    <Content Include="Resources\PagoDePrestamosM_32.png" />
+    <Content Include="Resources\PagoDePrestamos_32.png" />
+    <None Include="Resources\PAISES.png" />
+    <None Include="Resources\PAISES_32.png" />
+    <Content Include="Resources\PercepcionesM_32.png" />
+    <Content Include="Resources\Percepciones_32.png" />
+    <None Include="Resources\PERFILES_32.png" />
+    <Content Include="Resources\PeriodosDeNominaM_32.png" />
+    <Content Include="Resources\PeriodosDeNomina_32.png" />
+    <None Include="Resources\Prestamos.png" />
+    <None Include="Resources\PERMISOS_32.png" />
+    <None Include="Resources\POBLACIONES_32.png" />
+    <None Include="Resources\preautorizacion_32.png" />
+    <None Include="Resources\pieles_32.png" />
+    <Content Include="Resources\Preloader_3.gif" />
+    <Content Include="Resources\Preloader_31.gif" />
+    <Content Include="Resources\PrestamosM_32.png" />
+    <None Include="Resources\PRESTAMOS_32.png" />
+    <None Include="Resources\PRODUCCION_32.png" />
+    <None Include="Resources\productos_32.png" />
+    <None Include="Resources\programacion_32.png" />
+    <Content Include="Resources\produccion.png" />
+    <Content Include="Resources\programacion.png" />
+    <Content Include="Resources\provedores.png" />
+    <Content Include="Resources\PuestosM_32.png" />
+    <Content Include="Resources\Puestos_32.png" />
+    <Content Include="Resources\RegistroDeExcepcionesM_32.png" />
+    <Content Include="Resources\RegistroDeExcepciones_32.png" />
+    <Content Include="Resources\RegistrosPatronalesM_32.png" />
+    <Content Include="Resources\RegistrosPatronales_32.png" />
+    <None Include="Resources\salir_32.png" />
+    <None Include="Resources\Reportes.png" />
+    <None Include="Resources\SEGURIDAD.png" />
+    <None Include="Resources\SolicitarDineroCajaChica.png" />
+    <None Include="Resources\SolicitarDineroCajaChica_32.png" />
+    <None Include="Resources\REPORTES_32.png" />
+    <None Include="Resources\SEGURIDAD_32.png" />
+    <None Include="Resources\SOLICITAR-DINERO-A-CAJA-CHICA_32.png" />
+    <None Include="Resources\reportecontabilidad_32.png" />
+    <None Include="Resources\SAY.ico" />
+    <Content Include="Resources\SAPY.ico" />
+    <Content Include="Resources\SAPY.png" />
+    <Content Include="Resources\SAPY_almacen_menu.png" />
+    <Content Include="Resources\SAPY_calidad_menu.png" />
+    <Content Include="Resources\SAPY_cobranza_menu.png" />
+    <Content Include="Resources\SAPY_compras_menu.png" />
+    <Content Include="Resources\SAPY_contabilidad_menu.png" />
+    <Content Include="Resources\SAPY_facturas_menu.png" />
+    <Content Include="Resources\SAPY_FONDO.png" />
+    <Content Include="Resources\SAPY_framework_menu.png" />
+    <Content Include="Resources\SAPY_LOG-IN_2.png" />
+    <Content Include="Resources\SAPY_materiales_menu.png" />
+    <Content Include="Resources\SAPY_mercadotecnia_menu.png" />
+    <Content Include="Resources\SAPY_nomina-fiscal_menu.png" />
+    <Content Include="Resources\SAPY_nomina_menu.png" />
+    <Content Include="Resources\SAPY_nomipay_menu.png" />
+    <Content Include="Resources\SAPY_produccion_menu.png" />
+    <Content Include="Resources\SAPY_programacion_menu.png" />
+    <Content Include="Resources\SAPY_provedores_menu.png" />
+    <Content Include="Resources\SAPY_ventas_menu.png" />
+    <Content Include="Resources\SAY.png" />
+    <Content Include="Resources\SAY_FONDO.png" />
+    <Content Include="Resources\SAY_LOG-IN.png" />
+    <Content Include="Resources\SAY_LOG-IN_2 %28002%29.png" />
+    <Content Include="Resources\SolicitudDeGratificacionesM_32.png" />
+    <Content Include="Resources\SolicitudDeGratificaciones_32.png" />
+    <Content Include="Resources\SolicitudDePrestamosM_32.png" />
+    <Content Include="Resources\SolicitudDePrestamos_32.png" />
+    <Content Include="Resources\SolicitudDineroFinanzasM_32.png" />
+    <Content Include="Resources\SolicitudDineroFinanzas_32.png" />
+    <Content Include="Resources\SolicitudFiniquitoCajaChicaM_32.png" />
+    <Content Include="Resources\SolicitudFiniquitoCajaChica_32.png" />
+    <None Include="Resources\USUARIOS.png" />
+    <None Include="Resources\USUARIOS_32.png" />
+    <None Include="Resources\tickets_32.png" />
+    <None Include="Resources\suelas_32.png" />
+    <None Include="Resources\temporadas_32.png" />
+    <Content Include="Resources\VacacionesM_32.png" />
+    <Content Include="Resources\Vacaciones_32.png" />
+    <None Include="Resources\VENTAS_32.png" />
+    <None Include="Resources\xml.png" />
+    <Content Include="Resources\ventas.png" />
+    <Content Include="Resources\yuyin1.png" />
+    <Content Include="SAY.ico" />
+    <Content Include="YUMPER.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Charts.v24.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Office.v24.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Pdf.v24.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Pdf.v24.2.Drawing">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v24.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v24.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Sparkline.v24.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v24.2.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v24.2.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v24.2.Wizard">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v24.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Documents.Excel.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Documents.Reports.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Shared.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.AppStylistSupport.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.Misc.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.SupportDialogs.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinCalcManager.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinCalcManager.v12.2.FormulaBuilder">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinDataSource.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinDock.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinEditors.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinExplorerBar.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinGrid.DocumentExport.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinGrid.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinListView.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinSchedule.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinStatusBar.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinTabControl.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinToolbars.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinTree.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Stimulsoft.Base.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Stimulsoft.Controls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Stimulsoft.Controls.Win.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Stimulsoft.Controls.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Stimulsoft.Report.Win.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Stimulsoft.Report.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

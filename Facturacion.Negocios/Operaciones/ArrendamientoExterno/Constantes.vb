@@ -1,0 +1,16 @@
+﻿Module Constantes
+<<<<<<< .mine
+    Public Const rutaFTP As String = "FTP://192.168.2.158/"
+    Public Const ftpUsuario As String = "Administrador"
+    Public Const ftpContrasena As String = "Mlasrlcmar231012"""
+=======
+    Public Const rutaFTP As String = "FTP://192.168.2.158/"
+    Public Const ftpUsuario As String = "ftpaccess"
+    Public Const ftpContrasena As String = "Yuyin2017"""
+>>>>>>> .r8257
+    Public Const rutaTmp As String = "C:\WSExternoArrendamiento\"
+    'Public Const rutaTmpLocal As String = "C:\TmpRecibos\"
+    'Public Const rutaArchivos As String = "\\192.168.7.16\f$\RecibosNominaFiscal\"
+    'Public Const rutaArchivosCont As String = "\\192.168.2.30\atenas\CONTABILIDAD\Contabilidad\RecibosNominaFiscal\"
+    'Public Const rutaFTPHttp As String = "http://192.168.7.16/yuyinerp/"
+End Module
