@@ -41,10 +41,10 @@
     <ProductName>SAPY</ProductName>
     <PublisherName>Sistemas Grupo Yuyin</PublisherName>
     <SuiteName>SAPY</SuiteName>
-    <MinimumRequiredVersion>2.1.0.10</MinimumRequiredVersion>
+    <MinimumRequiredVersion>2.1.0.15</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
-    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationRevision>16</ApplicationRevision>
     <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
